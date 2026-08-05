@@ -50,8 +50,8 @@ les asymétries d'**information** (bloc A), les asymétries de **perception**
 | 9 | Catégorie, segmentation, positionnement (Ries & Trout) | ⬜ |
 | 10 | La contradiction : distinctivité vs différenciation (Byron Sharp) | ⬜ |
 | 11 | Pricing et capture de valeur | ⬜ |
-| 12 | Architecture de l'offre et copywriting (Schwartz, Ogilvy, Hormozi) | ⬜ |
-| 13 | Acquisition, canaux, unit economics (LTV / CAC / payback) | ⬜ |
+| 12 | **Hopkins, *La publicité scientifique*** — mesure, titre, précision, test | ✅ Écrit |
+| 13 | Acquisition, canaux, unit economics (LTV / CAC / payback) | 🟨 Partiellement couvert par le module 12 |
 
 ### Bloc D — Exécution, capital, levier
 
@@ -106,6 +106,12 @@ la plupart de leurs successeurs ont ce défaut. Je te le dirai à chaque fois, s
 ménagement, et je te dirai aussi ce qui reste utilisable malgré ça.
 
 ---
+
+## Livres traités
+
+| Livre | Auteur | Année | Fiche | Verdict |
+|---|---|---|---|---|
+| *Scientific Advertising* | Claude C. Hopkins | 1923 | [fiche](fiches-de-lecture/hopkins-publicite-scientifique.md) | **À lire intégralement**, mais jamais seul — voir le contradicteur (module 10) |
 
 ## Fichiers
 
