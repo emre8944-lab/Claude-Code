@@ -48,10 +48,10 @@ les asymétries d'**information** (bloc A), les asymétries de **perception**
 | # | Module | Statut |
 |---|--------|--------|
 | 9 | Catégorie, segmentation, positionnement (Ries & Trout) | ⬜ |
-| 10 | La contradiction : distinctivité vs différenciation (Byron Sharp) | ⬜ |
+| 10 | **Sharp contre Hopkins** — distinctivité, pénétration, 60/40 | ✅ Écrit |
 | 11 | Pricing et capture de valeur | ⬜ |
 | 12 | **Hopkins, *La publicité scientifique*** — mesure, titre, précision, test | ✅ Écrit |
-| 13 | Acquisition, canaux, unit economics (LTV / CAC / payback) | 🟨 Partiellement couvert par le module 12 |
+| 13 | **CAC, LTV, payback** — les chiffres qui décident | ✅ Écrit |
 
 ### Bloc D — Exécution, capital, levier
 
@@ -65,6 +65,22 @@ les asymétries d'**information** (bloc A), les asymétries de **perception**
 
 L'ordre est pédagogique, pas rigide. Si un livre que tu m'apportes touche au module 11,
 on saute au module 11.
+
+### Le socle écrit — à lire dans cet ordre
+
+Quatre modules sont rédigés, et ils forment déjà une chaîne complète et suffisante pour
+décider. Lis-les dans cet ordre, pas dans l'ordre des numéros :
+
+| Ordre | Module | Ce qu'il te donne |
+|---|---|---|
+| 1ᵉʳ | [**1 — Asymétries d'information**](modules/01-asymetries-information.md) | Où se trouve l'argent, et pourquoi |
+| 2ᵉ | [**12 — Hopkins**](modules/12-hopkins-publicite-scientifique.md) | Comment le message capte cet argent |
+| 3ᵉ | [**10 — Sharp contre Hopkins**](modules/10-sharp-distinctivite.md) | Ce que la mesure de Hopkins ne voit pas |
+| 4ᵉ | [**13 — CAC, LTV, payback**](modules/13-unit-economics.md) | Comment savoir si tu gagnes vraiment |
+
+Les modules 10 et 12 se contredisent frontalement. **C'est voulu, et c'est le cœur de la
+formation.** Les deux sont vrais dans leur domaine ; la compétence rare est de savoir dans
+lequel tu te trouves. Le module 10, section 4, tranche pour toi.
 
 ---
 
