@@ -18,7 +18,7 @@ média est **dérivé** du § 2.2 (CA TTC 2 931 600 €) et du § 2.3 (MER 2,80)
 
 ```
 Dépense pub P4 = 2 931 600 € TTC ÷ 2,80 = 1 047 000 € HT / mois
-Contrôle : 1 047 000 ÷ 2 443 000 € HT = 42,86 % ≈ 42,9 % (§ 2.2) ✔
+Contrôle : 1 047 000 ÷ 2 443 000 € HT = 42,86 % ≈ 42,9 % (§ 2.2)
 Par semaine 1 047 000 × 12 ÷ 52 = 241 615 € HT ; par jour × 12 ÷ 365 = 34 422 € HT
 Contribution par commande = 69,80 ÷ 1,20 × 60,4 % (CM2, § 2.1) = 35,13 € HT
 Panier de 1ʳᵉ commande P4 = 31,71 € (§ 2.4) ÷ 60,4 % × 1,20 = 63,00 € TTC
@@ -99,15 +99,15 @@ compte, c'est la prospection qui coûte cher. » Il voulait **y déplacer du bud
 | Option | Budget pub/mois HT | Commandes/mois | CA TTC/mois | MER | **EBITDA/mois** | % CA HT | Δ EBITDA/an |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | **A — statu quo** | 1 047 000 € | 42 000 | 2 931 600 € | 2,80 | **198 572 €** | 8,1 % | — |
-| **B — couper 22 %, encaisser** | 816 660 € | 36 483 | 2 546 527 € | 3,12 | **235 092 €** | 11,1 % | +438 240 € |
-| **C — couper 22 %, réallouer** | 1 047 000 € | 43 498 | 3 036 160 € | 2,90 | **251 201 €** | 9,9 % | **+631 548 €** |
-| **D — couper 26 %, réallouer** | 1 047 000 € | 40 044 | 2 795 099 € | 2,67 | **129 872 €** | 5,6 % | −824 400 € |
+| **B — couper 22 %, encaisser** | 816 660 € | 36 484 | 2 546 583 € | 3,12 | **235 120 €** | 11,1 % | +438 576 € |
+| **C — couper 22 %, réallouer** | 1 047 000 € | 43 499 | 3 036 230 € | 2,90 | **251 236 €** | 9,9 % | **+631 968 €** |
+| **D — couper 26 %, réallouer** | 1 047 000 € | 40 044 | 2 795 071 € | 2,67 | **129 852 €** | 5,6 % | −824 640 € |
 
 **B est le piège de la marge en pourcentage** : meilleur taux du tableau, 13,1 % de CA
-en moins. Reculer de 385 000 € de CA mensuel pour 36 520 € d'EBITDA est un mauvais
+en moins. Reculer de 385 017 € de CA mensuel pour 36 548 € d'EBITDA est un mauvais
 échange : le taux monte parce que le dénominateur descend.
 
-**D coupe les deux canaux à zéro** et détruit 824 400 € d'EBITDA par an : le premier
+**D coupe les deux canaux à zéro** et détruit 824 640 € d'EBITDA par an : le premier
 euro de recherche marque est bien plus incrémental que le dernier — il défend le nom —
 et la tranche réallouée devient trop grosse pour le CAC marginal de la prospection
 (*hypothèse : 47,50 € au lieu de 44,00 €*).
@@ -208,10 +208,10 @@ décalées, sans réactivation, avant lecture finale.
 
 ### 4.5 Le coût du test
 
-Sur 42 jours : dépense évitée `27 076 + 20 163 = 47 239 € HT` ; commandes perdues
-`869 + 724 = 1 593`, soit `1 593 × 35,13 = 55 941 €` de contribution. **Coût net :
-8 702 €** pour une question qui pèse 3 266 640 € HT par an. Un test se juge à son coût
-net, jamais au budget qu'il met en jeu.
+Sur 42 jours : dépense évitée `27 075 + 20 166 = 47 241 € HT` ; commandes perdues
+`868,6 + 723,8 = 1 592,4`, soit `× 35,13 = 55 941 €` de contribution. **Coût net :
+8 700 €** pour une question qui pèse 3 266 640 € HT par an. Un test se juge à son coût
+net, pas au budget qu'il met en jeu.
 
 ---
 
@@ -278,10 +278,10 @@ libérés, **22,0 % du budget**, réalloués en prospection Meta et TikTok
 
 | Mois | Commandes gagnées | Commandes perdues | **Net** | Δ CA TTC | **Δ EBITDA** |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| M+1 | 5 549 | 5 252 | **+297** | +20 738 € | **+10 437 €** |
-| M+2 | 6 282 | 5 384 | **+898** | +62 653 € | **+31 533 €** |
-| M+3 | 7 015 | 5 517 | **+1 498** | +104 567 € | **+52 629 €** |
-| **Cumul 90 j** | 18 846 | 16 153 | **+2 693** | **+187 958 €** | **+94 599 €** |
+| M+1 | 5 549 | 5 252 | **+297** | +20 731 € | **+10 434 €** |
+| M+2 | 6 282 | 5 384 | **+898** | +62 680 € | **+31 547 €** |
+| M+3 | 7 015 | 5 516 | **+1 499** | +104 630 € | **+52 660 €** |
+| **Cumul 90 j** | 18 846 | 16 152 | **+2 694** | **+188 041 €** | **+94 641 €** |
 
 Les gains montent parce que les cohortes reviennent (1,06 commande le premier mois,
 +0,14 ensuite, § 3) ; les pertes aussi, plus lentement, car 18 % des commandes perdues
@@ -289,20 +289,20 @@ Les gains montent parce que les cohortes reviennent (1,06 commande le premier mo
 
 | Indicateur | Avant (M0) | Après (M+3) | Écart |
 | --- | ---: | ---: | ---: |
-| Commandes / mois | 42 000 | 43 498 | +3,6 % |
-| CA TTC / mois | 2 931 600 € | 3 036 160 € | **+3,6 %** |
+| Commandes / mois | 42 000 | 43 499 | +3,6 % |
+| CA TTC / mois | 2 931 600 € | 3 036 230 € | **+3,6 %** |
 | Dépense pub / mois HT | 1 047 000 € | 1 047 000 € | **0 €** |
 | — dont marque + retargeting | 272 220 € (26,0 %) | 41 880 € (4,0 %) | **−22,0 pts** |
 | — dont prospection | 575 850 € (55,0 %) | 806 190 € (77,0 %) | +22,0 pts |
 | MER blended (seuil EBITDA 2,35) | 2,80 | **2,90** | +19,0 % → +23,4 % au-dessus du seuil |
-| Marge brute CM2 (60,4 % du CA HT) | 1 475 572 € | 1 528 200 € | +52 628 € |
-| CM3 (après pub), frais fixes 230 000 € | 428 572 € | 481 200 € | +52 628 € |
-| **EBITDA / mois** | **198 572 €** | **251 201 €** | **+52 629 €** |
+| Marge brute CM2 (60,4 % du CA HT) | 1 475 572 € | 1 528 236 € | +52 664 € |
+| CM3 (après pub), frais fixes 230 000 € | 428 572 € | 481 236 € | +52 664 € |
+| **EBITDA / mois** | **198 572 €** | **251 236 €** | **+52 664 €** |
 | **EBITDA en % du CA HT** | **8,1 %** | **9,9 %** | **+1,8 pt** |
-| **EBITDA annualisé** | 2 382 864 € | 3 014 412 € | **+631 548 €** |
+| **EBITDA annualisé** | 2 382 864 € | 3 014 832 € | **+631 968 €** |
 
 **Le CA n'a pas baissé : il a monté de 3,6 %**, à budget publicitaire identique. Gain
-annualisé d'EBITDA **631 548 €**, +26,5 %, pour un test à 8 702 € — **73 pour 1**.
+annualisé d'EBITDA **631 968 €**, +26,5 %, pour un test à 8 700 € — **73 pour 1**.
 
 ---
 
@@ -341,7 +341,7 @@ Trois corollaires opérationnels :
 - **Le budget se juge à l'arbitrage, pas au seuil.** Un canal peut couvrir ses coûts
   variables (2,24 > 1,99, MER seuil CM3) et rester le pire emploi du prochain euro.
 - **On ne coupe jamais à zéro un canal défensif.** Le plancher de 4 % du budget sépare
-  C (+631 548 €) de D (−824 400 €).
+  C (+631 968 €) de D (−824 640 €).
 - **Un test se dimensionne avant d'être lancé.** Sans le § 4.3 : 10 jours, « pas
   d'effet », et 272 220 € coupés par mois sur une mesure incapable de distinguer 0 % de
   18,7 % de perte.
@@ -412,13 +412,13 @@ MDE lâche est une zone de risque acceptée : `42 000 × 12 % × 69,80 € = 351
 Écris ce montant avant de choisir la durée.
 
 **4.** Cellule A : 172,4 puis 155,2 cmd/j ; témoin 173,4 puis 176,9 ; dépense évitée
-27 076 € HT sur 42 jours ; 101,59 commandes/jour revendiquées.
+27 075 € HT sur 42 jours ; 101,59 commandes/jour revendiquées.
 
 ```
 Rapport de base A/C = 172,4 ÷ 173,4 = 0,9942
 Contrefactuel A     = 176,9 × 0,9942 = 175,88 cmd/j
 Commandes perdues   = (175,88 − 155,2) × 42 = 868,6
-CAC incrémental  = 27 076 ÷ 868,6 = 31,17 € HT   ROAS incr. = 69,80 ÷ 31,17 = 2,24
+CAC incrémental  = 27 075 ÷ 868,6 = 31,17 € HT   ROAS incr. = 69,80 ÷ 31,17 = 2,24
 Incrémentalité   = 868,6 ÷ (101,59 × 42) = 20,4 %
 ```
 
@@ -437,12 +437,12 @@ c'est mauvais, on coupe parce que c'est le moins bon.
 
 ```
 Nouveaux clients = 230 340 ÷ 62,00 = 3 715 /mois
-Gagnées M+3 = 3 715 × (1,06 + 0,14 + 0,14) = 4 978 ; perdues 5 517 ; net −539
-Δ EBITDA = −539 × 35,13 = −18 935 €/mois = −227 220 €/an
+Gagnées M+3 = 3 715 × (1,06 + 0,14 + 0,14) = 4 978 ; perdues 5 516 ; net −538
+Δ EBITDA = −538 × 35,13 = −18 900 €/mois = −226 800 €/an
 ```
 
-**On ne réalloue pas.** Seuil d'indifférence : `230 340 ÷ (5 517 ÷ 1,34) = 55,95 €`.
-Au-delà, la bonne décision n'est plus C mais B — couper et encaisser (+438 240 €/an) en
+**On ne réalloue pas.** Seuil d'indifférence : `230 340 ÷ (5 516 ÷ 1,34) = 55,96 €`.
+Au-delà, la bonne décision n'est plus C mais B — couper et encaisser (+438 576 €/an) en
 acceptant le recul de CA. **Un test d'incrémentalité dit où ne pas mettre l'argent, jamais
 où le mettre : cette seconde réponse demande le CAC marginal du canal d'accueil.**
 

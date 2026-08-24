@@ -1,6 +1,6 @@
 # Niveau L02 — Praticien
 
-> **Prérequis :** niveau [L01](L01-initié.md) validé — 75 / 100, sans question éliminatoire ratée.
+> **Prérequis :** niveau [L01](L01-initie.md) validé — 75 / 100, sans question éliminatoire ratée.
 > **Ce que tu sais faire à la sortie :**
 > — tu chiffres un coût de revient complet **rendu entrepôt** depuis un devis, en retrouvant les six postes que le devis ne contient pas ;
 > — tu construis la cascade jusqu'au MER seuil pour trois produits qui n'existent pas encore et tu désignes celui dont la structure autorise l'objectif, par le calcul et non par le goût ;
@@ -340,4 +340,4 @@ Soixante-douze est le seuil le plus bas des trois premiers niveaux, et c'est dé
 
 ---
 
-*Fin du niveau L02. Suite : [L03 — Opérateur](L03-opérateur.md), où tu quittes la structure pour le message : un corpus client brut à transformer en angle, en script et en page.*
+*Fin du niveau L02. Suite : [L03 — Opérateur](L03-operateur.md), où tu quittes la structure pour le message : un corpus client brut à transformer en angle, en script et en page.*

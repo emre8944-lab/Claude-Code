@@ -1103,16 +1103,6 @@ def decider(strategie: str, sim: Simulateur) -> Decision:
         budget = prec.budget_pub * vitesse
         plafond_treso = max(0.0, sim.tresorerie - acompte) * part_treso
         budget = min(budget, plafond_treso)
-        # On ne dépense pas en média ce que le stock ne peut pas servir.
-        if prec.commandes > 0 and mult > 0:
-            # le stock disponible le mois prochain inclut les livraisons qui
-            # arrivent ce mois-là : ne pas les compter bride le compte à tort
-            arrivant = sum(u for (mois_liv, u, _) in sim.livraisons
-                           if mois_liv <= sim.mois + 1)
-            cmd_servables = (sim.stock_unites + arrivant) / mult
-            if cmd_servables < prec.commandes:
-                budget = min(budget, prec.budget_pub
-                             * max(0.65, cmd_servables / prec.commandes))
         if strategie != "agressive":
             # garde-fou : on garde toujours 2 mois de frais fixes au chaud
             budget = min(budget, max(0.0, sim.tresorerie - acompte
@@ -1122,17 +1112,42 @@ def decider(strategie: str, sim: Simulateur) -> Decision:
             budget = max(budget, min(prec.budget_pub * 0.80, plafond_treso, budget * 1.0)
                          if plafond_treso > prec.budget_pub * 0.80
                          else min(prec.budget_pub * 0.80, max(budget, plafond_treso)))
+        # PLAFOND STOCK — appliqué EN DERNIER, et il prime sur tout le reste.
+        # On ne paie pas pour du trafic qu'on ne peut pas servir. Le garde-fou
+        # anti-décrochage ci-dessus est une bonne règle en régime normal ; en
+        # rupture c'est une règle qui ruine, parce qu'elle maintient la dépense
+        # alors que le chiffre d'affaires est plafonné par l'entrepôt.
+        # Un opérateur réel coupe. La phase d'apprentissage perdue coûte cher,
+        # mais infiniment moins que trente jours de média servis à vide.
+        if prec.commandes > 0 and mult > 0:
+            # le stock servable le mois prochain inclut les livraisons attendues :
+            # ne pas les compter briderait le compte à tort
+            arrivant = sum(u for (mois_liv, u, _) in sim.livraisons
+                           if mois_liv <= sim.mois + 1)
+            cmd_servables = (sim.stock_unites + arrivant) / mult
+            if cmd_servables < prec.commandes:
+                couverture = max(0.10, cmd_servables / prec.commandes)
+                budget = min(budget, prec.budget_pub * couverture)
         budget = max(1_500.0, budget)
 
     # --- remise : dérive d'échelle + promotion saisonnière de novembre ---
     ca_prec_ttc = prec.ca_ttc if prec else 0.0
     pilotage_marge = (prec is not None and strategie != "agressive"
                       and prec.ca_ttc_semaine >= 0.70 * OBJECTIF_CA_TTC_SEMAINE)
-    derive = REMISE_DERIVE_ECHELLE * (0.5 if pilotage_marge else 1.0)
-    r = remise + derive * min(1.0, ca_prec_ttc / REMISE_CA_PLEIN)
-    if mois_cal == 11 and not pilotage_marge:
-        r = r + (0.15 if strategie == "agressive" else 0.08)
-    r = min(0.30, r)
+    if strategie == "remise_permanente":
+        # Expérience à variable unique : cette stratégie est identique à
+        # « équilibrée » SAUF la remise, qui reste plate à sa valeur nominale.
+        # Ni dérive d'échelle, ni promotion de novembre — une marque déjà
+        # remisée en permanence n'empile pas une promotion saisonnière dessus.
+        # Sans cette exemption, la remise effective atteindrait 30 % et le
+        # tableau comparatif ne dirait plus ce qu'il prétend dire.
+        r = remise
+    else:
+        derive = REMISE_DERIVE_ECHELLE * (0.5 if pilotage_marge else 1.0)
+        r = remise + derive * min(1.0, ca_prec_ttc / REMISE_CA_PLEIN)
+        if mois_cal == 11 and not pilotage_marge:
+            r = r + (0.15 if strategie == "agressive" else 0.08)
+        r = min(0.30, r)
 
     # --- investissements -------------------------------------------------
     ca_ht_prec = prec.ca_ht if prec else 0.0
@@ -1583,18 +1598,32 @@ def verifier(categorie: str, prix: float, coef: float, capital: float,
     print(f"    Qualité créative   : {dec(q_st):>18} contre {dec(q_eq)}")
     print(f"    Issue              : {st.issue:>18} contre {eq.issue}")
 
-    # (b) agressive : probabilite elevee de rupture de tresorerie
+    # (b) agressive : la rupture de tresorerie doit etre le cas LE PLUS PROBABLE,
+    # sans etre certaine. Une strategie agressive qui echouerait a tous les coups
+    # n'enseignerait rien : personne ne la choisirait dans la vraie vie. Ce qui la
+    # rend dangereuse, c'est precisement qu'elle marche parfois. La bande visee est
+    # donc [50 % ; 85 %] de faillites — plus souvent qu'un tirage a pile ou face,
+    # jamais systematiquement.
     ruptures = 0
+    mois_survie = []
     for g in range(graine, graine + n_graines):
         pa = jouer_auto("agressive", categorie, prix, coef, capital, g, horizon)
         if pa.issue == "faillite":
             ruptures += 1
+            mois_survie.append(len(pa.historique))
     taux = ruptures / n_graines
-    ok_b = taux >= 0.60
+    ok_b = 0.50 <= taux <= 0.85
     echecs += 0 if ok_b else 1
     print(f"(b) agressive : rupture de trésorerie ...... "
           f"{'OK' if ok_b else 'ÉCHEC'}")
-    print(f"    {ruptures} faillites sur {n_graines} graines, soit {pct(taux)}")
+    print(f"    {ruptures} faillites sur {n_graines} graines, soit {pct(taux)} "
+          f"(bande attendue : 50 % à 85 %)")
+    if mois_survie:
+        med = sorted(mois_survie)[len(mois_survie) // 2]
+        print(f"    Survie médiane avant faillite : {med} mois")
+    print("    Lecture : l'agressivité n'échoue pas toujours — c'est exactement")
+    print("    pour ça qu'elle est dangereuse. Elle marche assez souvent pour")
+    print("    être imitée, et rate assez souvent pour ruiner qui l'imite.")
 
     # (c) remise_permanente : du CA, peu d'EBITDA
     ca_rp = sum(m.ca_ttc for m in rp.historique)

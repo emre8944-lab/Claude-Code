@@ -372,4 +372,4 @@ Deux points de taux de retour tiennent dans une phrase écrite **avant** l'achat
 
 ---
 
-*Fin du niveau L03. Suite : [L04 — Acquéreur](L04-acquéreur.md), où l'on cesse d'écrire pour acheter — et où le CAC moyen cesse de décider.*
+*Fin du niveau L03. Suite : [L04 — Acquéreur](L04-acquereur.md), où l'on cesse d'écrire pour acheter — et où le CAC moyen cesse de décider.*

@@ -4,8 +4,8 @@
 >
 > **Ce que tu sais faire à la sortie :**
 > 1. Tu convertis un compte de résultat mensuel en semaines de trésorerie restantes, et tu dis lequel des deux chiffres commande la décision du trimestre.
-> 2. Tu dimensionnes un stock par un point de recommande calculé, et tu chiffres en euros de trésorerie ce que vaut une renégociation de MOQ ou de délai de paiement.
-> 3. Tu produis un plan de redressement à 90 jours dont chaque levier est chiffré en points de marge, ordonné par rapport gain sur effort, daté, et dont chaque contrepartie est écrite avant d'être subie.
+> 2. Tu dimensionnes un stock par un point de recommande calculé, et tu chiffres ce que vaut en trésorerie une renégociation de MOQ ou de délai de paiement.
+> 3. Tu produis un plan de redressement à 90 jours dont chaque levier est chiffré en points de marge, ordonné par rapport gain sur effort, daté, contrepartie écrite avant d'être subie.
 >
 > **Temps de travail typique :** 22 à 30 heures. Premier niveau dont l'épreuve n'a pas de réponse unique : elle a un plan défendable et une arithmétique qui doit tenir.
 
@@ -20,23 +20,23 @@
 3. **Je calcule un point de recommande** avec un écart type mesuré sur la fenêtre du délai, jamais sur la journée, et je sais pourquoi la différence vaut un facteur dix.
 4. **Je chiffre en euros de trésorerie une négociation fournisseur** — prix, MOQ, délai de paiement — et je sais laquelle des trois vaut le plus dans **ma** situation du moment.
 5. **Je refuse un gain de marge qui coûte de la trésorerie** quand mon horizon est plus court que son délai de récupération, et je dis à quelle date je le reprendrai.
-6. **Je chiffre un levier en points de marge sur un dénominateur figé**, contrepartie écrite d'avance, et j'ordonne mes leviers par rapport gain sur effort en assumant qu'un levier plus rentable s'exécute après un levier plus lent.
-7. **Je construis un plan de redressement sans aucune hypothèse de croissance**, et je reconnais une opération promotionnelle de sauvetage pour ce qu'elle est : un emprunt dont personne ne calcule le taux.
+6. **Je chiffre un levier en points de marge sur un dénominateur figé**, contrepartie écrite d'avance, et j'ordonne mes leviers par rapport gain sur effort — en assumant qu'un levier plus rentable s'exécute après un levier plus lent.
+7. **Je construis un plan de redressement sans hypothèse de croissance**, et je reconnais une opération promotionnelle de sauvetage pour ce qu'elle est : un emprunt dont personne ne calcule le taux.
 
 ## 2. Ce que tu lis
 
 | # | Lecture | Ce qu'elle apporte **à ce niveau** |
 |---|---|---|
-| 1 | [**E10**](../modules/E10-cash-et-operations.md) § 1, § 2 et § 5 | Le cycle de conversion du cash, l'intensité en cash par tranche de 100 000 € de CA, la formule `g = EBITDA mensuel ÷ BFR` ; puis le point de recommande, l'écart type mesuré sur la fenêtre du délai, et pourquoi un MOQ vaut des centaines de milliers d'euros. **Le cœur du niveau.** |
-| 3 | [**E10**](../modules/E10-cash-et-operations.md) § 6 et § 7 | La logistique en euros par commande, 3PL contre internalisation, et pourquoi trente jours de délai fournisseur valent plus que 2 % de remise. |
-| 4 | [**C08**](../etudes-de-cas/C08-redressement-90-jours.md), puis [**C05**](../etudes-de-cas/C05-abonnement-et-cac-negatif.md) et [**E01**](../modules/E01-arithmetique-de-la-marque.md) § 4-5 relu | C08 est le modèle de l'épreuve — lis-le **après** l'avoir tentée. C05 en est le symétrique : quand une contribution négative à la première commande est un calcul. E01 donne les deux MER seuils, vus à L01 comme une formule, relus ici comme une contrainte de trésorerie. |
+| 1 | [**E10**](../modules/E10-cash-et-operations.md) § 1, § 2, § 5 | Le cycle de conversion du cash, l'intensité en cash par tranche de 100 000 € de CA, `g = EBITDA mensuel ÷ BFR` ; le point de recommande, l'écart type mesuré sur la fenêtre du délai, ce que vaut un MOQ. **Le cœur du niveau.** |
+| 2 | [**E10**](../modules/E10-cash-et-operations.md) § 6 et § 7 | La logistique en euros par commande, 3PL contre internalisation, et pourquoi trente jours de délai fournisseur valent plus que 2 % de remise. |
+| 3 | [**C08**](../etudes-de-cas/C08-redressement-90-jours.md), puis [**C05**](../etudes-de-cas/C05-abonnement-et-cac-negatif.md) et [**E01**](../modules/E01-arithmetique-de-la-marque.md) § 4-5 relu | C08 est le modèle de l'épreuve — lis-le **après** l'avoir tentée. C05 en est le symétrique : quand une contribution négative à la première commande est un calcul. E01 donne les deux MER seuils, relus ici comme une contrainte de trésorerie. |
 
 ## 3. Ce que tu fais
 
 | Travail | Livrable | Comment on sait que c'est fait |
 |---|---|---|
 | [**S12**](../atelier/S12-la-crise.md), première partie | Un **plan de crise à 14 jours** : ce que tu coupes lundi, ce que tu appelles, ce que tu ne touches pas | Chaque ligne a un montant, une date, un responsable. Une ligne sans montant n'est pas une décision |
-| [**S11**](../atelier/S11-passer-a-l-echelle.md), volet trésorerie | Le plan de trésorerie à 12 mois du passage 30 k€ → 300 k€ | Le creux est identifié au mois près, et le montant à réunir écrit avant la première dépense |
+| [**S11**](../atelier/S11-passer-a-l-echelle.md), volet trésorerie | Le plan de trésorerie à 12 mois du passage 30 k€ → 300 k€ | Le creux est daté au mois près, le montant à réunir écrit avant la première dépense |
 | **`simulateur_tresorerie.py`**, scénario de crise **imposé** | Trois exécutions : trajectoire subie, avec ton plan, avec le plan inverse | Tu nommes la semaine où la trésorerie passe sous le point de non-retour dans le cas subi |
 
 ```
@@ -48,21 +48,19 @@ python3 ecommerce/outils/simulateur_tresorerie.py \
 
 Tu notes la semaine où la trésorerie franchit zéro, puis tu rejoues en modifiant **un seul paramètre à la fois** — `--jours-stock 60`, `--dpo 30`, `--mer 2.85`, `--marge 0.565` — et tu classes les quatre par trésorerie gagnée au 90ᵉ jour.
 
-> **Ce que la série te fait découvrir.** `--dpo 30` **détruit plus de trésorerie sur le trimestre que la totalité du gain de marge** qu'on obtient en l'échangeant. Et `--jours-stock 60`, qui ne change pas d'un centime le compte de résultat, en rapporte plus que le passage de la marge brute de 51 % à 56,5 %. **Les deux tableaux ne classent pas les décisions dans le même ordre** ; quand ils s'opposent, la trésorerie décide.
+> **Ce que la série te fait découvrir.** `--dpo 30` **détruit plus de trésorerie sur le trimestre que le gain de marge obtenu en l'échangeant** ; `--jours-stock 60`, qui ne change rien au compte de résultat, en rapporte plus que la marge brute passée de 51 % à 56,5 %.
 
 ## 4. L'épreuve
 
-**Durée : 4 h 00.** Calculatrice autorisée, aucun document. **Barème sur 100. Passage à 70.**
-
-**Pénalité de plan : −15 points** si le plan rendu à la question 6 dépend, en tout ou partie, d'une hausse du chiffre d'affaires pour atteindre l'équilibre. Elle s'applique quelle que soit la qualité du reste de la copie et se cumule avec les fautes éliminatoires du § 6.
+**Durée : 4 h 00.** Calculatrice autorisée, aucun document. **Barème sur 100. Passage à 70. Pénalité de plan : −15 points** si le plan rendu à la question 6 dépend, en tout ou partie, d'une hausse du chiffre d'affaires pour atteindre l'équilibre — quelle que soit la qualité du reste de la copie, et cumulable avec les fautes éliminatoires du § 6.
 
 ### Le dossier — KANOPÉ
 
 > *Cas composite. Marque fictive. Les chiffres sont un modèle calibré sur des ordres de grandeur sectoriels ; ce ne sont les comptes d'aucune entreprise réelle.*
 
-KANOPÉ vend des compléments alimentaires en direct, en France et en Belgique. Trente-quatre mois d'existence, quatre références, un produit héros qui pèse 46 % du coût marchandise. Le fondateur t'appelle un lundi de mars : l'expert-comptable vient de rendre les comptes de février, et il découvre qu'il perd de l'argent depuis cinq mois.
+KANOPÉ vend des compléments alimentaires en direct, en France et en Belgique. Trente-quatre mois d'existence, quatre références, un produit héros qui pèse 46 % du coût marchandise. Le fondateur t'appelle un lundi de mars : l'expert-comptable vient de rendre les comptes de février, il perd de l'argent depuis cinq mois.
 
-**Février — mois complet, non saisonnier.** CA **780 000 € TTC**, soit **650 000 € HT**. 13 000 commandes, dont 9 000 premières et 4 000 réachats. Panier moyen 60,00 € TTC / 50,00 € HT, identique en première commande et en réachat. Croissance mensuelle sur six mois : +0,4 % — **la marque est plate**. Dépense publicitaire 312 000 €. Frais fixes 78 000 € HT. Trésorerie au 1ᵉʳ mars **165 000 €**, échéance mensuelle d'emprunt 6 500 €, capital mobilisable sans engager le patrimoine du fondateur **0 €**.
+**Février — mois complet, non saisonnier.** CA **780 000 € TTC**, soit **650 000 € HT**. 13 000 commandes, dont 9 000 premières et 4 000 réachats. Panier moyen 60,00 € TTC / 50,00 € HT, identique en première commande et en réachat. Croissance sur six mois : +0,4 % — **la marque est plate**. Publicité 312 000 €. Frais fixes 78 000 € HT. Trésorerie au 1ᵉʳ mars **165 000 €**, échéance mensuelle d'emprunt 6 500 €, capital mobilisable **0 €**.
 
 | Coût variable, en % du CA HT | Taux | Détail |
 |---|---:|---|
@@ -84,26 +82,26 @@ KANOPÉ vend des compléments alimentaires en direct, en France et en Belgique. 
 
 **La rétention.** Réachats cumulés par client à 12 mois : **1,10**. Panier de réachat identique au panier d'acquisition.
 
-**Les trois propositions du fondateur.** **α — fournisseur :** **−7 % sur les prix** contre un engagement de volume de douze mois **et** le passage du délai de paiement de 60 à 30 jours, les dettes fournisseurs tombant de 190 000 € à 95 000 €. **β — logistique :** appel d'offres ramenant le transport de 4,20 € à 3,75 € par commande et l'emballage de 0,45 € à 0,33 €, pour 12 000 € d'outillage, le contrat 3PL imposant un **préavis de 60 jours**. **γ — opération commerciale :** **−25 % sur dix jours** pour refaire de la trésorerie — *hypothèses fournies :* volume de la période ×**2,2** ; **45 %** des commandes supplémentaires auraient eu lieu au prix plein sous soixante jours ; **60 %** des commandes de la période sont des premières commandes ; une cohorte promotionnelle réachète **42 % moins souvent** ([simulateur](../outils/README-simulateur.md) § 8).
+**Les trois propositions du fondateur.** **α :** **−7 % sur les prix** contre un engagement de volume de douze mois **et** le passage du délai de paiement de 60 à 30 jours, les dettes fournisseurs tombant de 190 000 € à 95 000 €. **β :** appel d'offres ramenant le transport de 4,20 € à 3,75 € par commande et l'emballage de 0,45 € à 0,33 €, pour 12 000 € d'outillage, le contrat 3PL imposant un **préavis de 60 jours**. **γ :** **−25 % sur dix jours** pour refaire de la trésorerie — *hypothèses fournies :* volume de la période ×**2,2** ; **45 %** des commandes supplémentaires auraient eu lieu au prix plein sous soixante jours ; **60 %** des commandes de la période sont des premières commandes ; une cohorte promotionnelle réachète **42 % moins souvent** ([simulateur](../outils/README-simulateur.md) § 8).
 
 ```
 Deux conventions, à respecter dans toute la copie :
-1. Un « point de marge » vaut 1 % du CA HT de référence de février,
-   soit 6 500 € par mois. Le dénominateur ne bouge pas, quoi que fasse
-   le plan : sans dénominateur figé, deux leviers ne s'additionnent pas.
-2. Les frais fixes et l'échéance d'emprunt sont les seuls décaissements
-   hors exploitation. Pas d'impôt (résultat négatif), pas d'investissement.
+1. Un « point de marge » vaut 1 % du CA HT de février, soit 6 500 €/mois.
+   Le dénominateur ne bouge pas, quoi que fasse le plan : sans dénominateur
+   figé, deux leviers ne s'additionnent pas.
+2. Frais fixes et échéance d'emprunt sont les seuls décaissements hors
+   exploitation. Pas d'impôt (résultat négatif), pas d'investissement.
 ```
 
 ### Les questions
 
-**Q1 — Le diagnostic, en chiffres. (12 points)** (a) CM2, CM3 en euros et en % du CA HT, EBITDA en euros et en % du CA HT. (b) MER réel, MER seuil de contribution, MER seuil d'EBITDA, écart en % entre le MER réel et le seuil d'EBITDA. (c) Semaines de trésorerie restantes au 1ᵉʳ mars, calcul déroulé. (d) En deux lignes maximum : le problème de KANOPÉ n'est pas celui que son fondateur croit — écris lequel c'est.
+**Q1 — Le diagnostic, en chiffres. (12 points)** (a) CM2, CM3 et EBITDA, en euros et en % du CA HT. (b) MER réel, MER seuil de contribution, MER seuil d'EBITDA, écart en % au seuil d'EBITDA. (c) Semaines de trésorerie restantes au 1ᵉʳ mars, calcul déroulé. (d) En deux lignes : le problème de KANOPÉ n'est pas celui que son fondateur croit — écris lequel c'est.
 
 **Q2 — Le stock. (14 points)** (a) Point de recommande du héros, en unités et en euros, stock de sécurité déroulé ; puis le résultat qu'aurait donné un écart type **quotidien** de 22 % avec une racine de 75, et pourquoi il est faux. (b) Trésorerie libérée par un cycle de commande ramené de 90 à 30 jours, sur le héros puis extrapolée à la gamme — le MOQ le permet-il ? (c) L'audit révèle en plus 56 152 € de surstock sur deux références en fin de vie : donne l'objectif de stock du plan, en euros et en jours de coût marchandise.
 
-**Q3 — La dépense publicitaire. (16 points)** (a) CAC marginal de chacune des quatre tranches et de celle que propose le fondateur. (b) LTV à 12 mois en marge de contribution, aux conditions de février. (c) Le niveau de dépense que tu retiens, pourquoi, et l'effet immédiat sur l'EBITDA mensuel. (d) Ce que ta décision coûte en LTV sur douze mois — conclus.
+**Q3 — La dépense publicitaire. (16 points)** (a) CAC marginal des quatre tranches et de celle que propose le fondateur. (b) LTV à 12 mois en marge de contribution, aux conditions de février. (c) Le niveau de dépense que tu retiens, pourquoi, et l'effet immédiat sur l'EBITDA mensuel. (d) Ce que ta décision coûte en LTV sur douze mois — conclus.
 
-**Q4 — Les leviers de marge. (18 points)** Pour chacun : gain **en points de marge** et **en euros par mois**, contrepartie chiffrée, délai avant premier effet.
+**Q4 — Les leviers de marge. (18 points)** Pour chacun : gain **en points de marge** et **en euros/mois**, contrepartie chiffrée, délai avant premier effet.
 
 **A** — remise de 11,0 % à 7,5 % du CA HT (*hypothèse : la suppression du code de bienvenue permanent et du code panier abandonné coûte **6 % des commandes***). **B** — proposition α. **C** — proposition β. **D** — retours de 3,8 % à 2,9 %, par refonte des deux fiches produit et retrait de trois concepts sur-promettants (*14 000 € non récurrents ; hypothèse : aucun effet sur le volume, la dépense étant réallouée*). **E** — frais fixes de 78 000 € à 68 500 € HT (*arrêt d'une prestation créative externalisée, indemnité de préavis de 19 000 € payée immédiatement*).
 
@@ -136,9 +134,7 @@ Par semaine = 65 000 ÷ 4,33 = 15 012 €
 Semaines restantes = 165 000 ÷ 15 012 = 11,0 semaines
 ```
 
-KANOPÉ est **au-dessus** de son seuil de contribution et **18,8 % sous** son seuil d'EBITDA : la zone que le [diagnostic](../mentorat/diagnostic.md) bloc C nomme « tu finances ta structure avec ton capital » — légitime seulement si le réachat rembourse, et ici il ne rembourse pas.
-
-**(d)** Le fondateur croit avoir un problème de rentabilité ; il a **onze semaines de trésorerie**. Sa contrainte active est le calendrier : un levier qui rapporte au mois 5 ne compte pas, et un levier qui rapporte de la marge en consommant de la trésorerie l'achève.
+**(d)** KANOPÉ est **au-dessus** de son seuil de contribution et **18,8 % sous** son seuil d'EBITDA : la zone que le [diagnostic](../mentorat/diagnostic.md) bloc C nomme « tu finances ta structure avec ton capital », légitime seulement si le réachat rembourse — et ici il ne rembourse pas. Le fondateur croit donc avoir un problème de rentabilité ; il a **onze semaines de trésorerie**. Sa contrainte active est le calendrier : un levier qui rapporte au mois 5 ne compte pas, et un levier qui rapporte de la marge en consommant de la trésorerie l'achève.
 
 **Barème.** (a) 4, une par ligne. (b) 4. (c) 2, dont 1 pour l'échéance d'emprunt — l'oublier donne 12,2 semaines et vaut 0. (d) 2, la réponse devant nommer le **calendrier** ou la **contrainte de trésorerie** ; « sa marge est trop faible » vaut 0.
 
@@ -157,7 +153,7 @@ KANOPÉ est **au-dessus** de son seuil de contribution et **18,8 % sous** son se
 
 La racine carrée suppose les écarts quotidiens **indépendants**. En vente directe ils ne le sont jamais : une publicité qui gagne, une rupture concurrente, un pic saisonnier sont des décalages de niveau qui durent des semaines. Le σ quotidien sous-estime ici la sécurité d'un **facteur 8,7** ([E10](../modules/E10-cash-et-operations.md) § 5.1).
 
-**(b)** Sécurité et transit ne bougent pas : seul le **stock de travail** dépend du cycle, et vaut en moyenne la moitié du cycle.
+**(b)** Sécurité et transit ne bougent pas : seul le **stock de travail** dépend du cycle, et vaut la moitié du cycle.
 
 ```
 Cycle 90 j : 45 j × 266,67 u × 6,00 € = 72 000 €
@@ -205,7 +201,7 @@ Le nCAC moyen vaut `312 000 ÷ 9 000 = 34,67 €` : il ne décrit **aucune** des
     Sur douze mois : 936 000 € épargnés contre 835 380 € abandonnés
 ```
 
-La proposition du fondateur ferait l'inverse : `900 × 25,50 = 22 950 €` pour 78 000 € de dépense, soit **−55 050 € par mois**. **La coupe est légèrement positive sur douze mois et décisive sur le trimestre** — 44 850 € dès le premier mois contre 8 385 € de valeur abandonnée sur l'année. Avec deux ans de trésorerie, garder la tranche 4 se défendrait, à condition de l'écrire comme un achat de volume chiffré à 8 385 € par an.
+La proposition du fondateur ferait l'inverse : `900 × 25,50 = 22 950 €` pour 78 000 € de dépense, soit **−55 050 € par mois**. **La coupe est légèrement positive sur douze mois et décisive sur le trimestre** — 44 850 € dès le premier mois contre 8 385 € abandonnés sur l'année. Avec deux ans de trésorerie, garder la tranche 4 se défendrait, à condition de l'écrire comme un achat de volume chiffré.
 
 **Barème.** (a) 5, 1 par CAC marginal ; répondre par le CAC moyen vaut 0 sur la question. (b) 3. (c) 5 : 2 la comparaison marginal/LTV, 2 le chiffrage, 1 l'écartement des 390 000 €. (d) 3 ; « on coupe, c'est tout bénéfice » vaut 1.
 
@@ -224,17 +220,15 @@ La proposition du fondateur ferait l'inverse : `900 × 25,50 = 22 950 €` pour 
 **A — le piège de l'épreuve.** Le gain brut de 3,5 points, soit 22 750 €, n'est pas le gain.
 
 ```
-Gain brut            3,5 pts × 6 500 €                    = 22 750 €
-Commandes perdues    6 % × 13 000                         =    780
+Gain brut              3,5 pts × 6 500 €               = 22 750 €
+Commandes perdues      6 % × 13 000                    =    780
 Contribution perdue au NOUVEAU taux de marge (54,5 %) :
-                     780 × 50,00 € × 54,5 %               = 21 255 €
-Gain net à budget publicitaire figé                       =  1 495 €
-```
+                       780 × 50,00 € × 54,5 %          = 21 255 €
+Gain net à budget publicitaire figé                    =  1 495 €
 
-**À budget figé, A ne rapporte presque rien.** Il rapporte parce qu'on pilote **au MER** et non au budget : les 780 commandes disparues n'ont plus besoin d'être achetées.
-
-```
-Dépense à MER constant : 611 000 × 1,20 ÷ 2,50 = 293 280 €, soit 18 720 € de moins
+Mais on pilote AU MER, pas au budget : les 780 commandes disparues
+n'ont plus besoin d'être achetées.
+Dépense à MER constant : 611 000 × 1,20 ÷ 2,50 = 293 280 €, soit −18 720 €
 Gain net réel = 1 495 + 18 720 = +20 215 €, soit +3,11 points
 ```
 
@@ -263,11 +257,9 @@ C est le meilleur rapport gain sur effort du dossier **et** le seul levier dont 
 (c) Délai de récupération = 95 000 ÷ 6 224 = 15,3 mois
 ```
 
-**(d) On refuse — en mars.** Un levier qui met **15,3 mois** à rembourser sa trésorerie ne se prend pas avec **11,0 semaines** devant soi : il ferait tomber KANOPÉ sous cinq semaines — la zone d'urgence du [diagnostic](../mentorat/diagnostic.md) bloc F — et rendrait le reste du plan inexécutable, puisque plus personne ne négocie rien à cinq semaines de trésorerie. On le reconsidère **au 1ᵉʳ juin**, avec 289 466 € en caisse (Q6) : les 95 000 € ne pèsent alors plus que 33 % de la trésorerie et le flux mensuel est positif.
+**(d) On refuse — en mars.** Un levier qui met **15,3 mois** à rembourser sa trésorerie ne se prend pas avec **11,0 semaines** devant soi : il ferait tomber KANOPÉ sous cinq semaines — la zone d'urgence du [diagnostic](../mentorat/diagnostic.md) bloc F. On le reconsidère **au 1ᵉʳ juin**, avec 289 466 € en caisse (Q6). À la place : **le prix sans le délai** — 3 à 4 % contre l'engagement de volume seul, en gardant les 60 jours ; et si le fournisseur refuse de dissocier, l'échelonnement sur six mois, ~16 000 € par mois au lieu de 95 000 € d'un coup. **Trente jours de délai valent ici plus que 7 % de prix** ([E10](../modules/E10-cash-et-operations.md) § 7.1).
 
-À la place : **le prix sans le délai** — 3 à 4 % contre l'engagement de volume seul, en gardant les 60 jours ; et si le fournisseur refuse de dissocier, l'échelonnement du passage à 30 jours sur six mois, ~16 000 € par mois au lieu de 95 000 € d'un coup. **Trente jours de délai valent ici plus que 7 % de prix** ([E10](../modules/E10-cash-et-operations.md) § 7.1).
-
-**Barème.** (a) 2. (b) 4, dont 2 pour les semaines. (c) 2. (d) 4 : 2 le refus argumenté par **15,3 mois contre 11 semaines** — « c'est trop cher » vaut 0 —, 1 la date de réexamen, 1 une contre-proposition qui dissocie le prix du délai.
+**Barème.** (a) 2. (b) 4, dont 2 les semaines. (c) 2. (d) 4 : 2 le refus argumenté par **15,3 mois contre 11 semaines** — « c'est trop cher » vaut 0 —, 1 la date de réexamen, 1 la contre-proposition.
 
 ---
 
@@ -275,17 +267,15 @@ C est le meilleur rapport gain sur effort du dossier **et** le seul levier dont 
 
 | Rang | Levier | Gain mensuel | Effort | Date d'effet | Contrepartie assumée |
 |---|---|---:|---|---|---|
-| 1 | **F** — publicité 312 000 → 234 000 € | **+44 850 €** | Une après-midi | **1ᵉʳ mars** | −1 300 premières cmd/mois ; 8 385 €/an de LTV |
-| 2 | **A** — remise 11,0 → 7,5 % | **+20 215 €** | Deux jours | **2 mars** | −6 % de commandes ; deux créateurs à renégocier |
-| 3 | **G** — stock 370 500 → 210 000 € | 0 € de marge, **+160 500 € de trésorerie** | Deux semaines | Étalé mars-mai | Risque de rupture pendant l'écoulement |
-| 4 | **E** — frais fixes −9 500 € | **+9 500 €** | Une semaine + préavis | **1ᵉʳ avril** | 19 000 € ; créa externe à reconstruire |
-| 5 | **D** — retours 3,8 → 2,9 % | **+5 850 €** | Trois semaines | **1ᵉʳ avril** | 14 000 € ; trois concepts retirés |
+| 1 | **F** — publicité 312 000 → 234 000 € | **+44 850 €** | 1 après-midi | **1ᵉʳ mars** | −1 300 premières cmd/mois ; 8 385 €/an de LTV |
+| 2 | **A** — remise 11,0 → 7,5 % | **+20 215 €** | 2 jours | **2 mars** | −6 % de commandes ; 2 créateurs à renégocier |
+| 3 | **G** — stock 370 500 → 210 000 € | 0 de marge, **+160 500 € de trésorerie** | 2 semaines | mars-mai | Risque de rupture pendant l'écoulement |
+| 4 | **E** — frais fixes −9 500 € | **+9 500 €** | 1 semaine + préavis | **1ᵉʳ avril** | 19 000 € ; créa externe à reconstruire |
+| 5 | **D** — retours 3,8 → 2,9 % | **+5 850 €** | 3 semaines | **1ᵉʳ avril** | 14 000 € ; 3 concepts retirés |
 | 6 | **C** — logistique −0,57 €/cmd | **+7 410 €** | Appel d'offres | **1ᵉʳ mai** | 12 000 € ; p90 du délai à surveiller |
-| — | **B** — fournisseur α | +6 224 € | Une réunion | **reporté au 1ᵉʳ juin** | −95 000 € : incompatible avec 11 semaines |
+| — | **B** — fournisseur α | +6 224 € | 1 réunion | **reporté au 1ᵉʳ juin** | −95 000 € : incompatible avec 11 semaines |
 
-C a un meilleur rapport gain sur effort que D et E et arrive **dernier** : un préavis de 60 jours ne se négocie pas. **Le rapport gain sur effort ordonne les priorités ; le calendrier ordonne l'exécution.**
-
-Volume du plan, stable sur le trimestre : `(7 700 + 4 000) × 0,94 = 10 998` commandes, soit **549 900 € HT** et **659 880 € TTC**. Les 4 000 réachats viennent de cohortes déjà acquises et ne bougent pas dans la fenêtre.
+C a un meilleur rapport gain sur effort que D et E et arrive **dernier** : un préavis de 60 jours ne se négocie pas. **Le rapport gain sur effort ordonne les priorités ; le calendrier ordonne l'exécution.** Volume du plan, stable sur le trimestre : `(7 700 + 4 000) × 0,94 = 10 998` commandes, soit **549 900 € HT** et **659 880 € TTC**. Les 4 000 réachats viennent de cohortes déjà acquises et ne bougent pas dans la fenêtre.
 
 | | **M1 — mars** | **M2 — avril** | **M3 — mai** |
 |---|---:|---:|---:|
@@ -310,7 +300,7 @@ Volume du plan, stable sur le trimestre : `(7 700 + 4 000) × 0,94 = 10 998` com
 | **Flux net** | **+18 408 €** | **+43 645 €** | **+62 413 €** |
 | **Trésorerie en fin de mois** | **183 408 €** | **227 052 €** | **289 466 €** |
 
-Baisse mécanique du BFR au mois 1 : `78 000 − 65 988 = 12 012 €` d'encours d'encaissement, `72 800 − 54 600 = 18 200 €` d'avance publicitaire.
+Baisse mécanique du BFR au mois 1 : `78 000 − 65 988 = 12 012 €` d'encours, `72 800 − 54 600 = 18 200 €` d'avance publicitaire.
 
 ```
 Trésorerie au 31 mai      = 289 466 €, contre 165 000 €        (+75 %)
@@ -322,7 +312,7 @@ MER seuil EBITDA          = 1,20 ÷ (0,5654 − 0,1246)     = 2,72
 Écart au seuil EBITDA     = 2,82 ÷ 2,72 − 1              = +3,7 %
 ```
 
-**Le plan en une ligne : le CA TTC passe de 780 000 € à 659 880 €, soit −15,4 %, et l'EBITDA de −58 500 € à +8 413 €.** Aucune ligne ne suppose un client de plus. Un plan qui atteint l'équilibre en faisant décroître le chiffre d'affaires de 15 % s'exécute en mars ; celui qui l'atteint en supposant +20 % de croissance est une prière avec un tableur autour.
+**Le plan en une ligne : le CA TTC passe de 780 000 € à 659 880 €, soit −15,4 %, et l'EBITDA de −58 500 € à +8 413 €.** Aucune ligne ne suppose un client de plus. Un plan qui atteint l'équilibre en faisant décroître le chiffre d'affaires de 15 % s'exécute en mars ; celui qui l'atteint en supposant +20 % de croissance est une prière.
 
 **(d) La proposition γ**
 
@@ -349,39 +339,34 @@ Contribution unitaire au prix plein : 50,00 × 54,5 %      =  27,25 € HT
 
 **La condition dans laquelle il faudrait quand même la lancer :** une trésorerie passée sous **quatre semaines**. 54 853 € encaissés en dix jours contre 76 883 € payés sur douze mois est alors un emprunt cher mais **immédiat et sans garantie**, ce qu'aucune banque ne propose en quinze jours — et une entreprise en défaut ne vaut plus rien. **Ce qui distingue un gestionnaire d'un amateur n'est pas de refuser cette opération : c'est de savoir à quel niveau de trésorerie elle cesse d'être une erreur.**
 
-**Barème de la question 6.** (a) 6 : 3 un ordre gain sur effort défendable, 3 la distinction explicite entre priorité et exécution. (b) 10 : 6 le compte de résultat, 2 par mois, l'EBITDA du mois 3 devant tomber entre +6 000 € et +11 000 € ; 4 la trésorerie, dont **2 pour le déstockage** — une trésorerie bâtie sur le seul EBITDA plafonne à 2. (c) 2. (d) 10 : 6 les trois calculs, 2 le verdict à condition de mentionner la contradiction avec A, 2 la condition, qui doit être **un seuil de trésorerie chiffré** — « en cas d'urgence » vaut 0. **Pénalité de −15** si l'équilibre repose sur une hausse du chiffre d'affaires.
+**Barème de la question 6.** (a) 6 : 3 un ordre gain sur effort défendable, 3 la distinction priorité / exécution. (b) 10 : 6 le compte de résultat (2 par mois, l'EBITDA du mois 3 devant tomber entre +6 000 € et +11 000 €), 4 la trésorerie dont **2 pour le déstockage** — une trésorerie bâtie sur le seul EBITDA plafonne à 2. (c) 2. (d) 10 : 6 les trois calculs, 2 le verdict s'il mentionne la contradiction avec A, 2 la condition, qui doit être **un seuil de trésorerie chiffré**. **Pénalité de −15** si l'équilibre repose sur une hausse du chiffre d'affaires.
 
 ---
 
 ## 6. Le critère de passage
 
-**Note minimale : 70 / 100**, dont **au moins 15 / 28 à la question 6** — le plan est l'épreuve, le reste en est l'outillage.
+**Note minimale : 70 / 100**, dont **au moins 15 / 28 à la question 6** — le plan est l'épreuve, le reste en est l'outillage. **Quatre fautes éliminatoires**, quelle que soit la note :
 
-**Quatre fautes éliminatoires**, quelle que soit la note :
-
-1. **Un plan qui atteint l'équilibre par une hausse du chiffre d'affaires.** La croissance coûte du cash avant d'en rapporter ([canoniques § 4](../donnees/chiffres-canoniques.md)) : elle est ce qu'on s'autorise **après** un redressement, jamais son moyen.
+1. **Un plan qui atteint l'équilibre par une hausse du chiffre d'affaires.** La croissance coûte du cash avant d'en rapporter ([canoniques § 4](../donnees/chiffres-canoniques.md)) : on se l'autorise **après** un redressement, jamais comme son moyen.
 2. **Accepter la proposition α au mois 1** — faire tomber la trésorerie de onze à moins de cinq semaines pour 0,96 point de marge : la faute la plus chère du dossier, et celle que le fondateur voudra commettre parce qu'elle « améliore la marge ».
-3. **Confondre CAC moyen et CAC marginal** en Q3 : arbitrer la tranche 4 sur les 34,67 € du nCAC moyen conduit à la conserver, puis à financer la cinquième.
+
+3. **Confondre CAC moyen et CAC marginal** : arbitrer la tranche 4 sur les 34,67 € du nCAC moyen conduit à la conserver, puis à financer la cinquième.
 4. **Un montant sans mention HT ou TTC**, ou un MER calculé sur du CA HT : les confondre déplace le seuil d'équilibre de 20 % dans le sens qui rassure.
 
-**Fautes lourdes :** oublier l'échéance d'emprunt (−4) ; bâtir la trésorerie sur le seul EBITDA (−6) ; chiffrer A sans déduire les commandes perdues (−4).
-
-**En cas d'échec**, tu repasses sur une marque de taille comparable à contrainte inversée : trésorerie confortable, marge nette légèrement positive, croissance de 18 % par mois consommant plus de trésorerie que l'EBITDA n'en produit. Les leviers sont les mêmes, leur ordre est entièrement différent, et c'est l'ordre qui est noté.
+**Fautes lourdes :** oublier l'échéance d'emprunt (−4) ; bâtir la trésorerie sur le seul EBITDA (−6) ; chiffrer A sans déduire les commandes perdues (−4). **En cas d'échec**, tu repasses sur une marque à contrainte inversée : trésorerie confortable, marge légèrement positive, croissance de 18 % par mois consommant plus de trésorerie que l'EBITDA n'en produit. Mêmes leviers, ordre entièrement différent — et c'est l'ordre qui est noté.
 
 ---
 
 ## 7. Les pièges de ce niveau
 
-**1. Croire qu'un plan de redressement est une liste de leviers.** C'est une liste de leviers **datés** : six leviers qui rapportent 95 000 € par mois au mois 4 ne valent rien pour une marque qui a onze semaines. Reprends ton dernier plan de marge et regarde la date de premier effet de chaque ligne — si la moitié tombe au-delà du trimestre, tu n'as pas écrit un plan, tu as écrit une intention.
+**1. Confondre la marge et la trésorerie, puis croire qu'on ne les confond plus.** À l'épreuve, la moitié des candidats accepte α : « −7 % sur les achats » se lit comme une amélioration, « 60 jours qui deviennent 30 » comme une modalité. Les deux chiffres sont dans la même phrase du fournisseur et vont en sens opposés — l'un rapporte 6 224 € par mois, l'autre en coûte 95 000 € tout de suite. **Un fournisseur qui t'offre du prix contre du délai ne te fait pas une remise : il te vend de la dette au taux qui l'arrange.**
 
-**2. Confondre la marge et la trésorerie, puis croire qu'on ne les confond plus.** À l'épreuve, la moitié des candidats accepte α, parce que « −7 % sur les achats » se lit comme une amélioration et « 60 jours qui deviennent 30 » comme une modalité. Les deux chiffres sont dans la même phrase du fournisseur et vont en sens opposés : l'un rapporte 6 224 € par mois, l'autre en coûte 95 000 € tout de suite. **Un fournisseur qui t'offre du prix contre du délai ne te fait pas une remise : il te vend de la dette au taux qui l'arrange.**
+**2. Croire qu'un plan de redressement est une liste de leviers, et confondre le rapport gain sur effort avec l'ordre d'exécution.** C'est une liste de leviers **datés** : six leviers qui rapportent 95 000 € par mois au mois 4 ne valent rien pour une marque qui a onze semaines — regarde la date de premier effet de chaque ligne de ton dernier plan, et si la moitié tombe au-delà du trimestre, tu as écrit une intention. Ici, le levier logistique est le mieux placé des deux points de vue et arrive dernier, à cause d'un préavis. Le déstockage ne rapporte pas un centime de marge et arrive troisième, parce qu'il apporte 160 500 € de trésorerie — deux fois et demie le meilleur levier de marge sur le trimestre. **Un levier de trésorerie et un levier de marge ne se comparent pas ; ils s'exécutent ensemble.**
 
-**3. Confondre le rapport gain sur effort avec l'ordre d'exécution.** Le levier logistique est le mieux placé des deux points de vue et arrive dernier, à cause d'un préavis. Le déstockage ne rapporte pas un centime de marge et arrive troisième, parce qu'il apporte 160 500 € de trésorerie — deux fois et demie le meilleur levier de marge sur le trimestre. **Un levier de trésorerie et un levier de marge ne se comparent pas ; ils s'exécutent ensemble.** Même chose pour la coupe publicitaire : le meilleur levier du dossier dégrade toutes les métriques que ton équipe regarde.
+**3. Croire que « je perds de l'argent » est un diagnostic.** C'est un symptôme à quatre causes : MER sous le seuil de contribution (structure — produit ou prix) ; MER entre les deux seuils (taille) ; croissance supérieure à `EBITDA ÷ BFR` (financement, pas rentabilité) ; BFR qui dérive à volume constant (opérations). KANOPÉ est dans le deuxième cas **et** dans le quatrième — qui traite le deuxième en coupant les frais fixes laisse 160 500 € sur la table.
 
-**4. Croire que « je perds de l'argent » est un diagnostic.** C'est un symptôme, à quatre causes distinctes : MER sous le seuil de contribution (structure — produit ou prix) ; MER entre les deux seuils (taille) ; croissance supérieure à `EBITDA ÷ BFR` (financement, pas rentabilité) ; BFR qui dérive à volume constant (opérations). KANOPÉ est dans le deuxième cas **et** dans le quatrième — qui traite le deuxième en coupant les frais fixes laisse 160 500 € sur la table.
-
-**5. Croire que L06 mesure ta marque.** Une marque **N3** à 780 000 € par mois est, aux yeux de sa banque, de ses fournisseurs et de son entourage, une réussite — elle est à onze semaines de la fin. Le chiffre d'affaires ne mesure ni la compétence ni la solidité : il mesure la vitesse à laquelle une erreur de structure se paie. **À L05, une compétence insuffisante coûtait des points de marge ; à partir d'ici, elle coûte l'entreprise, et vite.**
+**4. Croire que L06 mesure ta marque.** Une marque **N3** à 780 000 € par mois est, aux yeux de sa banque et de son entourage, une réussite — elle est à onze semaines de la fin. Le chiffre d'affaires ne mesure ni la compétence ni la solidité : il mesure la vitesse à laquelle une erreur de structure se paie.
 
 ---
 
-*Fin du niveau L06. Suite : [L07 — Stratège](L07-stratège.md) — tu sais redresser une marge sur les chiffres qu'on te donne. Reste à savoir lesquels sont vrais.*
+*Fin du niveau L06. Suite : [L07 — Stratège](L07-stratege.md) — tu sais redresser une marge sur les chiffres qu'on te donne. Reste à savoir lesquels sont vrais.*

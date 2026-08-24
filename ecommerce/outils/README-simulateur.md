@@ -309,6 +309,14 @@ sur le pilotage de la marge à 70 % de l'objectif : c'est le passage P5 → P5+ 
 [canoniques § 8](../donnees/chiffres-canoniques.md), qui double l'EBITDA sans un
 euro de chiffre d'affaires supplémentaire.
 
+> **Aucune des cinq stratégies automatiques ne gagne. C'est voulu.**
+> Sur la graine de référence, `equilibree` monte à ~898 000 € de CA hebdomadaire
+> mais plafonne à 8,8 % d'EBITDA ; `prudente` tient 17,4 % d'EBITDA mais s'arrête
+> à ~661 000 €. L'une a le volume sans la marge, l'autre la marge sans le volume.
+> Une stratégie automatique applique une règle ; gagner demande d'**arbitrer**, et
+> l'arbitrage ne s'automatise pas. C'est le mode `--interactif` qui te le fait
+> travailler, et c'est aussi ce que ton travail réel te demandera.
+
 **Ce que ça t'apprend :** le chiffre d'affaires est une conséquence, pas un
 objectif. Modules [E14](../modules/E14-plan-1M-semaine.md) et
 [E12](../modules/E12-marque-et-actif.md).

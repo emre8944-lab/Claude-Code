@@ -19,42 +19,40 @@ et à l'euro : une colonne peut s'écarter de 1 €.*
 
 NØRA est au palier **P3** : France + Belgique, 18 000 commandes par mois, 1 177 200 € TTC,
 981 000 € HT, 60,35 % de marge brute, 51 033 € d'EBITDA mensuel, nCAC 33,18 €, MER 2,70
-(canonique § 2). Le passage à P4 suppose cinq marchés. Le premier ouvert est
+(canonique § 2). Le passage à P4 suppose cinq marchés ; le premier ouvert est
 l'**Allemagne**, parce que c'est le plus grand — et que si un marché doit casser la méthode,
-autant que ce soit celui-là tant qu'il reste du cash pour l'encaisser. Trésorerie au mois 0 :
-**1 250 000 €**. L'Allemagne dispose de cinq mois et d'un critère de fermeture écrit
-d'avance (§ 4.3).
+autant que ce soit celui-là tant qu'il reste du cash. Trésorerie au mois 0 : **1 250 000 €**.
+Cinq mois, et un critère de fermeture écrit d'avance (§ 4.3).
 
 ### 1.1 Ce que coûte l'ouverture avant le premier euro de chiffre d'affaires
 
 | Poste | Détail | Coût HT |
 | --- | --- | ---: |
 | **Traduction** | 68 000 mots (site, 24 fiches, 41 emails, 180 réponses SAV type, CGV) à 0,14 €/mot | **9 520 €** |
-| **Localisation** | 12 pages qui portent la vente, réécrites par un rédacteur natif (12 × 850 €) + refonte des unités, formats et preuves (3 800 €) | **14 000 €** |
-| Juridique et étiquetage | Cabinet allemand : Impressum, CGV, droit de rétractation (6 500 €) ; refonte des 5 étuis et notices en allemand, plaques et surcoût de tirage sur 40 000 unités (4 200 €) ; enregistrement emballages et licence de recyclage (2 400 €) | **13 100 €** |
-| Moyens de paiement locaux | Contrat PSP allemand, intégration de l'achat sur facture, du prélèvement SEPA et du virement immédiat, recette du tunnel | **8 700 €** |
-| Transporteur local | Contrat transporteur allemand, étiquettes retour prépayées, points relais, interface avec l'entrepôt français | **4 800 €** |
-| Service client germanophone | Recrutement (3 200 €), 1,5 ETP formés un mois à vide (5 100 €), licences et base de connaissances (900 €) | **9 200 €** |
-| TVA et fiscalité | Dossier guichet unique OSS et conseil (1 800 €), immatriculation allemande anticipée (2 600 €) | **4 400 €** |
+| **Localisation** | 12 pages qui portent la vente, réécrites par un natif (12 × 850 €) + unités, formats, preuves (3 800 €) | **14 000 €** |
+| Juridique et étiquetage | Impressum, CGV, droit de rétractation (6 500 €) ; 5 étuis et notices en allemand, plaques et surcoût de tirage sur 40 000 unités (4 200 €) ; enregistrement emballages et licence de recyclage (2 400 €) | **13 100 €** |
+| Moyens de paiement locaux | PSP allemand, achat sur facture, prélèvement SEPA, virement immédiat, recette du tunnel | **8 700 €** |
+| Transporteur local | Contrat, étiquettes retour prépayées, points relais, interface avec l'entrepôt français | **4 800 €** |
+| Service client germanophone | Recrutement (3 200 €), 1,5 ETP formés un mois à vide (5 100 €), licences (900 €) | **9 200 €** |
+| TVA et fiscalité | Guichet unique OSS et conseil (1 800 €), immatriculation allemande anticipée (2 600 €) | **4 400 €** |
 | Site et tunnel | Sous-domaine, moteur de recherche interne, tunnel réécrit pour six moyens de paiement | **7 300 €** |
 | **Total des charges de préparation** | | **71 020 €** |
 
 S'y ajoute un **sur-stock d'ouverture de 38 000 € HT** qui n'est pas une charge : c'est du
-besoin en fonds de roulement, il reste au bilan. Confondre les deux fausse le seuil de
-rentabilité du marché dans le sens optimiste.
+BFR, il reste au bilan. Confondre les deux fausse le seuil de rentabilité dans le sens
+optimiste.
 
 **Traduction et localisation ne sont pas la même chose, et l'écart de prix le dit.** La
-traduction convertit 68 000 mots pour 9 520 €, soit 0,14 € le mot. La localisation réécrit
-12 pages — moins de 8 % du volume — pour 14 000 €, soit **147 fois plus cher au mot**. La
-traduction rend un texte compréhensible ; la localisation rend une offre achetable. Les 12
-pages localisées sont celles où l'argent change de mains. Le reste peut être traduit.
+traduction convertit 68 000 mots à 0,14 € le mot. La localisation réécrit 12 pages — moins
+de 8 % du volume — pour 14 000 €, soit **147 fois plus cher au mot**. La traduction rend un
+texte compréhensible ; la localisation rend une offre achetable. Les 12 pages localisées
+sont celles où l'argent change de mains ; le reste peut être traduit.
 
 ### 1.2 Les cinq premiers mois
 
-*Hypothèses : COGS à 16 % du CA HT brut (mêmes conditions d'achat qu'en France) ; 70 % des
-retours remis en stock, 30 % détruits ; transport retour et reconditionnement 6,20 € par
-retour ; SAV hors retours 0,55 € par commande ; logistique aller de 8,60 € au M1 à 7,90 € au
-M5.*
+*Hypothèses : COGS à 16 % du CA HT brut ; 70 % des retours remis en stock, 30 % détruits ;
+transport retour et reconditionnement 6,20 € par retour ; SAV hors retours 0,55 € par
+commande ; logistique aller de 8,60 € au M1 à 7,90 € au M5.*
 
 | | **M1** | **M2** | **M3** | **M4** | **M5** |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -79,16 +77,16 @@ M5.*
 | MER seuil CM3 (1,19 ÷ marge) | 2,37 | 2,32 | 2,29 | 2,22 | **2,17** |
 
 *Frais fixes = SAV germanophone (3 400 € par ETP chargé, de 1,5 à 4,5 ETP), responsable de
-marché à partir du M2 (7 500 €), production créative locale (4 000 € puis 12 000 à
-18 000 €), fiscal-juridique-outils (1 550 €).*
+marché dès le M2 (7 500 €), production créative locale (4 000 € puis 12 000 à 18 000 €),
+fiscal-juridique-outils (1 550 €).*
 
 **Cumul sur cinq mois :** 675 000 € de publicité, 15 397 nouveaux clients, 1 040 151 € TTC
 bruts, 906 885 € TTC nets, 407 336 € de marge de contribution, **401 313 € de perte
 d'exploitation**. Avec les 71 020 € de préparation : **472 333 € de charges engagées.**
 
-Le nCAC moyen des cinq mois vaut `675 000 ÷ 15 397 = 43,84 €`, soit **1,32 fois le nCAC
-français** ; celui du seul mois 5 vaut **1,12 fois**. La courbe d'apprentissage existe et
-elle converge — mais elle n'a jamais rejoint la France et ne la rejoindra pas. Le § 2 dit
+Le nCAC moyen des cinq mois vaut `675 000 ÷ 15 397 = 43,84 €`, **1,32 fois le nCAC
+français** ; celui du seul mois 5, **1,12 fois**. La courbe d'apprentissage existe et
+converge — mais elle n'a jamais rejoint la France et ne la rejoindra pas. Le § 2 dit
 pourquoi.
 
 ---
@@ -99,10 +97,10 @@ Le dirigeant croyait ouvrir un marché. Il ouvrait trois chantiers, dont deux no
 
 ### 2.1 Surprise n° 1 — le retour, et l'illusion qu'il ne coûte qu'une ligne
 
-France : **4,2 % des commandes**. Allemagne : **12,4 % au mois 5**, avec un pic à 13,6 % au
-mois 3. Deux causes : commander plusieurs variantes et renvoyer le reste est un usage
-normal, hérité de la vente par correspondance ; et l'achat sur facture permet de commander
-**sans payer**, ce qui supprime le dernier frein à la commande d'essai.
+France : **4,2 % des commandes**. Allemagne : **12,4 % au mois 5**, pic à 13,6 % au mois 3.
+Deux causes : commander plusieurs variantes et renvoyer le reste est un usage normal, hérité
+de la vente par correspondance ; et l'achat sur facture permet de commander **sans payer**,
+ce qui supprime le dernier frein à la commande d'essai.
 
 | Moyen de paiement (mix du M5) | Part des commandes | Taux de retour | Contribution au taux moyen |
 | --- | ---: | ---: | ---: |
@@ -117,8 +115,8 @@ En France, le même calcul donne `0,46 × 3,9 + 0,33 × 4,6 + 0,15 × 4,8 + 0,06
 4,20 %`. **Le taux de retour n'est pas un trait national : c'est la conséquence arithmétique
 d'un mix de paiement.**
 
-L'erreur d'analyse serait de croire que le retour coûte une ligne. Il en contamine quatre.
-Décomposition d'une commande du mois 5, à 64,00 € TTC :
+Croire que le retour coûte une ligne est l'erreur. Il en contamine quatre — décomposition
+d'une commande du mois 5, à 64,00 € TTC :
 
 ```
 CA TTC facturé                                              64,00 € TTC
@@ -134,9 +132,9 @@ CA TTC facturé                                              64,00 € TTC
 = Marge de contribution                                      25,79 € HT   → 54,74 %
 ```
 
-Le même calcul avec **le seul taux de retour ramené à 4,2 %**, tout le reste inchangé, donne
-29,95 € et **58,13 %** : **3,39 points de marge brute** et **4,16 € par commande**, soit
-`4,16 × 6 666 = 27 731 €` par mois au rythme du M5 et **332 772 € par an**.
+Le même calcul avec **le seul taux de retour ramené à 4,2 %** donne 29,95 € et **58,13 %** :
+**3,39 points de marge brute** et **4,16 € par commande**, soit `4,16 × 6 666 = 27 731 €`
+par mois au rythme du M5 et **332 772 € par an**.
 
 | Pont France → Allemagne | Effet | Marge brute |
 | --- | ---: | ---: |
@@ -150,20 +148,20 @@ Le même calcul avec **le seul taux de retour ramené à 4,2 %**, tout le reste 
 
 Sur les 8,05 points d'écarts défavorables, le retour en pèse **3,39, soit 42 %** — le poste
 le plus lourd, devant la logistique transfrontalière. Et c'est le seul des deux qui ne
-s'achète pas : la logistique se renégocie par contrat, le taux de retour se gagne sur le
-tunnel, les fiches et les règles de paiement.
+s'achète pas : la logistique se renégocie par contrat, le retour se gagne sur le tunnel, les
+fiches et les règles de paiement.
 
-> **À retenir — une confusion coûteuse.** Le tableau canonique § 7 dit qu'un point de
-> **coût** retours/SAV en pourcentage du CA HT vaut 433 320 € d'EBITDA annuel au palier P5.
-> Ce n'est pas l'unité d'un point de **taux de retour** en pourcentage des commandes. Ici,
-> 12,4 % → 11,4 % porte la contribution de 25,79 € à 26,30 € : **un point de taux vaut 0,45
-> point de marge**, et 3 400 € par mois. Écris toujours l'unité, sinon tu te trompes d'un
-> facteur 2,2.
+> **À retenir.** Le canonique § 7 dit qu'un point de **coût** retours/SAV en % du CA HT vaut
+> 433 320 € d'EBITDA annuel au palier P5. Ce n'est pas l'unité d'un point de **taux de
+> retour** en % des commandes : ici 12,4 % → 11,4 % porte la contribution de 25,79 € à
+> 26,30 €, donc **un point de taux vaut 0,45 point de marge** et 3 400 € par mois. Écris
+> l'unité, sinon tu te trompes d'un facteur 2,2.
 
 ### 2.2 Surprise n° 2 — le mix de paiement : conversion contre trésorerie
 
 NØRA a ouvert avec carte, PayPal et virement immédiat, comme en France. L'achat sur facture
 n'a été activé qu'au mois 3, après un test à trafic partagé.
+
 
 | Test, semaine 3 du mois 3 | Sans achat sur facture | Avec achat sur facture |
 | --- | ---: | ---: |
@@ -176,10 +174,9 @@ n'a été activé qu'au mois 3, après un test à trafic partagé.
 | Contribution totale | 17 542 € | 19 134 € |
 | **Contribution par 1 000 sessions** | **425,78 €** | **464,42 €** (**+9,1 %**) |
 
-**L'arbitrage se tranche par la contribution par session, pas par la contribution par
-commande** — c'est la session qui a été achetée. L'achat sur facture détruit 2,09 € sur
-chaque commande et en crée 133 de plus : le solde est positif de 9,1 %. On garde. Ce qu'on
-garde a un prix de bilan :
+**L'arbitrage se tranche par la contribution par session, pas par commande** — c'est la
+session qui a été achetée. L'achat sur facture détruit 2,09 € sur chaque commande et en crée
+133 de plus : solde +9,1 %. On garde. Ce qu'on garde a un prix de bilan :
 
 | BFR du marché allemand, au mois 5 | Calcul | Montant |
 | --- | --- | ---: |
@@ -194,13 +191,13 @@ Impayés nets après relance : 0,92 % du CA HT brut, soit `53,78 × 0,0092 × 6 
 par mois. La France au palier P3 tourne à **12 jours** de BFR (canonique § 4) : **l'Allemagne
 en consomme 2,4 fois plus pour un chiffre d'affaires trois fois plus petit.** À 8 % de coût
 du capital, les 161 000 € immobilisés coûtent 1 073 € par mois contre 15 600 € de
-contribution mensuelle gagnée — l'arbitrage tient. **Mais la rentabilité ne dit rien du fait
-qu'il faut avoir les 161 000 €.**
+contribution gagnée : l'arbitrage tient. **Mais la rentabilité ne dit rien du fait qu'il
+faut avoir les 161 000 €.**
 
 ### 2.3 Surprise n° 3 — les créas françaises traduites ne fonctionnent pas
 
 Aux mois 1 et 2, NØRA a testé 34 concepts issus de la bibliothèque française, traduits et
-sous-titrés, pour 8 000 € de production. **Deux ont dépassé le seuil de survie, soit 5,9 %,
+sous-titrés, pour 8 000 € de production. **Deux ont dépassé le seuil de survie : 5,9 %,
 contre 11,05 % en France** (4,2 gagnants pour 38 concepts testés par semaine, canonique § 6).
 
 | Angle | Origine | CTR | CPC | CVR | CAC | Verdict |
@@ -219,21 +216,19 @@ L'angle qui portait la France — une promesse de résultat appuyée sur un pour
 Allemagne et culturellement suspecte. Les angles qui gagnent ne promettent rien : ils
 montrent la composition, l'origine des actifs, l'absence de silicones, un usage.
 
-**Coût du redémarrage créatif, décidé au mois 3 : 42 000 € HT** — 14 créateurs allemands à
-3 vidéos, 380 € la vidéo (15 960 €) ; direction artistique, briefs en allemand, casting et
-contrats (4 240 €) ; tournage studio à Berlin, 2 jours, 3 concepts « marque » (11 400 €) ;
-montage et déclinaisons, 128 assets (6 800 €) ; scripts réécrits par un concepteur-rédacteur
-natif (3 600 €).
+**Redémarrage créatif décidé au mois 3 : 42 000 € HT** — 14 créateurs allemands à 3 vidéos,
+380 € la vidéo (15 960 €) ; direction artistique, briefs, casting, contrats (4 240 €) ;
+tournage à Berlin, 2 jours, 3 concepts « marque » (11 400 €) ; montage et déclinaisons,
+128 assets (6 800 €) ; scripts réécrits par un rédacteur natif (3 600 €).
 
-**Coût du retard.** Bibliothèque locale produite dès la préparation, la courbe de CAC
-démarrait deux mois plus haut : 60,00 € au M1, 46,00 € au M2, 40,00 € au M3, 37,00 € au M4,
-35,00 € au M5. À budgets identiques,
+**Coût du retard.** Bibliothèque locale produite dès la préparation, la courbe démarrait deux
+mois plus haut : 60,00 €, 46,00 €, 40,00 €, 37,00 €, 35,00 €. À budgets identiques,
 `60 000/60 + 90 000/46 + 130 000/40 + 175 000/37 + 220 000/35 = 17 223` nouveaux clients
-contre 15 397, soit **1 826 clients perdus** valant `1 826 × 56,05 € = 102 347 €`.
+contre 15 397 : **1 826 clients perdus**, valant `1 826 × 56,05 € = 102 347 €`.
 
-**Bilan de l'erreur : 8 000 € de production jetée + 102 347 € de valeur non acquise =
-110 347 €, pour une solution qui coûtait 42 000 €. L'erreur vaut 2,63 fois la solution — et
-elle était évitable au mois −1, pas au mois 3.**
+**Bilan : 8 000 € de production jetée + 102 347 € de valeur non acquise = 110 347 €, pour une
+solution qui coûtait 42 000 €. L'erreur vaut 2,63 fois la solution — et elle était évitable
+au mois −1, pas au mois 3.**
 
 ---
 
@@ -248,25 +243,21 @@ Perte cumulée à fin M3 : 225 134 € d'exploitation + 71 020 € de préparati
 | **C** — geler le budget, reconstruire les créas | 260 000 € | 6 516 | 11 592 | **−132 545 €** |
 | **D** — reconstruire **et** accélérer | 395 000 € | 10 321 | **15 397** | **−176 179 €** |
 
-**A — fermer.** Publicité coupée, site en mode passif. Les 5 076 clients produisent
+**A — fermer.** Site en mode passif : les 5 076 clients produisent
 `5 076 × 0,55 × 32,89 € = 91 822 €` de contribution résiduelle sur douze mois, contre
-74 400 € de fixes maintenus et 22 500 € de décote sur le stock rapatrié : solde **−5 078 €**,
-perte définitive **301 232 €**. Fermer n'est pas gratuit, mais ce n'est pas le gouffre qu'on
-imagine — et c'est le point de comparaison de toutes les autres options.
+74 400 € de fixes maintenus et 22 500 € de décote sur le stock rapatrié — solde **−5 078 €**,
+perte définitive **301 232 €**. Fermer n'est pas gratuit, mais c'est le point de comparaison
+de toutes les autres options : chiffre-le en premier.
 
 **B — le réflexe.** « Le CAC baisse, poussons. » Sauf que la bibliothèque est épuisée : à
-budget +50 %, le CAC remonte (52,00 € puis 58,00 €). 592 500 € de publicité pour 10 738
-clients, **−348 252 €**, et un LTV/CAC de `56,05 ÷ 58,00 = 0,97`. **On achète des clients qui
-valent moins qu'ils ne coûtent.** C'est l'option que choisissent la plupart des marques,
-parce qu'elle ressemble à du courage.
+budget +50 %, le CAC remonte (52,00 € puis 58,00 €). 592 500 € pour 10 738 clients,
+**−348 252 €**, LTV/CAC de `56,05 ÷ 58,00 = 0,97`. **On achète des clients qui valent moins
+qu'ils ne coûtent** — et cette option ressemble à du courage, ce qui explique sa popularité.
 
-**C — la prudence.** Budget gelé à 130 000 €, créas reconstruites : CAC à 42,00 € puis
-38,00 €, perte limitée à 132 545 €, mais 11 592 clients seulement.
-
-**D contre C.** D coûte `176 179 − 132 545 = 43 634 €` de plus et achète
-`15 397 − 11 592 = 3 805` clients de plus, dont la contribution de réachat future vaut
-`3 805 × 0,92 × 32,89 = 115 135 €`. **Solde +71 501 €.** Chaque client supplémentaire coûte
-`43 634 ÷ 3 805 = 11,47 €` d'EBITDA pour 30,26 € de contribution future : rapport 2,64.
+**D contre C.** D coûte `176 179 − 132 545 = 43 634 €` de plus que le gel de budget, et
+achète `15 397 − 11 592 = 3 805` clients de plus dont la contribution de réachat future vaut
+`3 805 × 0,92 × 32,89 = 115 135 €` : **solde +71 501 €**. Chaque client supplémentaire coûte
+`43 634 ÷ 3 805 = 11,47 €` d'EBITDA pour 30,26 € de contribution future, rapport 2,64.
 **On prend D.**
 
 ---
@@ -278,12 +269,11 @@ parce qu'elle ressemble à du courage.
 
 ### 4.1 Où va l'argent, au mois 5
 
-85 % du budget sur trois angles produits par des créateurs allemands — 102 850 € à 32,00 €
-de CAC (3 214 clients), 56 100 € à 38,00 € (1 476), 28 050 € à 42,00 € (668) — et **15 % en
-budget de test**, 33 000 € à 56,10 € de CAC (588). Total 220 000 € pour 5 946 nouveaux
-clients, soit 37,00 €. Le budget de test produit `33 000 ÷ 250 = 132` concepts par mois dont
-5,9 % survivent : **7,8 gagnants par mois**. C'est ce flux, et lui seul, qui tient le CAC.
-Retiens-le pour le § 7.4.
+85 % du budget sur trois angles de créateurs allemands — 102 850 € à 32,00 € de CAC
+(3 214 clients), 56 100 € à 38,00 € (1 476), 28 050 € à 42,00 € (668) — et **15 % en budget
+de test**, 33 000 € à 56,10 € (588). Total 220 000 € pour 5 946 nouveaux clients, soit
+37,00 €. Le test produit `33 000 ÷ 250 = 132` concepts par mois dont 5,9 % survivent :
+**7,8 gagnants par mois**. C'est ce flux, et lui seul, qui tient le CAC (§ 7.4).
 
 ### 4.2 Le verdict à cinq mois
 
@@ -314,17 +304,16 @@ Trésorerie : `1 250 000 + 5 × 51 033 (EBITDA France + Belgique) − 71 020 −
 (BFR allemand) = 675 932 €`. **Un seul critère manqué et le marché fermait** ; deux l'ont été
 à moins de 6 % près.
 
-**Ce qui aurait justifié de fermer :** nCAC au-dessus de 41,48 € au mois 5 — c'est-à-dire
-l'absence de convergence — ou marge sous 50 %, ou charges cumulées au-delà de 500 000 €.
-Aucun de ces trois seuils ne parle de chiffre d'affaires. **Un marché ne se juge jamais à son
-chiffre d'affaires : il se juge à la vitesse à laquelle son CAC converge vers celui du marché
-de référence, et à ce qu'il reste en banque.**
+**Ce qui aurait justifié de fermer :** nCAC au-dessus de 41,48 € au mois 5 — l'absence de
+convergence — ou marge sous 50 %, ou charges au-delà de 500 000 €. Aucun de ces seuils ne
+parle de chiffre d'affaires. **Un marché se juge à la vitesse à laquelle son CAC converge
+vers celui du marché de référence, et à ce qu'il reste en banque.**
 
 ### 4.4 Les trois mois suivants : budget gelé, trois chantiers
 
 Achat sur facture plafonné à 150 € TTC et refusé au premier achat au-dessus de 90 € TTC ;
 entrepôt allemand au mois 7 (logistique aller de 7,90 € à 7,10 €) ; fiches réécrites avec
-photos de texture et tableau de correspondance des volumes.
+photos de texture et correspondance des volumes.
 
 | | **M6** | **M7** | **M8** |
 | --- | ---: | ---: | ---: |
@@ -362,45 +351,41 @@ LTV/CAC ≥ 1,90 au mois 8 — est atteint.** Le marché est à 8 193 € de l'�
 | LTV 12 mois / CAC | 2,41 | — | 1,51 | **2,01** |
 | **Résultat du marché / mois** | **+51 033 €** | **−54 427 €** | **−84 434 €** | **−8 193 €** |
 
-**En points de marge :** de 50,15 % à 59,69 % en huit mois, soit **+9,54 points**, dont 3,4
-viennent du seul taux de retour et 1,6 du contrat logistique allemand. En résultat : de
-**−168,3 % du CA HT net** au mois 1 à **−1,9 %** au mois 8.
-
-**Coût total :** 71 020 € de préparation, 503 904 € de pertes cumulées sur huit mois,
-396 200 € de BFR au mois 8. **Capital d'ouverture réel : 971 124 €**, soit **4,4 fois la
-dépense publicitaire mensuelle de croisière**.
+**En points de marge :** de 50,15 % à 59,69 % en huit mois, **+9,54 points**, dont 3,4 du
+seul taux de retour et 1,6 du contrat logistique allemand. En résultat : de **−168,3 % du CA
+HT net** au mois 1 à **−1,9 %** au mois 8. **Coût total :** 71 020 € de préparation,
+503 904 € de pertes cumulées, 396 200 € de BFR au mois 8 — **capital d'ouverture réel
+971 124 €**, soit **4,4 fois la dépense publicitaire mensuelle de croisière**.
 
 ---
 
 ## 6. Ce qui aurait pu mal tourner
 
 **Le plafonnement de l'achat sur facture coûte plus de conversion que prévu.** Le plan retient
-−4,2 % de taux de conversion. À −8 %, le CAC du mois 8 devient `34,50 × 0,958 ÷ 0,92 =
-35,93 €` et le ratio tombe à `69,38 ÷ 35,93 = 1,93` : le critère de 1,90 tient à trois
-centièmes. On a joué le marché sur une hypothèse de conversion.
+−4,2 %. À −8 %, le CAC du mois 8 devient `34,50 × 0,958 ÷ 0,92 = 35,93 €` et le ratio tombe à
+`69,38 ÷ 35,93 = 1,93` : le critère de 1,90 tient à trois centièmes. On a joué le marché sur
+une hypothèse de conversion.
 
-**Les créateurs allemands partent chez un concurrent.** Aucune exclusivité n'a été signée au
-départ ; le rattrapage coûte 850 € par créateur pour six mois de non-concurrence de
-catégorie, soit **11 900 €**. Sans lui, un concurrent copie l'angle en quatre à six semaines,
-le CPC de « Ce qu'il y a dedans » monte de 0,79 € à 0,95 €, son CAC de 32,00 € à 38,93 €, et
-le CAC global du mois 5 de 37,00 € à **40,94 €** — sous le seuil de 41,48 € par 54 centimes.
+**Les créateurs partent chez un concurrent.** Aucune exclusivité signée au départ ; le
+rattrapage coûte 850 € par créateur pour six mois, soit **11 900 €**. Sans lui, l'angle est
+copié en quatre à six semaines, le CPC de « Ce qu'il y a dedans » monte de 0,79 € à 0,95 €,
+son CAC de 32,00 € à 38,93 €, et le CAC global du M5 de 37,00 € à **40,94 €** — sous le seuil
+de 41,48 € par 54 centimes.
 
 **L'entrepôt allemand crée une obligation de TVA locale et un stock dédoublé :** +82 000 €
-immobilisés et +2 800 € par mois. Si le marché ferme, ce stock est bloqué le temps de la
-radiation.
+immobilisés, +2 800 € par mois, et un stock bloqué le temps de la radiation si le marché ferme.
 
 **La France ralentit pendant qu'on ouvre.** Le directeur créatif a passé 40 % de son temps
 sur l'Allemagne du M3 au M5 ; la France a produit 22 concepts par semaine au lieu de 38
-(canonique § 6). CAC français +6,1 % : à budget constant de 436 000 €,
-`436 000 ÷ (33,18 × 1,061) = 12 386` nouveaux clients au lieu de 13 140, soit **754 de moins
-par mois**, valant `754 × 80,06 € = 60 365 €` de LTV, **181 095 € sur trois mois**. C'est le
-coût le plus lourd du dossier après les pertes, et il n'apparaît dans aucun tableau du marché
-allemand.
+(canonique § 6), CAC +6,1 % : `436 000 ÷ (33,18 × 1,061) = 12 386` nouveaux clients au lieu
+de 13 140, soit **754 de moins par mois** valant `754 × 80,06 € = 60 365 €`, **181 095 € sur
+trois mois**. Le coût le plus lourd du dossier après les pertes — et il n'apparaît dans aucun
+tableau du marché allemand.
 
-**Le taux de retour ne descend pas.** À 12,0 % encore au mois 8, la contribution tombe à
-29,08 €, la marge à 58,69 % et le ratio à 1,97. Le critère tient — mais seulement parce que
-le contrat logistique et la discipline sur la remise ont absorbé une partie du choc. **Sans
-les deux autres chantiers, le retour seul fermait le marché.**
+**Le retour ne descend pas.** À 12,0 % encore au mois 8, la contribution tombe à 29,08 €, la
+marge à 58,69 %, le ratio à 1,97. Le critère tient, mais parce que le contrat logistique et
+la discipline sur la remise ont absorbé le choc. **Sans les deux autres chantiers, le retour
+seul fermait le marché.**
 
 ---
 

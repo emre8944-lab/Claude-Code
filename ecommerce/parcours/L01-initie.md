@@ -23,7 +23,7 @@
 
 L'épreuve de ce niveau met en scène exactement cette situation : une marque qui vend bien, un directeur financier qui produit une note propre, et trois erreurs qui, ensemble, transforment « nous perdons 760 € par mois » en « doublons le budget média ».
 
-**Garde ton niveau L au-dessus de ton niveau N.** Un L01 dans une entreprise N2 sait lire ; c'est déjà beaucoup, et ce n'est pas encore savoir décider — la décision d'allocation, c'est [L04](L04-acquéreur.md).
+**Garde ton niveau L au-dessus de ton niveau N.** Un L01 dans une entreprise N2 sait lire ; c'est déjà beaucoup, et ce n'est pas encore savoir décider — la décision d'allocation, c'est [L04](L04-acquereur.md).
 
 ---
 
@@ -352,7 +352,7 @@ Le seuil descend de 80 à 75 parce que la nature de l'épreuve change. À L00 on
 
 **6. Croire qu'avoir trouvé les erreurs du directeur financier signifie qu'on en sait plus que lui.** Non : qu'on applique une méthode qu'il n'applique pas. Il connaît probablement mieux que toi la fiscalité et le financement. Ce que L01 installe, c'est le jeu de contrôles qui rend une note de synthèse vérifiable en trois divisions — et le jour où tu produiras la note, quelqu'un devra pouvoir faire pareil sur la tienne.
 
-**7. Croire que savoir lire, c'est savoir décider.** L01 te rend capable de dire « ne double pas ». Pas de dire **où** mettre le budget, ni de distinguer un CAC marginal d'une saturation créative, ni de savoir si un canal est incrémental : ce sont [L04](L04-acquéreur.md), L05 et L07. Le danger propre à ce niveau est la confiance — on y comprend assez pour avoir des convictions, pas encore assez pour savoir lesquelles sont fausses.
+**7. Croire que savoir lire, c'est savoir décider.** L01 te rend capable de dire « ne double pas ». Pas de dire **où** mettre le budget, ni de distinguer un CAC marginal d'une saturation créative, ni de savoir si un canal est incrémental : ce sont [L04](L04-acquereur.md), L05 et L07. Le danger propre à ce niveau est la confiance — on y comprend assez pour avoir des convictions, pas encore assez pour savoir lesquelles sont fausses.
 
 **8. Croire que la structure se rattrape à l'échelle.** Le seuil de contribution passe de 2,10 à 1,95 entre le premier euro et 1 M€ TTC par semaine : 7 % pour dix ans de croissance. Si ton produit ne supporte pas un MER de 2,0, il ne le supportera pas mieux à 40 M€ de chiffre d'affaires — leçon de [C01](../etudes-de-cas/C01-coefficient-insuffisant.md), et sujet du niveau suivant.
 

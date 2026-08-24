@@ -333,4 +333,4 @@ Voici ce que les gens croient avoir compris à la sortie de L00, et qu'ils n'ont
 
 ---
 
-*Fin du niveau L00. Suite : [L01 — Initié](L01-initié.md), où tu construis une cascade complète sur un dossier réel et où tu apprends à repérer les erreurs de calcul d'un directeur financier.*
+*Fin du niveau L00. Suite : [L01 — Initié](L01-initie.md), où tu construis une cascade complète sur un dossier réel et où tu apprends à repérer les erreurs de calcul d'un directeur financier.*

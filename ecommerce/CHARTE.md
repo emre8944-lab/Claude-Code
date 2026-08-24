@@ -131,8 +131,8 @@ Rappel des cinq paliers, à connaître avant d'écrire une ligne :
 - `> **À retenir :**` pour les encadrés de synthèse. Un à trois par module, pas plus.
 - Diagrammes : zéro à deux blocs ```mermaid``` par module, seulement si le
   diagramme montre un mécanisme qu'un tableau ne montrerait pas mieux.
-- Liens internes en relatif : `[E01](E01-arithmetique-de-la-marque.md)`,
-  `[chiffres canoniques](../donnees/chiffres-canoniques.md)`.
+- Liens internes en relatif : `[E01](modules/E01-arithmetique-de-la-marque.md)`,
+  `[chiffres canoniques](donnees/chiffres-canoniques.md)`.
 
 ---
 
