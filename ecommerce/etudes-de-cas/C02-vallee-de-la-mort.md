@@ -12,24 +12,21 @@
 ## 0. Comment ce cas est construit
 
 Les [chiffres canoniques](../donnees/chiffres-canoniques.md) figent NØRA par
-**paliers**, pas par mois : P1 est la moyenne de M1–M3, P2 la moyenne de M4–M9.
-Un palier ne se vit pas en moyenne, il se vit mois par mois — et c'est mois par
-mois que la trésorerie tombe.
+**paliers** : P1 est la moyenne de M1–M3, P2 celle de M4–M9. Un palier ne se vit
+pas en moyenne — et c'est mois par mois que la trésorerie tombe.
 
 J'ai donc construit une progression mensuelle sous contrainte : **les moyennes de
 M1 à M3 retombent exactement sur P1, celles de M4 à M9 exactement sur P2.** Ce qui
-varie d'un mois à l'autre est le volume de commandes, la part de réachat, le budget
+varie d'un mois sur l'autre est le volume de commandes, la part de réachat, le budget
 publicitaire et les frais fixes. Ce qui est tenu constant à l'intérieur d'un palier
 est le panier moyen et la structure de coût variable, parce que ce sont des
 paramètres de palier dans le modèle canonique (§ 2 et § 2.1). Les budgets média sont
 posés en montants ronds ; le dernier mois de chaque palier absorbe l'arrondi pour que
-le MER moyen tombe sur 1,80 et 2,20 au centième. Tout le reste est calculé, jamais
-posé.
+le MER moyen tombe sur 1,80 et 2,20 au centième. Tout le reste est calculé.
 
-Une conséquence à assumer : le passage du panier de première commande de 45,50 € à
-55,00 € apparaît comme une marche au mois 4, alors que dans la vraie vie l'adoption
-d'une nouvelle offre s'étale sur six à huit semaines. *Hypothèse de modélisation
-déclarée.* Elle ne change pas la leçon, elle la rend lisible.
+Conséquence assumée : le panier de première commande passe de 45,50 € à 55,00 € en
+une marche au mois 4, alors qu'une adoption réelle s'étalerait sur six à huit
+semaines. *Hypothèse de modélisation déclarée.*
 
 ---
 
@@ -39,17 +36,14 @@ NØRA lance en janvier. Soin capillaire premium, France uniquement, un seul prod
 le **Sérum Densité 50 ml à 39,00 € TTC** (chiffres canoniques § 1). Un fondateur à
 plein temps, une personne à mi-temps, un prestataire logistique au colis, Shopify et
 Meta. **90 000 € de fonds propres** au départ — 60 000 € du fondateur, 30 000 € de
-love money.
-
-Le panier moyen de première commande est de **45,50 € TTC** : le sérum à 39,00 €,
-plus le port facturé et une deuxième unité sur une minorité de commandes.
-*Hypothèse de composition ;* le montant, lui, est canonique (§ 2).
+love money. Panier moyen de première commande : **45,50 € TTC** — le sérum à 39,00 €
+plus le port facturé et une deuxième unité sur une minorité de commandes
+(*hypothèse de composition ;* le montant est canonique, § 2).
 
 ### 1.1 L'économie d'une première commande au palier P1
 
-Tous les pourcentages sont ceux de la structure de coût variable P1 (canoniques
-§ 2.1), appliqués au CA **HT**. Le CA HT d'une commande à 45,50 € TTC vaut
-45,50 ÷ 1,20 = **37,92 € HT**.
+Pourcentages de la structure de coût variable P1 (canoniques § 2.1), appliqués au CA
+**HT**. Une commande de 45,50 € TTC vaut 45,50 ÷ 1,20 = **37,92 € HT**.
 
 | Ligne | Taux (% CA HT) | Montant HT |
 | --- | ---: | ---: |

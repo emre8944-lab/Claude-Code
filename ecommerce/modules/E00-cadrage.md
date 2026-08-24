@@ -95,15 +95,16 @@ Le § 5 la chiffre. Le nCAC — coût d'acquisition d'un *nouveau* client — va
 
 ### 1.4 (d) L'infrastructure — vendre aux vendeurs
 
-Asymétrie **structurelle** : tu prélèves sur le volume des autres sans porter leur stock, leur CAC ni leur risque de mode. Regarde ce que l'infrastructure encaisse sur NØRA à P5, en un mois, sur un seul client :
+Asymétrie **structurelle** : tu prélèves sur le volume des autres sans porter leur stock, leur CAC ni leur risque de mode. Ce que l'infrastructure encaisse sur NØRA à P5, en un mois, sur un seul client :
 
-| Fournisseur | Base | Montant / mois |
-| --- | --- | ---: |
-| Plateformes publicitaires | § 2.2 | 1 494 206 € |
-| Logistique (11,0 % du CA HT) | § 2.1 | 397 210 € |
-| Prestataire de paiement (1,55 % du CA HT) | § 2.1 | 55 970 € |
-| **Total capté par l'infrastructure** | | **1 947 386 €** |
-| Pour mémoire — EBITDA de NØRA | § 2.2 | 364 752 € |
+```
+Plateformes publicitaires (§ 2.2)                    1 494 206 €
+Logistique     : 3 610 997 € × 11,00 % (§ 2.1)   =     397 210 €
+Paiement (PSP) : 3 610 997 ×  1,55 % (§ 2.1)     =      55 970 €
+                                                     -----------
+Total capté par l'infrastructure                     1 947 386 €
+EBITDA conservé par NØRA (§ 2.2)                       364 752 €
+```
 
 `1 947 386 ÷ 364 752 = 5,34`. **Les fournisseurs captent 5,34 € pour chaque euro d'EBITDA que NØRA conserve** — sans BFR, sans retours, sans plateau créatif.
 
@@ -173,17 +174,14 @@ La différence tient en quatre lignes du § 8 : 7 % de commandes en moins, 7 % d
 
 ```mermaid
 flowchart LR
-  K["Média<br/>1 494 206 €/mois"] --> N["37 324 nouveaux clients<br/>nCAC 40,03 €"]
-  N --> C1["Contribution 1ʳᵉ cmd<br/>32,77 × 37 324 = 1 223 107 €"]
-  C1 --> R["22 876 réachats<br/>× 43,53 € = 995 792 €"]
-  R --> CM2["Marge brute<br/>2 218 957 €/mois"]
-  CM2 --> CM3["− média = CM3<br/>724 752 €"]
-  CM3 --> E["− fixes 360 000 €<br/>= EBITDA 364 752 €"]
-  E --> BFR["BFR : 52 263 € réimmobilisés<br/>par +100 k€ de CA mensuel"]
-  BFR --> K
+  K["Média<br/>1 494 206 €/mois"] --> N["37 324 clients<br/>nCAC 40,03 €"]
+  N --> C["1ʳᵉ cmd 1 223 107 €<br/>+ réachats 995 792 €"]
+  C --> E["− média − fixes<br/>= EBITDA 364 752 €"]
+  E --> B["BFR : 52 263 € réimmobilisés<br/>par +100 k€ de CA mensuel"]
+  B --> K
 ```
 
-Contrôle du bouclage : `1 223 107 + 995 792 = 2 218 899 €` contre 2 218 957 € au § 2.2, soit 0,003 % d'écart. Retiens la dernière flèche : **une partie de l'EBITDA n'est jamais disponible, elle repart dans le BFR** (§ 4.2).
+Bouclage : `1 223 107 + 995 792 = 2 218 899 €` contre 2 218 957 € de marge brute au § 2.2, soit 0,003 % d'écart. Retiens la dernière flèche : **une partie de l'EBITDA n'est jamais disponible, elle repart dans le BFR** (§ 4.2).
 
 ---
 
@@ -191,9 +189,7 @@ Contrôle du bouclage : `1 223 107 + 995 792 = 2 218 899 €` contre 2 218 957 �
 
 ### 3.1 Les ordres de grandeur
 
-Aucune statistique publique fiable ne donne la distribution du CA des marques DTC européennes. Ce qui suit est une **construction raisonnée, pas une statistique sourcée** — je te donne le raisonnement pour que tu puisses le contester.
-
-Le cursus retient comme cadre (CHARTE § 1) que **moins de 300 marques DTC natives en Europe atteignent 1 M€ de CA par semaine**. Construis la chaîne de survie à partir des cinq obstacles détaillés en § 4, chacun affecté d'une probabilité déclarée comme hypothèse :
+Aucune statistique publique fiable ne donne la distribution du CA des marques DTC européennes. Ce qui suit est une **construction raisonnée, pas une statistique sourcée** — je te donne le raisonnement pour que tu puisses le contester. Le cursus retient comme cadre (CHARTE § 1) que **moins de 300 marques DTC natives en Europe atteignent 1 M€ de CA par semaine**. Construis la chaîne de survie à partir des cinq obstacles du § 4, chacun affecté d'une probabilité déclarée comme hypothèse :
 
 | Étape | *Hypothèse* de franchissement | Ce qui tue |
 | --- | ---: | --- |
@@ -294,7 +290,7 @@ P5 : 5,2 ÷ 57                  =  9,1 %
 P2 : 9 ÷ 1,7 = 5,3 sem.   P3 : 21 ÷ 4,2 = 5,0 sem.   P5 : 23 ÷ 5,2 = 4,4 sem.
 ```
 
-Un concept gagnant vit environ un mois : à P5, tu remplaces ta rotation complète toutes les 4,4 semaines, indéfiniment. Le jour où l'équipe passe de 57 à 30 concepts testés par semaine — départ du directeur artistique, budget de production coupé, angles saturés — le régime permanent se recalcule seul :
+Un gagnant vit environ un mois : à P5 tu remplaces ta rotation complète toutes les 4,4 semaines, indéfiniment. Le jour où l'équipe passe de 57 à 30 concepts par semaine — départ du directeur artistique, budget coupé, angles saturés — le régime permanent se recalcule seul :
 
 ```
 Gagnants/semaine     = 30 × 9,1 %  = 2,73
@@ -312,12 +308,7 @@ Et le § 2.3 annonce indépendamment un « écart au seuil EBITDA » de 24,4 % �
 
 ### 4.4 Mode 4 — La dépendance mono-canal
 
-À P5, Meta pèse 55 % du budget et 21 346 des 41 364 nouveaux clients attribués (§ 5), lequel prévient que l'attribution totale dépasse de 11 % les 37 324 nouveaux clients réels. En répartissant uniformément :
-
-```
-Part réelle de Meta = 21 346 ÷ 41 364 = 51,6 %
-Clients réels via Meta = 51,6 % × 37 324 = 19 265 / mois
-```
+À P5, Meta pèse 55 % du budget et 21 346 des 41 364 nouveaux clients attribués (§ 5), lequel prévient que l'attribution totale dépasse de 11 % les 37 324 clients réels. En répartissant uniformément : `21 346 ÷ 41 364 = 51,6 %`, soit `51,6 % × 37 324 = 19 265` clients réels par mois via Meta.
 
 Un mois sans Meta — compte banni, refus de vérification, changement de politique produit. Le réflexe est de calculer la perte de chiffre d'affaires du mois. C'est faux, et c'est le piège :
 
@@ -391,14 +382,9 @@ Le plancher strictement canonique — sans lancement, sans sécurité — est de
 
 ### 5.2 « On peut démarrer avec 500 € »
 
-À P1, le plus petit palier, la publicité coûte 20 444 € par mois (§ 2.2), soit `20 444 ÷ 30,4 = 672 €` par jour.
+À P1, le plus petit palier, la publicité coûte 20 444 € par mois (§ 2.2), soit `20 444 ÷ 30,4 = 672 €` par jour. Donc `500 ÷ 672 = 0,74` jour de publicité, et `370 874 ÷ 500 = 742`.
 
-```
-500 € ÷ 672 €/jour = 0,74 jour de publicité au plus petit palier du modèle
-370 874 € ÷ 500 €  = 742
-```
-
-**500 €, c'est dix-huit heures de publicité à P1, et 1/742 du capital nécessaire.** La phrase n'est pas exagérée, elle est fausse d'un facteur 742. Elle contient pourtant une part de vérité qu'il faut dire précisément : 500 € suffisent à faire **une vente**. Ils ne suffisent pas à faire une entreprise, parce qu'entre les deux il y a neuf mois de pertes et un BFR (§ 8.5).
+**500 €, c'est dix-huit heures de publicité à P1 et 1/742 du capital nécessaire.** La phrase n'est pas exagérée, elle est fausse d'un facteur 742. Elle contient pourtant une part de vérité qu'il faut dire précisément : 500 € suffisent à faire **une vente**. Ils ne suffisent pas à faire une entreprise, parce qu'entre les deux il y a neuf mois de pertes et un BFR (§ 8.5).
 
 ### 5.3 Où meurt le sous-capitalisé
 
@@ -438,11 +424,7 @@ Le § 2 donne P3 = M10 à M18, soit **9 mois**. La durée de P3 n'est pas une es
 
 ### 6.2 P4 : la durée est une contrainte d'organisation
 
-Même calcul : croissance autofinançable 418 046 € sur 2 931 600 €, soit 14,26 % par mois ; multiple `4 333 196 ÷ 2 931 600 = 1,478`.
-
-```
-Durée à 14,26 %/mois = ln(1,478) ÷ ln(1,1426) = 0,3908 ÷ 0,1333 = 2,93 mois
-```
+Même calcul : croissance autofinançable 418 046 € sur 2 931 600 €, soit 14,26 % par mois, pour un multiple `4 333 196 ÷ 2 931 600 = 1,478`. Donc `ln(1,478) ÷ ln(1,1426) = 2,93 mois`.
 
 Le § 2 donne pourtant P4 = M19 à M30, soit **12 mois** : quatre fois plus long que ce que le cash exige. La raison est au § 2 : P4 fait passer NØRA de 2 à 5 marchés, et chaque pays rouvre un mini-P1 — créatives à retraduire, preuve sociale locale à reconstituer, logistique et retours à recâbler. Douze mois pour trois pays, quatre mois par marché, ce qui recoupe [C07](../etudes-de-cas/C07-ouverture-allemagne.md).
 
@@ -485,11 +467,11 @@ Une catégorie qui échoue au test A est exclue de P5, définitivement. Une cat�
 
 **8.2 Choisir un produit qu'on aime plutôt qu'un produit qui a une structure de marge.** § 4.1 : à volume P2 identique, le ×2,5 perd 77 388 € par mois là où NØRA en perd 19 838 €. Coût : **928 656 € par an**, décidés le jour du choix du produit, avant la première vente. Aucun travail ultérieur ne les récupère.
 
-**8.3 Sous-capitaliser.** § 5.3 : 100 000 € épuisés au milieu du mois 5, quatre mois avant le point bas. Coût : la totalité des `28 209 + 4 × 19 838 = 107 561 €` déjà engagés, plus le lancement, plus les mois de travail — perdus alors que le modèle économique était valide. C'est la seule erreur de cette liste qui détruit un projet correct.
+**8.3 Sous-capitaliser.** § 5.3 : 100 000 € épuisés au milieu du mois 5, quatre mois avant le point bas. Coût : les `28 209 + 4 × 19 838 = 107 561 €` déjà engagés, plus le lancement, plus les mois de travail — perdus alors que le modèle était valide. Seule erreur de cette liste qui détruit un projet correct.
 
 **8.4 Croire qu'un bon produit se vend seul.** Le produit de NØRA ne change pas entre P2 et P5 ; la production, si : de 14 concepts testés par semaine et 188 assets par mois à P2, à 57 concepts et 1 245 assets à P5 (§ 6), soit `1 245 × 12 = 14 940` assets par an pour vendre **trois références**. Et sur 57 concepts hebdomadaires, `57 − 5,2 = 51,8` sont jetés : 90,9 % d'échec. Un bon produit ne se vend pas seul ; il rend rentable le fait de le vendre.
 
-**8.5 Confondre « j'ai fait une vente » et « j'ai un business ».** Une vente à P5 rapporte 12,04 € de CM3 (§ 2.2). Un salarié à 4 000 € chargés par mois exige donc `4 000 ÷ 12,04 = 332` commandes supplémentaires chaque mois pour se payer, et les 38 ETP de P5 exigent `332 × 38 = 12 616` commandes mensuelles rien que pour couvrir les salaires — 21 % du volume. Une vente est un événement ; une entreprise est un débit soutenu.
+**8.5 Confondre « j'ai fait une vente » et « j'ai un business ».** Une vente à P5 rapporte 12,04 € de CM3 (§ 2.2). Un salarié à 4 000 € chargés par mois exige donc `4 000 ÷ 12,04 = 332` commandes supplémentaires chaque mois pour se payer, et les 38 ETP de P5 en exigent `332 × 38 = 12 616` — 21 % du volume, rien que pour les salaires. Une vente est un événement ; une entreprise est un débit soutenu.
 
 ---
 
@@ -499,7 +481,7 @@ Une catégorie qui échoue au test A est exclue de P5, définitivement. Une cat�
 
 **Les cas où on ne veut pas de marque.** Si ton avantage réel est technique, logistique ou financier plutôt que créatif, le § 1.4 dit que l'infrastructure a de meilleurs unit economics, sans BFR ni plateau créatif. Et si ton horizon est court, la marque est le pire placement possible : un actif à amortissement lent, qui coûte cher au début (P1 et P2 perdent de l'argent volontairement, § 2.3 des canoniques) et ne rend qu'au-delà de P3.
 
-**La sortie rapide.** Ce module raisonne en exploitation, pas en valorisation. Une marque peut se vendre avant P5, à un multiple d'EBITDA ou de CA selon la catégorie, et cette perspective change tous les arbitrages entre croissance et marge — jusqu'à rendre rationnel de sacrifier l'EBITDA pour la trajectoire. Voir [E12](E12-marque-et-actif.md).
+**La sortie rapide.** Ce module raisonne en exploitation, pas en valorisation. Une marque peut se vendre avant P5, à un multiple d'EBITDA ou de CA selon la catégorie — perspective qui change tous les arbitrages croissance/marge, jusqu'à rendre rationnel de sacrifier l'EBITDA pour la trajectoire. Voir [E12](E12-marque-et-actif.md).
 
 **Les chiffres eux-mêmes.** NØRA est fictive, sur une catégorie consommable premium à coefficient élevé et réachat rapide. Une catégorie à réachat lent — mobilier, électronique, bagagerie — ne se lit pas dans ces tableaux : le payback de 1,8 mois y devient 12 mois, et toute la section 5 est à refaire. Le mécanisme reste vrai, les nombres non.
 
@@ -536,7 +518,7 @@ Trois précisions qui séparent un tableau de bord d'une décoration :
 Un fournisseur te propose un produit à coefficient ×3,5, que tu envisages de vendre avec la structure de coût du palier P3 (§ 2.1). Calcule en déroulant : COGS en % du CA HT, marge brute, MER seuil CM3 = 0, MER seuil EBITDA = 0. Compare au MER réel de P3 (§ 2.3) et conclus en une phrase.
 
 **Exercice 2 — Le mois de la mort (données NØRA).**
-Tu disposes de 150 000 € et tu suis exactement la trajectoire canonique P1 puis P2. Par la méthode du § 5.3 — pertes du § 2.2, constitution linéaire du BFR du § 4 — donne le mois exact où ta trésorerie atteint zéro, le nombre de mois qui te séparaient de la fin de P2, et le capital additionnel qu'il aurait fallu.
+Tu disposes de 150 000 € et suis exactement la trajectoire canonique P1 puis P2. Par la méthode du § 5.3 — pertes du § 2.2, constitution linéaire du BFR du § 4 — donne le mois où ta trésorerie atteint zéro, le nombre de mois qui te séparaient de la fin de P2, et le capital additionnel qu'il aurait fallu.
 
 **Exercice 3 — Ton coefficient et ton seuil.**
 Prends ton produit principal, ou celui que tu envisages. Écris PVC TTC, TVA applicable, PVC HT, COGS rendu entrepôt (fabrication + transport amont + douane + emballage). Calcule ton coefficient, ton COGS en % du CA HT, ta marge brute avec tes propres taux de logistique, PSP, retours et remises, puis ton MER seuil CM3 = 0.
@@ -550,7 +532,7 @@ Deux produits, mêmes hypothèses : AOV 60 € TTC (50 € HT), coûts variables
 - **Option A** — coefficient ×7,2, fréquence de 1,2 commande par client sur 12 mois.
 - **Option B** — coefficient ×4,2, fréquence de 3,1 commandes par client sur 12 mois.
 
-Calcule pour chacune : COGS en % du CA HT, marge brute, contribution par commande, LTV 12 mois en contribution, LTV/CAC. Tranche et justifie par la règle canonique du § 3. Puis réponds à la question qui compte : **à quel nCAC l'option perdante deviendrait-elle la bonne**, et quel type de canal délivre ce nCAC (§ 5) ?
+Calcule pour chacune : COGS en % du CA HT, marge brute, contribution par commande, LTV 12 mois en contribution, LTV/CAC. Tranche, justifie par la règle canonique du § 3, puis réponds à la question qui compte : **à quel nCAC l'option perdante deviendrait-elle la bonne**, et quel canal délivre ce nCAC (§ 5) ?
 
 ---
 
