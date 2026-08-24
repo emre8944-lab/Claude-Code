@@ -186,6 +186,32 @@ Base : nCAC = **40,03 €**, contribution 1ʳᵉ commande = **32,77 €**, c
 | P4 | 1 160 425 € | 293 160 € | 488 600 € | 549 675 € | **1 392 510 €** | 14 j |
 | P5 | 1 832 581 € | 433 320 € | 1 045 944 € | 1 047 189 € | **2 264 655 €** | 16 j |
 
+### 4.1 Le BFR réel — acompte fournisseur inclus
+
+Le tableau ci-dessus suppose que **toute** la marchandise bénéficie du délai
+fournisseur négocié. C'est faux : la part payée comptant à la commande de
+production — ici **30 %** — n'obtient aucun crédit. Le vrai besoin de
+financement est donc supérieur, et c'est celui-là qu'il faut avoir en banque.
+
+| Palier | BFR hors acompte | **BFR réel** | Écart | Écart en % |
+| --- | ---: | ---: | ---: | ---: |
+| P1 | 21 603 € | **21 603 €** | 0 € | 0,0 % |
+| P2 | 104 462 € | **109 641 €** | 5 180 € | 5,0 % |
+| P3 | 481 053 € | **528 141 €** | 47 088 € | 9,8 % |
+| P4 | 1 392 510 € | **1 557 412 €** | 164 902 € | 11,8 % |
+| P5 | 2 264 655 € | **2 578 812 €** | 314 157 € | 13,9 % |
+
+> **Pourquoi les deux colonnes cohabitent.** Le reste du cursus cite la
+> colonne de gauche, qui est celle du modèle simple. Elle est utile pour
+> comparer des paliers entre eux. Mais **le chiffre à financer est celui de
+> droite.** C'est une règle générale et pas une particularité de ce modèle :
+> tout modèle de BFR sous-estime la réalité, parce qu'il oublie toujours une
+> sortie de cash anticipée. Prends une marge de sécurité sur ce que ton
+> tableur te dit. Le simulateur
+> [`simulateur_tresorerie.py`](../outils/simulateur_tresorerie.py) modélise
+> l'acompte et reproduit la colonne de gauche à l'euro près quand on le met
+> à zéro — c'est ainsi que cet écart a été trouvé.
+
 | Palier | Cash immobilisé par +100 k€ de CA mensuel | EBITDA mensuel | Croissance autofinançable / mois |
 | --- | ---: | ---: | ---: |
 | P1 | 58 704 € | −9 403 € | **négative — la croissance consomme du cash** |

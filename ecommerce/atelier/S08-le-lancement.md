@@ -69,14 +69,14 @@ Le calcul exact, par intervalle de Poisson — celui que produit `test_significa
 | 16 | −38,4 % à +74,9 % | ×2,8 |
 | **43** | **−25,8 % à +38,2 %** | **×1,9** |
 | 62 | −22,0 % à +30,4 % | ×1,7 |
-| 96 | −18,1 % à +23,4 % | ×1,5 |
-| 385 | −9,7 % à +11,6 % | ×1,2 |
+| 96 | −18,1 % à +23,5 % | ×1,5 |
+| 385 | −9,5 % à +10,8 % | ×1,2 |
 
 **Quarante-trois achats, c'est le premier niveau où l'on peut dire quelque chose.** En dessous de seize, on ne peut littéralement rien conclure : à quatre achats, la borne haute vaut neuf fois la borne basse.
 
-**Le second cadran donne le même nombre.** Le modèle d'enchère d'une plateforme a besoin d'un nombre minimal de conversions par semaine et par unité d'optimisation pour cesser d'explorer au hasard — de l'ordre de **50**. C'est une valeur d'interface, donc datée ; le mécanisme, lui, ne l'est pas : un modèle a besoin d'exemples, et il ne les invente pas.
+**Le second raisonnement donne le même nombre.** Le modèle d'enchère d'une plateforme a besoin d'un nombre minimal de conversions par semaine et par unité d'optimisation pour cesser d'explorer au hasard — de l'ordre de **50**. C'est une valeur d'interface, donc datée ; le mécanisme, lui, ne l'est pas : un modèle a besoin d'exemples, et il ne les invente pas.
 
-Deux raisonnements indépendants, une statistique et une algorithmique, convergent sur **50 conversions par semaine et par unité d'optimisation**. C'est de là que sort le budget :
+Deux raisonnements indépendants — l'un statistique, l'autre algorithmique — convergent sur **50 conversions par semaine et par unité d'optimisation**. C'est de là que sort le budget :
 
 ```
 Budget minimal lisible / semaine = 50 × CPA de lancement
@@ -297,9 +297,11 @@ Commandes payantes attendues              = 7 800 ÷ 35,93    = 217
 **KALIS lance en dessous de son plafond de contribution, volontairement et pour un mois.** À 35,93 € de CPA contre 28,87 € de marge brute, chaque commande du premier mois perd **7,06 €**. Ce n'est pas une erreur : c'est le prix des données. Ce qui serait une erreur, c'est de ne pas l'avoir écrit avant, et de le découvrir à J+20 en se croyant en train d'échouer.
 
 ```
-Perte du mois 1 = 217 × (−7,06 €) − 2 500 € de fixes = −4 032 € HT
-7 800 € de budget = 3,1 mois de la perte mensuelle projetée à ce rythme.
+Perte du mois 1 = 217 × (−7,06 €) − 2 500 € de fixes  = −4 032 € HT
+Trésorerie après le 1ᵉʳ lot de stock : 36 690 €       = 9,1 mois de cette perte
 ```
+
+**Et ce dernier chiffre est trompeur.** La perte d'exploitation *décroît* de mois en mois à mesure que le CPA baisse ; ce qui consomme la trésorerie de KALIS, c'est le stock. Le § 8.2 le démontre : la marque disciplinée épuise sa trésorerie au cinquième mois alors même que son résultat mensuel s'améliore à chaque mois.
 
 ### 7.2 La structure de compte
 
@@ -406,10 +408,10 @@ Deux lancements. Même produit, même page, mêmes douze concepts, même capital
 
 ```
 P(couper un vrai gagnant)  = P(X ≤ 1 | λ = 2,50) = 28,7 %
-P(garder un vrai perdant)  = P(X ≥ 2 | λ = 1,18) = 33,0 %
+P(garder un vrai perdant)  = P(X ≥ 2 | λ = 1,18) = 33,1 %
 ```
 
-**B élimine plus d'un vrai gagnant sur quatre et conserve un perdant sur trois.** Au taux de réussite de 12,14 % dérivé en [S06 § 8.1](S06-premier-lot-de-creas.md), son taux effectif tombe à 8,66 % : sa probabilité d'avoir deux gagnants distincts au bout d'un lot de douze passe de **43,8 % à 27,4 %**. À chaque lot, sa bibliothèque se dégrade — moins de gagnants en rotation, donc plus de fréquence sur ceux qui restent, donc un coût pour mille qui monte. **B ne juge pas mal : il juge tôt, ce qui revient à tirer au sort.**
+**B élimine plus d'un vrai gagnant sur quatre et conserve un perdant sur trois.** Au taux de réussite de 12,14 % dérivé en [S06 § 8.1](S06-premier-lot-de-creas.md), son taux effectif tombe à 8,66 % : sa probabilité d'avoir deux gagnants distincts au bout d'un lot de douze passe de **43,8 % à 27,9 %**. À chaque lot, sa bibliothèque se dégrade — moins de gagnants en rotation, donc plus de fréquence sur ceux qui restent, donc un coût pour mille qui monte. **B ne juge pas mal : il juge tôt, ce qui revient à tirer au sort.**
 
 ### 8.1 Six mois, mois par mois
 

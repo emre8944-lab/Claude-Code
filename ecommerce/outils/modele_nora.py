@@ -361,7 +361,20 @@ class Tresorerie:
 
     @property
     def dettes_fournisseurs(self) -> float:
+        """Credit fournisseur obtenu, acompte ignore. Voir bfr_reel ci-dessous."""
         return self.cogs_mensuel * self.delai_fournisseur / 30
+
+    @property
+    def dettes_fournisseurs_reelles(self) -> float:
+        """L'acompte paye comptant a la commande ne beneficie d'aucun credit."""
+        return (self.cogs_mensuel * (1 - self.acompte_fournisseur)
+                * self.delai_fournisseur / 30)
+
+    @property
+    def bfr_reel(self) -> float:
+        """BFR acompte fournisseur inclus. C'est celui qu'il faut financer."""
+        return (self.stock_immobilise + self.creances + self.avance_pub
+                - self.dettes_fournisseurs_reelles)
 
     @property
     def avance_pub(self) -> float:
@@ -715,6 +728,32 @@ def rapport() -> str:
         a(ligne([code, eur(t.stock_immobilise), eur(t.creances), eur(t.avance_pub),
                  eur(t.dettes_fournisseurs), f"**{eur(t.bfr)}**",
                  f"{t.bfr_en_jours_de_ca:.0f} j"]))
+    a("")
+    a("### 4.1 Le BFR réel — acompte fournisseur inclus")
+    a("")
+    a("Le tableau ci-dessus suppose que **toute** la marchandise bénéficie du délai")
+    a("fournisseur négocié. C'est faux : la part payée comptant à la commande de")
+    a("production — ici **" + pct(TRESO["P5"].acompte_fournisseur, 0) + "** — n'obtient aucun crédit. Le vrai besoin de")
+    a("financement est donc supérieur, et c'est celui-là qu'il faut avoir en banque.")
+    a("")
+    a(ligne(["Palier", "BFR hors acompte", "**BFR réel**", "Écart", "Écart en %"]))
+    a(ligne(["---", "---:", "---:", "---:", "---:"]))
+    for code in ["P1", "P2", "P3", "P4", "P5"]:
+        t = TRESO[code]
+        ec = t.bfr_reel - t.bfr
+        a(ligne([code, eur(t.bfr), f"**{eur(t.bfr_reel)}**", eur(ec),
+                 pct(ec / t.bfr) if t.bfr else "—"]))
+    a("")
+    a("> **Pourquoi les deux colonnes cohabitent.** Le reste du cursus cite la")
+    a("> colonne de gauche, qui est celle du modèle simple. Elle est utile pour")
+    a("> comparer des paliers entre eux. Mais **le chiffre à financer est celui de")
+    a("> droite.** C'est une règle générale et pas une particularité de ce modèle :")
+    a("> tout modèle de BFR sous-estime la réalité, parce qu'il oublie toujours une")
+    a("> sortie de cash anticipée. Prends une marge de sécurité sur ce que ton")
+    a("> tableur te dit. Le simulateur")
+    a("> [`simulateur_tresorerie.py`](../outils/simulateur_tresorerie.py) modélise")
+    a("> l'acompte et reproduit la colonne de gauche à l'euro près quand on le met")
+    a("> à zéro — c'est ainsi que cet écart a été trouvé.")
     a("")
     a(ligne(["Palier", "Cash immobilisé par +100 k€ de CA mensuel", "EBITDA mensuel", "Croissance autofinançable / mois"]))
     a(ligne(["---", "---:", "---:", "---:"]))

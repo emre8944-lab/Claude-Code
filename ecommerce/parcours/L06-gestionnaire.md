@@ -58,7 +58,7 @@ Tu notes la semaine où la trésorerie franchit zéro, puis tu rejoues en modifi
 
 > *Cas composite. Marque fictive. Les chiffres sont un modèle calibré sur des ordres de grandeur sectoriels ; ce ne sont les comptes d'aucune entreprise réelle.*
 
-KANOPÉ vend des compléments alimentaires en direct, en France et en Belgique. Trente-quatre mois d'existence, quatre références, un produit héros qui pèse 46 % du coût marchandise. Le fondateur t'appelle un lundi de mars : l'expert-comptable vient de rendre les comptes de février, il perd de l'argent depuis cinq mois.
+KANOPÉ vend des compléments alimentaires en direct, en France et en Belgique. Trente-quatre mois, quatre références, un héros qui pèse 46 % du coût marchandise. Le fondateur t'appelle un lundi de mars : les comptes de février viennent de tomber, il perd de l'argent depuis cinq mois.
 
 **Février — mois complet, non saisonnier.** CA **780 000 € TTC**, soit **650 000 € HT**. 13 000 commandes, dont 9 000 premières et 4 000 réachats. Panier moyen 60,00 € TTC / 50,00 € HT, identique en première commande et en réachat. Croissance sur six mois : +0,4 % — **la marque est plate**. Publicité 312 000 €. Frais fixes 78 000 € HT. Trésorerie au 1ᵉʳ mars **165 000 €**, échéance mensuelle d'emprunt 6 500 €, capital mobilisable **0 €**.
 
@@ -72,7 +72,7 @@ KANOPÉ vend des compléments alimentaires en direct, en France et en Belgique. 
 
 **BFR au 1ᵉʳ mars :** stock au coût de revient 370 500 € + encours d'encaissement 78 000 € (3 jours de CA TTC) + avance publicitaire 72 800 € (7 jours de dépense) − dettes fournisseurs 190 000 € (délai de paiement 60 jours) = **331 300 €**.
 
-**Le produit héros.** 8 000 unités/mois, coût de revient rendu entrepôt 6,00 €/unité, délai fournisseur complet 75 jours, écart type de la demande **mesuré sur des fenêtres glissantes de 75 jours** égal à 22 % de la demande moyenne sur la fenêtre, service visé 97,5 % (`Z = 1,96`), cycle de commande actuel 90 jours, **MOQ négocié 8 000 unités**.
+**Le produit héros.** 8 000 unités/mois, coût de revient rendu entrepôt 6,00 €/unité, délai fournisseur 75 jours, écart type de la demande **mesuré sur des fenêtres glissantes de 75 jours** égal à 22 % de la demande moyenne sur la fenêtre, service visé 97,5 % (`Z = 1,96`), cycle de commande 90 jours, **MOQ négocié 8 000 unités**.
 
 **La courbe de réponse publicitaire** — deux tests d'augmentation, par tranches de 78 000 € mensuels.
 
@@ -80,9 +80,9 @@ KANOPÉ vend des compléments alimentaires en direct, en France et en Belgique. 
 |---|---:|---:|---:|---:|---:|
 | Premières commandes cumulées | 3 400 | 5 900 | 7 700 | **9 000** | 9 900 |
 
-**La rétention.** Réachats cumulés par client à 12 mois : **1,10**. Panier de réachat identique au panier d'acquisition.
+**La rétention.** Réachats cumulés par client à 12 mois : **1,10**, à panier identique.
 
-**Les trois propositions du fondateur.** **α :** **−7 % sur les prix** contre un engagement de volume de douze mois **et** le passage du délai de paiement de 60 à 30 jours, les dettes fournisseurs tombant de 190 000 € à 95 000 €. **β :** appel d'offres ramenant le transport de 4,20 € à 3,75 € par commande et l'emballage de 0,45 € à 0,33 €, pour 12 000 € d'outillage, le contrat 3PL imposant un **préavis de 60 jours**. **γ :** **−25 % sur dix jours** pour refaire de la trésorerie — *hypothèses fournies :* volume de la période ×**2,2** ; **45 %** des commandes supplémentaires auraient eu lieu au prix plein sous soixante jours ; **60 %** des commandes de la période sont des premières commandes ; une cohorte promotionnelle réachète **42 % moins souvent** ([simulateur](../outils/README-simulateur.md) § 8).
+**Les trois propositions du fondateur.** **α :** **−7 % sur les prix** contre un engagement de volume de douze mois **et** le passage du délai de paiement de 60 à 30 jours — les dettes fournisseurs tombent de 190 000 € à 95 000 €. **β :** appel d'offres ramenant le transport de 4,20 € à 3,75 € par commande et l'emballage de 0,45 € à 0,33 €, pour 12 000 € d'outillage, le contrat 3PL imposant un **préavis de 60 jours**. **γ :** **−25 % sur dix jours** pour refaire de la trésorerie — *hypothèses fournies :* volume de la période ×**2,2** ; **45 %** des commandes supplémentaires auraient eu lieu au prix plein sous soixante jours ; **60 %** des commandes de la période sont des premières commandes ; une cohorte promotionnelle réachète **42 % moins souvent** ([simulateur](../outils/README-simulateur.md) § 8).
 
 ```
 Deux conventions, à respecter dans toute la copie :
@@ -101,11 +101,11 @@ Deux conventions, à respecter dans toute la copie :
 
 **Q3 — La dépense publicitaire. (16 points)** (a) CAC marginal des quatre tranches et de celle que propose le fondateur. (b) LTV à 12 mois en marge de contribution, aux conditions de février. (c) Le niveau de dépense que tu retiens, pourquoi, et l'effet immédiat sur l'EBITDA mensuel. (d) Ce que ta décision coûte en LTV sur douze mois — conclus.
 
-**Q4 — Les leviers de marge. (18 points)** Pour chacun : gain **en points de marge** et **en euros/mois**, contrepartie chiffrée, délai avant premier effet.
+**Q4 — Les leviers de marge. (18 points)** Pour chacun : gain **en points de marge** et **en euros/mois**, contrepartie chiffrée, délai avant effet.
 
 **A** — remise de 11,0 % à 7,5 % du CA HT (*hypothèse : la suppression du code de bienvenue permanent et du code panier abandonné coûte **6 % des commandes***). **B** — proposition α. **C** — proposition β. **D** — retours de 3,8 % à 2,9 %, par refonte des deux fiches produit et retrait de trois concepts sur-promettants (*14 000 € non récurrents ; hypothèse : aucun effet sur le volume, la dépense étant réallouée*). **E** — frais fixes de 78 000 € à 68 500 € HT (*arrêt d'une prestation créative externalisée, indemnité de préavis de 19 000 € payée immédiatement*).
 
-**Q5 — L'arbitrage fournisseur. (12 points)** (a) Gain annuel de marge de α. (b) Effet immédiat sur la trésorerie et sur les semaines restantes, si elle est acceptée le 1ᵉʳ mars. (c) Délai de récupération en trésorerie, en mois. (d) Ta décision, la date à laquelle tu la reconsidères, et ce que tu proposes au fournisseur à la place.
+**Q5 — L'arbitrage fournisseur. (12 points)** (a) Gain annuel de marge de α. (b) Effet immédiat sur la trésorerie et sur les semaines restantes si elle est acceptée le 1ᵉʳ mars. (c) Délai de récupération en trésorerie. (d) Ta décision, la date à laquelle tu la reconsidères, et ce que tu proposes à la place.
 
 **Q6 — Le plan à 90 jours. (28 points)** (a) Un tableau des leviers retenus **ordonnés par rapport gain sur effort**, avec gain mensuel, effort, date d'effet et contrepartie assumée. (b) Le compte de résultat projeté des mois 1 à 3 et le tableau de trésorerie des trois mois. (c) La position au 31 mai et le nouveau MER seuil d'EBITDA. (d) La proposition γ : chiffre son effet immédiat sur la contribution de la période, l'effet de la demande avancée, l'effet sur la LTV de la cohorte acquise ; conclus, puis donne **la condition précise** dans laquelle il faudrait quand même la lancer.
 
@@ -136,7 +136,7 @@ Semaines restantes = 165 000 ÷ 15 012 = 11,0 semaines
 
 **(d)** KANOPÉ est **au-dessus** de son seuil de contribution et **18,8 % sous** son seuil d'EBITDA : la zone que le [diagnostic](../mentorat/diagnostic.md) bloc C nomme « tu finances ta structure avec ton capital », légitime seulement si le réachat rembourse — et ici il ne rembourse pas. Le fondateur croit donc avoir un problème de rentabilité ; il a **onze semaines de trésorerie**. Sa contrainte active est le calendrier : un levier qui rapporte au mois 5 ne compte pas, et un levier qui rapporte de la marge en consommant de la trésorerie l'achève.
 
-**Barème.** (a) 4, une par ligne. (b) 4. (c) 2, dont 1 pour l'échéance d'emprunt — l'oublier donne 12,2 semaines et vaut 0. (d) 2, la réponse devant nommer le **calendrier** ou la **contrainte de trésorerie** ; « sa marge est trop faible » vaut 0.
+**Barème.** (a) 4. (b) 4. (c) 2, dont 1 l'échéance d'emprunt — l'oublier donne 12,2 semaines et vaut 0. (d) 2, la réponse devant nommer le **calendrier** ou la **contrainte de trésorerie** ; « sa marge est trop faible » vaut 0.
 
 ---
 
@@ -148,7 +148,7 @@ Semaines restantes = 165 000 ÷ 15 012 = 11,0 semaines
      σ sur la fenêtre         = 22 % × 20 000   =  4 400 unités
      Stock de sécurité        = 1,96 × 4 400    =  8 624 unités  (32,3 jours)
      Point de recommande      = 20 000 + 8 624  = 28 624 u = 171 744 € de COGS
-     Avec un σ QUOTIDIEN : 1,96 × (22 % × 266,67) × √75 = 996 u = 3,7 jours
+     Avec un σ quotidien : 1,96 × (22 % × 266,67) × √75 = 996 u = 3,7 jours
 ```
 
 La racine carrée suppose les écarts quotidiens **indépendants**. En vente directe ils ne le sont jamais : une publicité qui gagne, une rupture concurrente, un pic saisonnier sont des décalages de niveau qui durent des semaines. Le σ quotidien sous-estime ici la sécurité d'un **facteur 8,7** ([E10](../modules/E10-cash-et-operations.md) § 5.1).
@@ -171,7 +171,7 @@ Le MOQ le permet **tout juste** : 8 000 unités par commande, MOQ à 8 000. **Ce
      Stock cible = 210 000 ÷ 104 481 × 30 = 60,3 jours
 ```
 
-**Barème.** (a) 7 : 1 la consommation quotidienne, 1 la demande sur le délai, 2 la sécurité, 1 les euros, 2 l'explication du σ — elle doit contenir l'**indépendance** ou le décalage durable, « il n'a pas pris le bon σ » vaut 0. (b) 5, dont 2 pour la moitié du cycle et 1 pour le MOQ ; appliquer le cycle au stock **total** coûte les 5. (c) 2.
+**Barème.** (a) 7 : 1 la consommation quotidienne, 1 la demande sur le délai, 2 la sécurité, 1 les euros, 2 l'explication du σ, qui doit contenir l'**indépendance** ou le décalage durable. (b) 5, dont 2 la moitié du cycle et 1 le MOQ ; appliquer le cycle au stock **total** coûte les 5. (c) 2.
 
 ---
 
@@ -203,7 +203,7 @@ Le nCAC moyen vaut `312 000 ÷ 9 000 = 34,67 €` : il ne décrit **aucune** des
 
 La proposition du fondateur ferait l'inverse : `900 × 25,50 = 22 950 €` pour 78 000 € de dépense, soit **−55 050 € par mois**. **La coupe est légèrement positive sur douze mois et décisive sur le trimestre** — 44 850 € dès le premier mois contre 8 385 € abandonnés sur l'année. Avec deux ans de trésorerie, garder la tranche 4 se défendrait, à condition de l'écrire comme un achat de volume chiffré.
 
-**Barème.** (a) 5, 1 par CAC marginal ; répondre par le CAC moyen vaut 0 sur la question. (b) 3. (c) 5 : 2 la comparaison marginal/LTV, 2 le chiffrage, 1 l'écartement des 390 000 €. (d) 3 ; « on coupe, c'est tout bénéfice » vaut 1.
+**Barème.** (a) 5, 1 par CAC marginal ; le CAC moyen vaut 0 sur la question. (b) 3. (c) 5 : 2 la comparaison marginal/LTV, 2 le chiffrage, 1 l'écartement des 390 000 €. (d) 3.
 
 ---
 
@@ -222,11 +222,11 @@ La proposition du fondateur ferait l'inverse : `900 × 25,50 = 22 950 €` pour 
 ```
 Gain brut              3,5 pts × 6 500 €               = 22 750 €
 Commandes perdues      6 % × 13 000                    =    780
-Contribution perdue au NOUVEAU taux de marge (54,5 %) :
+Contribution perdue au nouveau taux de marge (54,5 %) :
                        780 × 50,00 € × 54,5 %          = 21 255 €
 Gain net à budget publicitaire figé                    =  1 495 €
 
-Mais on pilote AU MER, pas au budget : les 780 commandes disparues
+Mais on pilote au MER, pas au budget : les 780 commandes disparues
 n'ont plus besoin d'être achetées.
 Dépense à MER constant : 611 000 × 1,20 ÷ 2,50 = 293 280 €, soit −18 720 €
 Gain net réel = 1 495 + 18 720 = +20 215 €, soit +3,11 points
@@ -244,7 +244,7 @@ D : 0,9 point × 6 500 €                                   = 5 850 €/mois
 
 C est le meilleur rapport gain sur effort du dossier **et** le seul levier dont on ne verra rien pendant le trimestre.
 
-**Barème.** 3 par levier pour B, C, D, E (gain, contrepartie, délai) = 12. 6 pour A, dont **4 pour l'effet de volume** : annoncer 3,5 points sans déduire les commandes perdues vaut 2 sur 6, et c'est l'erreur la plus fréquente de l'épreuve.
+**Barème.** 3 par levier pour B, C, D, E (gain, contrepartie, délai) = 12. 6 pour A, dont **4 pour l'effet de volume** : annoncer 3,5 points sans déduire les commandes perdues vaut 2 — l'erreur la plus fréquente de l'épreuve.
 
 ---
 
@@ -275,7 +275,9 @@ C est le meilleur rapport gain sur effort du dossier **et** le seul levier dont 
 | 6 | **C** — logistique −0,57 €/cmd | **+7 410 €** | Appel d'offres | **1ᵉʳ mai** | 12 000 € ; p90 du délai à surveiller |
 | — | **B** — fournisseur α | +6 224 € | 1 réunion | **reporté au 1ᵉʳ juin** | −95 000 € : incompatible avec 11 semaines |
 
-C a un meilleur rapport gain sur effort que D et E et arrive **dernier** : un préavis de 60 jours ne se négocie pas. **Le rapport gain sur effort ordonne les priorités ; le calendrier ordonne l'exécution.** Volume du plan, stable sur le trimestre : `(7 700 + 4 000) × 0,94 = 10 998` commandes, soit **549 900 € HT** et **659 880 € TTC**. Les 4 000 réachats viennent de cohortes déjà acquises et ne bougent pas dans la fenêtre.
+C a un meilleur rapport gain sur effort que D et E et arrive **dernier** : un préavis de 60 jours ne se négocie pas. **Le rapport gain sur effort ordonne les priorités ; le calendrier ordonne l'exécution.**
+
+Volume du plan, stable sur le trimestre : `(7 700 + 4 000) × 0,94 = 10 998` commandes, soit **549 900 € HT** et **659 880 € TTC**. Les 4 000 réachats viennent de cohortes déjà acquises et ne bougent pas dans la fenêtre.
 
 | | **M1 — mars** | **M2 — avril** | **M3 — mai** |
 |---|---:|---:|---:|
@@ -332,7 +334,7 @@ Contribution unitaire au prix plein : 50,00 × 54,5 %      =  27,25 € HT
                  × (27,25 − 19,19)                        = −15 961 €
 3. LTV de la cohorte  8 065 × 60 % = 4 839 clients
                  × 1,10 × 42 % × 27,25 €                  = −60 922 €
-                                              TOTAL       = −22 030 €
+                                              Total       = −22 030 €
 ```
 
 **Verdict : on ne la lance pas.** 54 853 € de trésorerie en dix jours contre 22 030 € de valeur détruite — et elle **contredit le levier A** : réapprendre à ta base d'acheter à −25 % six semaines après lui avoir retiré son −10 % permanent, c'est payer deux fois pour installer le réflexe que ton plan existe pour désinstaller.
@@ -359,11 +361,11 @@ Contribution unitaire au prix plein : 50,00 × 54,5 %      =  27,25 € HT
 
 ## 7. Les pièges de ce niveau
 
-**1. Confondre la marge et la trésorerie, puis croire qu'on ne les confond plus.** À l'épreuve, la moitié des candidats accepte α : « −7 % sur les achats » se lit comme une amélioration, « 60 jours qui deviennent 30 » comme une modalité. Les deux chiffres sont dans la même phrase du fournisseur et vont en sens opposés — l'un rapporte 6 224 € par mois, l'autre en coûte 95 000 € tout de suite. **Un fournisseur qui t'offre du prix contre du délai ne te fait pas une remise : il te vend de la dette au taux qui l'arrange.**
+**1. Confondre la marge et la trésorerie, puis croire qu'on ne les confond plus.** La moitié des candidats accepte α : « −7 % sur les achats » se lit comme une amélioration, « 60 jours qui deviennent 30 » comme une modalité. Les deux chiffres sont dans la même phrase du fournisseur et vont en sens opposés — l'un rapporte 6 224 € par mois, l'autre en coûte 95 000 € tout de suite. **Un fournisseur qui t'offre du prix contre du délai ne te fait pas une remise : il te vend de la dette au taux qui l'arrange.**
 
-**2. Croire qu'un plan de redressement est une liste de leviers, et confondre le rapport gain sur effort avec l'ordre d'exécution.** C'est une liste de leviers **datés** : six leviers qui rapportent 95 000 € par mois au mois 4 ne valent rien pour une marque qui a onze semaines — regarde la date de premier effet de chaque ligne de ton dernier plan, et si la moitié tombe au-delà du trimestre, tu as écrit une intention. Ici, le levier logistique est le mieux placé des deux points de vue et arrive dernier, à cause d'un préavis. Le déstockage ne rapporte pas un centime de marge et arrive troisième, parce qu'il apporte 160 500 € de trésorerie — deux fois et demie le meilleur levier de marge sur le trimestre. **Un levier de trésorerie et un levier de marge ne se comparent pas ; ils s'exécutent ensemble.**
+**2. Croire qu'un plan de redressement est une liste de leviers.** C'est une liste de leviers **datés** : six leviers qui rapportent 95 000 € au mois 4 ne valent rien pour une marque qui a onze semaines. Ici le levier logistique a le meilleur rapport gain sur effort et arrive dernier, à cause d'un préavis ; le déstockage ne rapporte pas un centime de marge et arrive troisième, parce qu'il apporte 160 500 € de trésorerie — deux fois et demie le meilleur levier de marge du trimestre. **Le rapport gain sur effort ordonne les priorités, le calendrier ordonne l'exécution — et un levier de trésorerie ne se compare pas à un levier de marge : ils s'exécutent ensemble.**
 
-**3. Croire que « je perds de l'argent » est un diagnostic.** C'est un symptôme à quatre causes : MER sous le seuil de contribution (structure — produit ou prix) ; MER entre les deux seuils (taille) ; croissance supérieure à `EBITDA ÷ BFR` (financement, pas rentabilité) ; BFR qui dérive à volume constant (opérations). KANOPÉ est dans le deuxième cas **et** dans le quatrième — qui traite le deuxième en coupant les frais fixes laisse 160 500 € sur la table.
+**3. Croire que « je perds de l'argent » est un diagnostic.** C'est un symptôme à quatre causes : MER sous le seuil de contribution (structure) ; MER entre les deux seuils (taille) ; croissance supérieure à `EBITDA ÷ BFR` (financement, pas rentabilité) ; BFR qui dérive à volume constant (opérations). KANOPÉ est dans le deuxième cas **et** dans le quatrième — qui traite le deuxième en coupant les frais fixes laisse 160 500 € sur la table.
 
 **4. Croire que L06 mesure ta marque.** Une marque **N3** à 780 000 € par mois est, aux yeux de sa banque et de son entourage, une réussite — elle est à onze semaines de la fin. Le chiffre d'affaires ne mesure ni la compétence ni la solidité : il mesure la vitesse à laquelle une erreur de structure se paie.
 

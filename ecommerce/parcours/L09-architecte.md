@@ -54,7 +54,7 @@
 
 ## 4. L'épreuve
 
-**Durée : 4 h 00**, trois parties. Calculatrice autorisée, aucun document. **Barème sur 100 — (a) 55, (b) 25, (c) 20. Passage à 75, minimums par partie au § 6.**
+**Durée : 4 h 00**, trois parties. Calculatrice autorisée, aucun document. **Barème sur 100 — (a) 55, (b) 25, (c) 20. Passage à 75, minimums au § 6.**
 
 ### Le dossier — MAVELLE
 
@@ -80,7 +80,7 @@ MAVELLE vend du soin du corps premium en direct sur sept marchés européens. El
 
 **Structure** — sérum héros : 71 % du CA HT, **fournisseur unique**, réappro en 105 jours. Logistique : **prestataire unique**, 100 % des expéditions. Marque déposée en France, Belgique et Royaume-Uni seulement — **les quatre autres marchés, 50 % du CA HT, ne sont pas couverts**. Trésorerie 2 150 000 € ; BFR 2 480 000 € ; ligne de crédit 1 200 000 € tirés à 0. La fondatrice se verse 90 000 € par an ; le marché pour ce poste est à 180 000 €.
 
-**Le registre des risques, tel qu'il t'est remis** — probabilités et durées sont des *hypothèses du dossier*, pas des mesures.
+**Le registre des risques remis** — probabilités et durées sont des *hypothèses du dossier*, pas des mesures.
 
 | Risque | Probabilité annuelle | Durée d'impact | Part du CA touchée | Coût annuel de la mesure proposée | Effet de la mesure |
 |---|---:|---:|---:|---:|---|
@@ -271,7 +271,7 @@ Résultat inconfortable, d'où sa présence dans l'épreuve : **la mesure que to
 
 ### B3 — La limite de la colonne « espérance »
 
-Le verdict à réviser est **R2**, « retenu de justesse » à 11 574 € de gain net par an. Lecture fausse : l'espérance mélange deux choses incomparables, un coût et une fin.
+Le verdict à réviser est **R2**, « retenu de justesse » à 11 574 €/an. Lecture fausse : l'espérance mélange deux choses incomparables, un coût et une fin.
 
 ```
 Perte de contribution sur 15 semaines  15 × 0,71 × 153 328 €  = 1 632 943 €
@@ -343,7 +343,7 @@ CA TTC hebdomadaire                   =   999 969 €
 
 **La phrase attendue :** *une année de travail sur le volume vaut moins qu'un point de marge — et personne, dans l'entreprise, n'a de prime indexée dessus.*
 
-**Barème.** 2 le montant par point, 2 les comparaisons, 2 la conclusion. Recommander d'aller chercher de la croissance vaut 0 : la mission l'interdisait, et c'était le vrai enseignement.
+**Barème.** 2 le montant par point, 2 les comparaisons, 2 la conclusion. Recommander d'aller chercher de la croissance vaut 0 : la mission l'interdisait, et c'était l'enseignement.
 
 ---
 
