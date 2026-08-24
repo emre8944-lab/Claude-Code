@@ -632,10 +632,11 @@ def rapport(d: Diagnostic) -> str:
         ["g", "d", "g", "d"],
     )
     a("")
-    a(f"  CA TTC : {eur(d.ca_ttc)} / mois, soit {eur(d.ca_semaine_ttc)} / semaine "
-      f"et {eur(d.ca_ttc * 12)} / an.")
-    a(f"  AOV mixte : {eur(d.aov_mixte_ttc, 2)} TTC. "
-      f"Part du CA en réachat : {pct(d.part_ca_reachat)}.")
+    for l in _envelopper(
+            f"CA TTC : {eur(d.ca_ttc)} / mois, soit {eur(d.ca_semaine_ttc)} / semaine "
+            f"et {eur(d.ca_ttc * 12)} / an. AOV mixte : {eur(d.aov_mixte_ttc, 2)} TTC. "
+            f"Part du CA en réachat : {pct(d.part_ca_reachat)}.", LARGEUR - 2):
+        a("  " + l)
 
     # -- 1. cascade ---------------------------------------------------------
     o += titre("1. La cascade de marge — mensuel")
@@ -657,7 +658,9 @@ def rapport(d: Diagnostic) -> str:
     ]
     o += tableau(["Poste", "Montant", "% CA HT"], lignes, ["g", "d", "d"])
     a("")
-    a(f"  EBITDA annualisé : {eur(d.ebitda_annuel)} (12 × le mois ci-dessus, sans saisonnalité).")
+    for l in _envelopper(f"EBITDA annualisé : {eur(d.ebitda_annuel)} — soit douze fois "
+                         f"le mois ci-dessus, sans saisonnalité.", LARGEUR - 2):
+        a("  " + l)
 
     # -- 2. MER -------------------------------------------------------------
     o += titre("2. Les seuils de MER")
@@ -669,7 +672,7 @@ def rapport(d: Diagnostic) -> str:
             ["MER seuil CM3 = 0", _mer_txt(d.mer_seuil_cm3),
              f"(1 + {pct(e.tva, 0)}) ÷ {pct(d.taux_marge_brute)}"],
             ["MER seuil EBITDA = 0", _mer_txt(d.mer_seuil_ebitda),
-             "marge brute − frais fixes, en % du CA HT"],
+             "frais fixes inclus"],
             ["Écart au seuil CM3", _ecart_txt(d.ecart_seuil_cm3), "marge avant perte à l'unité"],
             ["Écart au seuil EBITDA", _ecart_txt(d.ecart_seuil_ebitda), "marge avant perte comptable"],
         ],

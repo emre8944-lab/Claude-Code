@@ -29,13 +29,12 @@ semaines (*hypothèse déclarée*). Tout le reste est calculé.
 
 ## 1. La situation
 
-NØRA lance en janvier. Soin capillaire premium, France uniquement, un seul produit :
-le **Sérum Densité 50 ml à 39,00 € TTC** (canoniques § 1). Un fondateur à plein temps,
-une personne à mi-temps, un logisticien au colis, Shopify et Meta. **90 000 € de
-fonds propres** — 60 000 € du fondateur, 30 000 € de love money. Panier de première
-commande : **45,50 € TTC**, soit le sérum plus le port facturé et une deuxième unité
-sur une minorité de commandes (*hypothèse de composition ;* le montant est canonique,
-§ 2).
+NØRA lance en janvier. Soin capillaire premium, France, un seul produit : le **Sérum
+Densité 50 ml à 39,00 € TTC** (canoniques § 1). Un fondateur à plein temps, une
+personne à mi-temps, un logisticien au colis, Shopify et Meta. **90 000 € de fonds
+propres** — 60 000 € du fondateur, 30 000 € de love money. Panier de première commande
+**45,50 € TTC** : le sérum, plus le port facturé et une deuxième unité sur une
+minorité de commandes (*hypothèse de composition ;* le montant est canonique, § 2).
 
 ### 1.1 L'économie d'une première commande au palier P1
 
@@ -82,9 +81,8 @@ C'est le CM3 canonique de P1. **À structure inchangée, doubler le volume doubl
 perte avant même de toucher aux frais fixes.**
 
 **Deuxième point — le MER est sous ses deux seuils.** Le MER est le rapport CA TTC
-sur dépense publicitaire. Seuils canoniques P1 (§ 2.3) : MER d'équilibre CM3 = 2,10,
-MER d'équilibre EBITDA = 3,33. NØRA est à 1,80, soit 46,0 % sous sa ligne de
-flottaison EBITDA.
+sur dépense publicitaire. Seuils canoniques P1 (§ 2.3) : équilibre CM3 à 2,10,
+équilibre EBITDA à 3,33. NØRA est à 1,80, soit 46,0 % sous sa ligne de flottaison.
 
 **Troisième point — le seul actif est la courbe de réachat, et elle n'existe pas
 encore.** À 4 % de commandes en réachat, le modèle n'a aucun second étage. La LTV en
@@ -96,7 +94,6 @@ mois, 1,24 à douze mois.
 | 3 mois | 0,34 | 31,09 € | 1,17 |
 | 6 mois | 0,72 | 41,59 € | 1,56 |
 | 12 mois | 1,24 | 55,97 € | 2,10 |
-| 24 mois | 1,98 | 76,43 € | 2,87 |
 
 Calcul déroulé à 12 mois : 21,69 € + 1,24 × 27,65 € (contribution d'un réachat à
 58,00 € TTC de panier) ≈ **55,97 €**, soit 2,10 fois le nCAC. Conforme au § 3.1.
@@ -121,11 +118,11 @@ Trésorerie au 31 du mois 3 : **29 210 €**, brûlage du mois 3 : 22 249 €. I
 
 **Option A.** Pertes cumulées M1–M3 = 28 209 €. Le BFR se récupère sauf le stock :
 15 333 € × (55 500 ÷ 36 800) = 23 124 €, soldé à 50 %, soit 11 562 € perdus. Total
-28 209 + 11 562 = **39 771 €** — le seul montant certain de tout ce cas.
+**39 771 €** — le seul montant certain de tout ce cas.
 
-**Option B.** EBITDA du mois 3 = −10 678 €. À volume gelé, le BFR cesse de croître et
-le brûlage tombe à l'EBITDA seul : 29 210 ÷ 10 678 = **2,7 mois**. Mort au mois 6,
-sans un apprentissage de plus.
+**Option B.** EBITDA du mois 3 = −10 678 €. À volume gelé le BFR cesse de croître, donc
+le brûlage tombe à l'EBITDA seul : 29 210 ÷ 10 678 = **2,7 mois**. Mort au mois 6, sans
+un apprentissage de plus.
 
 **Option C — celle qui tue.** Même volume que D, mais panier à 45,50 €, réachat à
 4 % et nCAC dégradé à 37,61 € (le CAC marginal monte quand on passe de 768 à 3 400
@@ -248,16 +245,15 @@ lieu de s'additionner.
 | Part de commandes en réachat | 0,0 % | 19,7 % | +19,7 pts |
 | CA TTC / semaine | 4 410 € | 84 834 € | ×19,2 |
 | Marge brute (CM2) | 9 109 € | 180 131 € | 57,2 % → 58,8 % |
-| Dépense publicitaire | 12 300 € | 149 318 € | ×12,1 |
-| MER | 1,55 | 2,46 | +0,91 |
+| MER (pub : 12 300 € → 149 318 €) | 1,55 | 2,46 | +0,91 |
 | CM3 en % du CA HT | −20,0 % | +10,1 % | **+30,1 pts** |
 | EBITDA | −8 191 € | −10 187 € | −1 996 € |
 | **EBITDA en % du CA HT** | **−51,4 %** | **−3,3 %** | **+48,1 pts** |
 
 La ligne EBITDA en euros est **pire** à M9 qu'à M1 ; celle du dessous est meilleure de
-48 points. Les deux sont vraies : c'est ce que produit une marque qui répare son
-économie unitaire tout en accélérant. **Piloter la perte en euros pendant cette phase
-est la meilleure façon de tuer une marque qui allait s'en sortir.**
+48 points. Les deux sont vraies — c'est ce que produit une marque qui répare son
+économie unitaire en accélérant. **Piloter la perte en euros pendant cette phase est
+la meilleure façon de tuer une marque qui allait s'en sortir.**
 
 ### 5.2 La trésorerie — le vrai tableau
 
@@ -370,10 +366,9 @@ Confrontation aux faits :
 mois 9.** Les deux tests d'économie unitaire passent, d'un cheveu ; le test de
 financement saute. Ce n'est pas la marque qui a échoué, c'est le plan de financement :
 la levée du mois 4 était calibrée sur les pertes et pas sur le BFR, qui pèse 53 % du
-besoin. **Il fallait lever 500 000 € au mois 4, pas 250 000 €.**
-
-Retiens ceci : le point 2 est passé à 0,06 près, le point 3 à 0,01 près. Ce cas se lit
-après coup comme une réussite. Il s'est joué à deux centièmes.
+besoin. **Il fallait lever 500 000 € au mois 4, pas 250 000 €.** Et retiens que le
+point 2 est passé à 0,06 près, le point 3 à 0,01 près : ce cas se lit après coup comme
+une réussite, il s'est joué à deux centièmes.
 
 ---
 
@@ -386,14 +381,14 @@ après coup comme une réussite. Il s'est joué à deux centièmes.
 Trois règles, dans cet ordre.
 
 **1. Si ta marge de première commande est négative, ta perte est proportionnelle à ta
-croissance.** Marge première commande = marge brute unitaire − nCAC. NØRA :
-21,69 − 26,62 = −4,93 €. Tant que ce nombre est négatif, chaque client acquis creuse
-le trou, et le seul indicateur qui décide est le CM3 — pas le chiffre d'affaires.
+croissance.** Marge première commande = marge brute unitaire − nCAC ; chez NØRA,
+21,69 − 26,62 = −4,93 €. Tant que ce nombre est négatif, chaque client creuse le trou,
+et le seul indicateur qui décide est le CM3 — pas le chiffre d'affaires.
 
 **2. Le capital nécessaire n'est pas la somme des pertes**, mais
-`pertes cumulées + BFR de fin de période` : 147 239 + 166 819 = 314 058 €. Un plan
-qui ne budgète que les pertes sous-estime le besoin de **113 %** (166 819 ÷ 147 239).
-C'est le mode de mort le plus fréquent des marques qui marchent.
+`pertes cumulées + BFR de fin de période` : 147 239 + 166 819 = 314 058 €. Un plan qui
+ne budgète que les pertes sous-estime le besoin de **113 %** (166 819 ÷ 147 239) —
+mode de mort le plus fréquent des marques qui marchent.
 
 **3. Le point bas de trésorerie arrive après le point bas du compte de résultat** —
 trois mois après, ici. Tant que la croissance mensuelle du CA multipliée par le ratio
@@ -414,7 +409,7 @@ créative, qui a rapporté le plus.
 1. Calcule le capital total consommé sur M1–M9 et décompose-le en deux postes. Lequel
    est récupérable, et sous quelle condition ?
 2. À la fin du mois 9, combien de mois de trésorerie reste-t-il au rythme de brûlage
-   du mois 9 ? Déroule le calcul.
+   de ce mois-là ? Déroule.
 3. Le MER d'équilibre CM3 de P2 vaut 2,04. À quel mois NØRA le franchit-elle, et que
    vaut alors le CM3 ?
 4. Sans la relance de réachat (part figée à 4 %, acquisition inchangée), quel serait

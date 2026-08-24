@@ -283,7 +283,7 @@ Et le § 2.3 annonce indépendamment un « écart au seuil EBITDA » de 24,4 % �
 
 ### 4.4 Mode 4 — La dépendance mono-canal
 
-À P5, Meta pèse 55 % du budget et 21 346 des 41 364 nouveaux clients attribués (§ 5), lequel prévient que l'attribution totale dépasse de 11 % les 37 324 clients réels. En répartissant uniformément : `21 346 ÷ 41 364 = 51,6 %`, soit `51,6 % × 37 324 = 19 265` clients réels via Meta.
+À P5, Meta pèse 55 % du budget et 21 346 des 41 364 nouveaux clients attribués (§ 5, qui prévient que l'attribution totale dépasse de 11 % les 37 324 clients réels). En répartissant uniformément : `21 346 ÷ 41 364 = 51,6 %`, soit `51,6 % × 37 324 = 19 265` clients réels via Meta.
 
 Un mois sans Meta — compte banni, refus de vérification, changement de politique produit. Le réflexe est de calculer la perte de CA du mois. C'est faux, et c'est le piège :
 

@@ -526,9 +526,16 @@ def rapport(h: Hypotheses, entete: Optional[List[str]] = None) -> str:
         a("jamais sous son niveau de départ sur l'horizon simulé.")
     else:
         a(f"Point bas : mois M{rang_bas} — {eur(montant_bas)}.")
-        a(f"Consommé depuis le départ : {eur(h.tresorerie_depart - montant_bas)} "
-          f"({taux((h.tresorerie_depart - montant_bas) / h.tresorerie_depart, 1)} "
-          f"de la trésorerie initiale).")
+        consomme = h.tresorerie_depart - montant_bas
+        if montant_bas >= 0 and h.tresorerie_depart > 0:
+            a(f"Consommé depuis le départ : {eur(consomme)} "
+              f"({taux(consomme / h.tresorerie_depart, 1)} de la trésorerie "
+              f"initiale).")
+        elif h.tresorerie_depart > 0:
+            a(f"La trésorerie de départ ({eur(h.tresorerie_depart)}) est intégralement")
+            a(f"consommée, et il manque encore {eur(-montant_bas)} au point bas.")
+        else:
+            a(f"Trésorerie de départ nulle : le besoin est de {eur(consomme)} en cash.")
     a("")
     if rupture is None:
         a("Pas de rupture de trésorerie sur l'horizon simulé.")
@@ -589,11 +596,18 @@ def rapport(h: Hypotheses, entete: Optional[List[str]] = None) -> str:
           f"{taux(h.croissance, 2)} / mois")
         a(f"sur {h.horizon} mois : le point bas reste positif à {eur(montant_bas)}.")
         a("")
-        a(f"Marge de sécurité disponible au point bas : {eur(montant_bas)}, soit")
-        a(f"{montant_bas / matelas(h):.1f}".replace(".", ",") +
-          f" mois de charges décaissées ({eur(matelas(h))} / mois).")
-        a("Sous 1,0 mois de charges au point bas, la simulation est trop tendue")
-        a("pour être un plan : un retard de livraison suffit à te mettre à découvert.")
+        m = matelas(h)
+        if m > 0:
+            couverture = montant_bas / m
+            a(f"Marge de sécurité disponible au point bas : {eur(montant_bas)}, soit")
+            a(f"{couverture:.1f}".replace(".", ",") +
+              f" mois de charges décaissées ({eur(m)} / mois).")
+            if couverture < 1.0:
+                a("")
+                a("Sous 1,0 mois de charges au point bas, ce n'est pas un plan, c'est un")
+                a("pari : un retard de production, un mois de créatifs en panne ou un")
+                a("compte publicitaire suspendu suffit à te mettre à découvert. Lève,")
+                a("ralentis, ou négocie du délai fournisseur avant de partir.")
     else:
         a(f"Capital à injecter au mois 0 pour tenir {taux(h.croissance, 2)} / mois")
         a(f"sur {h.horizon} mois, sans jamais passer sous zéro :")
