@@ -174,6 +174,76 @@ Base : nCAC = **40,03 €**, contribution 1ʳᵉ commande = **32,77 €**, c
 | P4 | 37,77 € | 83,51 € | 2,21 | 3,03 | 1,6 |
 | P5 | 40,03 € | 86,75 € | 2,17 | 2,97 | 1,8 |
 
+### 3.2 Contrôle de cohérence — et ce qu'il révèle
+
+**Ce paragraphe documente un défaut de ce modèle. Il est publié plutôt que
+corrigé en silence, parce que c'est l'erreur de modélisation la plus
+fréquente dans les tableurs de marque et qu'il vaut mieux la voir ici que
+dans les siens.**
+
+Deux paramètres décrivent le même phénomène et n'ont jamais été réconciliés :
+
+- `part_commandes_repeat`, déclaré palier par palier — il pilote le **compte
+  de résultat** (§ 2) : chiffre d'affaires, panier mixte, EBITDA ;
+- `COURBE_REPEAT`, la courbe de cohorte — elle pilote la **LTV** (§ 3).
+
+Si la courbe est juste, on peut recalculer les commandes de réachat de
+n'importe quel mois à partir de l'historique d'acquisition. Voici le résultat :
+
+| Palier | Mois | Réachats déclarés | Réachats impliqués par la courbe | Facteur |
+| --- | ---: | ---: | ---: | ---: |
+| P1 | 3 | 32 | 261 | **×8,16** |
+| P2 | 9 | 600 | 2 648 | **×4,41** |
+| P3 | 18 | 4 860 | 14 636 | **×3,01** |
+| P4 | 30 | 14 280 | 42 996 | **×3,01** |
+| P5 | 40 | 22 876 | 67 571 | **×2,95** |
+
+Les trois paliers matures donnent le même facteur, autour de **×3,0**. Ce
+n'est donc pas du bruit : **la courbe de réachat est environ trois fois plus
+généreuse que ce que le compte de résultat peut supporter.** Les deux
+paramètres décrivent deux entreprises différentes.
+
+### 3.3 La courbe recalée, et ce qu'elle dit vraiment de NØRA
+
+En alignant la courbe sur le compte de résultat des paliers matures
+(facteur **0,334**), on obtient la retenue réelle de NØRA :
+
+| Horizon | Courbe publiée (§ 3) | Courbe recalée | LTV recalée (contrib.) | LTV/CAC recalée |
+| --- | ---: | ---: | ---: | ---: |
+| 1 mois | 0,06 | 0,02 | 33,65 € | 0,84 |
+| 3 mois | 0,34 | 0,11 | 37,72 € | 0,94 |
+| 6 mois | 0,72 | 0,24 | 43,25 € | 1,08 |
+| 12 mois | 1,24 | 0,41 | 50,81 € | 1,27 |
+| 18 mois | 1,66 | 0,55 | 56,92 € | 1,42 |
+| 24 mois | 1,98 | 0,66 | 61,58 € | 1,54 |
+| 36 mois | 2,42 | 0,81 | 67,98 € | 1,70 |
+
+> **Ce que ça change, et pourquoi c'est instructif.** Avec la courbe publiée,
+> NØRA affiche une LTV/CAC de 2,17 à 12 mois et un délai de récupération de
+> 1,8 mois — des chiffres de très bonne marque. Avec la courbe recalée, elle
+> affiche **1,27** et un délai d'environ **4 mois** — une marque correcte
+> et pas plus.
+>
+> **C'est la seconde version qui est cohérente avec le reste du modèle.** Une
+> entreprise qui récupère son CAC en 1,8 mois avec un ratio de 2,17 ne finit
+> pas l'année à 10,1 % d'EBITDA : elle en ferait le double. Le 10,1 % du § 2.2
+> et le 2,17 du § 3 ne peuvent pas être vrais en même temps.
+>
+> **Comment lire le reste du cursus.** Les modules citent la courbe publiée,
+> parce qu'ils ont été écrits avec. Les raisonnements restent justes — ce sont
+> les mêmes mécanismes — mais **tiens le ratio de 2,17 pour une borne haute**.
+> Quand tu appliques la méthode à ta marque, c'est ta propre courbe, mesurée
+> sur tes cohortes réelles, qui décide. Jamais celle d'un modèle.
+
+> **La leçon de modélisation, qui vaut plus que le chiffre.** Ce défaut vient
+> d'avoir calibré séparément deux paramètres qui décrivent le même phénomène.
+> Ton tableur contient probablement le même : un onglet « P&L » où tu déclares
+> une part de réachat, et un onglet « cohortes » où tu poses une courbe. Rien
+> ne les oblige à être d'accord, et personne ne le vérifie jamais. Le test
+> tient en une ligne : **recalcule tes commandes de réachat du mois à partir
+> de ta courbe et de ton historique d'acquisition, et compare au réel.** Si
+> l'écart dépasse 20 %, l'un des deux est faux, et tu pilotes avec.
+
 ---
 
 ## 4. Trésorerie et besoin en fonds de roulement

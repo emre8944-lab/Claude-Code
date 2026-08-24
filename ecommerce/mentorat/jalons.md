@@ -92,7 +92,7 @@ franchissent sans la remplir, et c'est là qu'elles meurent — pas au lancement
 | 6 | Part du CA en réachat | **≥ 15 %** | Valeur canonique de P2 |
 | 7 | LTV/CAC à 12 mois, **mesurée sur cohortes réelles** | **≥ 2,00** | Le modèle de référence est à 2,30 à P2 |
 | 8 | Délai de récupération du CAC | **≤ 4 mois** | Au-delà, c'est ta trésorerie et non ta rentabilité qui plafonne ta croissance |
-| 9 | Trésorerie ≥ BFR du palier P3 visé + 3 mois de frais fixes | calculé | Le BFR canonique de P3 est de 477 420 € |
+| 9 | Trésorerie ≥ BFR du palier P3 visé + 3 mois de frais fixes | calculé | Le BFR canonique de P3 est de 481 053 € |
 | 10 | Une personne dont la créa est le métier principal (interne ou externe), avec un rythme documenté | existe | |
 
 > **Ne négocie pas la condition 3.** C'est la seule qui est un *rythme* et non un
@@ -115,7 +115,7 @@ Tu gagnes de l'argent en France. La question devient organisationnelle.
 | 5 | Définitions écrites des indicateurs + tableau de bord à trois niveaux en service | existe |
 | 6 | Au moins **un** test d'incrémentalité mené jusqu'au bout | fait |
 | 7 | Prestataire logistique capable d'absorber 2,5 fois le volume actuel, contractuellement | vérifié |
-| 8 | Trésorerie ≥ BFR de P4 + 4 mois de frais fixes | BFR canonique de P4 : 1 383 938 € |
+| 8 | Trésorerie ≥ BFR de P4 + 4 mois de frais fixes | BFR canonique de P4 : 1 392 510 € |
 | 9 | Un responsable identifié par fonction : créa, média, opérations | existe |
 | 10 | Marge brute CM2 | **≥ 59 %** |
 

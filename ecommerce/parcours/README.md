@@ -84,8 +84,8 @@ Le parcours combine trois activités. Aucune ne suffit seule.
 | Niveau | Modules | Cas | Séances d'atelier | Simulateur |
 |---|---|---|---|---|
 | **L00** | E00, E01 §0–2 | — | — | — |
-| **L01** | E01 | C01 | S01, S02 | `--comparer` |
-| **L02** | E02, E03 | C01 | S03, S04 | Deux catégories, même graine |
+| **L01** | E01 | C01 | — | `--comparer` |
+| **L02** | E02, E03 | C01 | S01, S02, S03, S04 | Deux catégories, même graine |
 | **L03** | E04, E07 | — | S05, S06, S07 | — |
 | **L04** | E06 | — | S08, S09 | Une partie complète en interactif |
 | **L05** | E05, E08 | C03 | S10 | `sans_test_crea` contre `equilibree` |

@@ -51,6 +51,17 @@ que tu ne referas pas l'erreur : tu l'auras vue coûter.
 | **[S11](S11-passer-a-l-echelle.md)** | Passer à l'échelle | L06–L08 | Plan 30 k€ → 300 k€ sur 12 mois |
 | **[S12](S12-la-crise.md)** | La crise et la revue générale | L06–L09 | Plan de crise à 14 jours + auto-évaluation finale |
 
+> **Sur les marques fictives des corrigés exemplaires.** Elles changent d'un
+> bloc à l'autre : **CLARÈNE** (soin visage) porte les séances de sélection S01
+> et S02, **KALIS** (chaussettes de course, importées) porte les séances de
+> construction S03 à S06. Ce n'est pas un oubli de continuité, et ce n'est pas
+> non plus un choix élégant : les corrigés ont été écrits séparément. Le résultat
+> se lit bien quand même, et il a un mérite involontaire — tu vois la méthode
+> appliquée à deux catégories aux structures opposées, un consommable à fort
+> coefficient et un textile importé à coefficient serré, ce qui est précisément
+> l'écart qu'enseigne S01. Aucun chiffre n'est partagé entre les deux, donc
+> aucune comparaison ne peut être faussée.
+
 ---
 
 ## Deux façons de faire l'atelier

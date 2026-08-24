@@ -334,6 +334,59 @@ class Cohorte:
         return float("inf")
 
 
+# --- CONTROLE DE COHERENCE : la courbe contre le compte de resultat ---------
+# Deux parametres du modele decrivent le meme phenomene sans jamais avoir ete
+# reconcilies : part_commandes_repeat (declare par palier, il pilote le compte
+# de resultat) et COURBE_REPEAT (la courbe de cohorte, elle pilote la LTV).
+# Cette fonction mesure l'ecart. Elle existe pour qu'il ne puisse plus etre
+# oublie : tout tableur de marque contient ce piege, et presque personne ne le
+# teste.
+
+PLAGES_MOIS = [(1, 3, 0), (4, 9, 1), (10, 18, 2), (19, 30, 3), (31, 40, 4)]
+
+
+def _acquisitions_mensuelles() -> Dict[int, float]:
+    return {m: PALIERS[i].commandes_new
+            for deb, fin, i in PLAGES_MOIS for m in range(deb, fin + 1)}
+
+
+def _cumul_courbe(age: float, k: float = 1.0) -> float:
+    """Reachats cumules par client acquis, a l'age donne, courbe mise a l'echelle k."""
+    jal = sorted(COURBE_REPEAT)
+    if age <= 0:
+        return 0.0
+    if age >= jal[-1]:
+        return COURBE_REPEAT[jal[-1]] * k
+    prev_a, prev_v = 0, 0.0
+    for a in jal:
+        v = COURBE_REPEAT[a] * k
+        if age <= a:
+            return prev_v + (v - prev_v) * (age - prev_a) / (a - prev_a)
+        prev_a, prev_v = a, v
+    return prev_v
+
+
+def reachats_impliques(mois: int, k: float = 1.0) -> float:
+    """Commandes de reachat d'un mois donne, deduites de la courbe et de
+    l'historique d'acquisition. C'est le chiffre que le compte de resultat
+    DEVRAIT afficher si la courbe etait juste."""
+    N = _acquisitions_mensuelles()
+    return sum(N[c] * (_cumul_courbe(mois - c + 1, k) - _cumul_courbe(mois - c, k))
+               for c in range(1, mois + 1))
+
+
+FINS_DE_PALIER = [(0, 3), (1, 9), (2, 18), (3, 30), (4, 40)]
+
+
+def facteur_de_recalage() -> float:
+    """Facteur qui aligne la courbe sur le compte de resultat des paliers
+    matures (P3, P4, P5). Les paliers P1 et P2 sont exclus : leurs volumes
+    absolus sont trop faibles pour porter un calage."""
+    ratios = [reachats_impliques(m) / PALIERS[i].commandes_repeat
+              for i, m in FINS_DE_PALIER if i >= 2]
+    return 1.0 / (sum(ratios) / len(ratios))
+
+
 # ---------------------------------------------------------------------------
 # 4. BESOIN EN FONDS DE ROULEMENT
 # ---------------------------------------------------------------------------
@@ -714,6 +767,78 @@ def rapport() -> str:
         a(ligne([p.code, eur(p.ncac, 2), eur(c.ltv_contribution(12), 2),
                  f"{c.ratio(12):.2f}".replace(".", ","),
                  f"{c.ratio(24):.2f}".replace(".", ","), pb_s]))
+    a("")
+    a("### 3.2 Contrôle de cohérence — et ce qu'il révèle")
+    a("")
+    a("**Ce paragraphe documente un défaut de ce modèle. Il est publié plutôt que")
+    a("corrigé en silence, parce que c'est l'erreur de modélisation la plus")
+    a("fréquente dans les tableurs de marque et qu'il vaut mieux la voir ici que")
+    a("dans les siens.**")
+    a("")
+    a("Deux paramètres décrivent le même phénomène et n'ont jamais été réconciliés :")
+    a("")
+    a("- `part_commandes_repeat`, déclaré palier par palier — il pilote le **compte")
+    a("  de résultat** (§ 2) : chiffre d'affaires, panier mixte, EBITDA ;")
+    a("- `COURBE_REPEAT`, la courbe de cohorte — elle pilote la **LTV** (§ 3).")
+    a("")
+    a("Si la courbe est juste, on peut recalculer les commandes de réachat de")
+    a("n'importe quel mois à partir de l'historique d'acquisition. Voici le résultat :")
+    a("")
+    a(ligne(["Palier", "Mois", "Réachats déclarés", "Réachats impliqués par la courbe", "Facteur"]))
+    a(ligne(["---", "---:", "---:", "---:", "---:"]))
+    for i, m in FINS_DE_PALIER:
+        p_ = PALIERS[i]
+        imp = reachats_impliques(m)
+        a(ligne([p_.code, str(m), f"{p_.commandes_repeat:,.0f}".replace(",", "\u202f"),
+                 f"{imp:,.0f}".replace(",", "\u202f"),
+                 f"**×{imp / p_.commandes_repeat:.2f}**".replace(".", ",")]))
+    a("")
+    k = facteur_de_recalage()
+    a("Les trois paliers matures donnent le même facteur, autour de **×3,0**. Ce")
+    a("n'est donc pas du bruit : **la courbe de réachat est environ trois fois plus")
+    a("généreuse que ce que le compte de résultat peut supporter.** Les deux")
+    a("paramètres décrivent deux entreprises différentes.")
+    a("")
+    a("### 3.3 La courbe recalée, et ce qu'elle dit vraiment de NØRA")
+    a("")
+    a(f"En alignant la courbe sur le compte de résultat des paliers matures")
+    a(f"(facteur **{k:.3f}**".replace(".", ",") + "), on obtient la retenue réelle de NØRA :")
+    a("")
+    a(ligne(["Horizon", "Courbe publiée (§ 3)", "Courbe recalée", "LTV recalée (contrib.)", "LTV/CAC recalée"]))
+    a(ligne(["---", "---:", "---:", "---:", "---:"]))
+    for m in sorted(COURBE_REPEAT):
+        rec = COURBE_REPEAT[m] * k
+        ltv = p5.contribution_1ere_commande + rec * p5.contribution_commande_repeat
+        a(ligne([f"{m} mois", f"{COURBE_REPEAT[m]:.2f}".replace(".", ","),
+                 f"{rec:.2f}".replace(".", ","), eur(ltv, 2),
+                 f"{ltv / p5.ncac:.2f}".replace(".", ",")]))
+    a("")
+    ltv12 = p5.contribution_1ere_commande + COURBE_REPEAT[12] * k * p5.contribution_commande_repeat
+    a("> **Ce que ça change, et pourquoi c'est instructif.** Avec la courbe publiée,")
+    a("> NØRA affiche une LTV/CAC de 2,17 à 12 mois et un délai de récupération de")
+    a("> 1,8 mois — des chiffres de très bonne marque. Avec la courbe recalée, elle")
+    a(f"> affiche **{ltv12 / p5.ncac:.2f}".replace(".", ",") + "** et un délai d'environ **4 mois** — une marque correcte")
+    a("> et pas plus.")
+    a(">")
+    a("> **C'est la seconde version qui est cohérente avec le reste du modèle.** Une")
+    a("> entreprise qui récupère son CAC en 1,8 mois avec un ratio de 2,17 ne finit")
+    a("> pas l'année à 10,1 % d'EBITDA : elle en ferait le double. Le 10,1 % du § 2.2")
+    a("> et le 2,17 du § 3 ne peuvent pas être vrais en même temps.")
+    a(">")
+    a("> **Comment lire le reste du cursus.** Les modules citent la courbe publiée,")
+    a("> parce qu'ils ont été écrits avec. Les raisonnements restent justes — ce sont")
+    a("> les mêmes mécanismes — mais **tiens le ratio de 2,17 pour une borne haute**.")
+    a("> Quand tu appliques la méthode à ta marque, c'est ta propre courbe, mesurée")
+    a("> sur tes cohortes réelles, qui décide. Jamais celle d'un modèle.")
+    a("")
+    a("> **La leçon de modélisation, qui vaut plus que le chiffre.** Ce défaut vient")
+    a("> d'avoir calibré séparément deux paramètres qui décrivent le même phénomène.")
+    a("> Ton tableur contient probablement le même : un onglet « P&L » où tu déclares")
+    a("> une part de réachat, et un onglet « cohortes » où tu poses une courbe. Rien")
+    a("> ne les oblige à être d'accord, et personne ne le vérifie jamais. Le test")
+    a("> tient en une ligne : **recalcule tes commandes de réachat du mois à partir")
+    a("> de ta courbe et de ton historique d'acquisition, et compare au réel.** Si")
+    a("> l'écart dépasse 20 %, l'un des deux est faux, et tu pilotes avec.")
     a("")
     a("---")
     a("")
