@@ -42,6 +42,17 @@ chiffre d'affaires comptable. **Les confondre est l'erreur n° 1 du métier.**
 | **P4 — Multi-pays** | M19 – M30 | FR, BE, DE, ES, IT | 42 000 | 69,80 € | 2 931 600 € | 676 523 € |
 | **P5 — 1 M€ / semaine** | M31 – M40 | FR, BE, DE, ES, IT, NL, UK | 60 200 | 71,98 € | 4 333 196 € | 999 968 € |
 
+**Composition du panier.** Ces colonnes manquaient et plusieurs calculs du
+cursus en dépendent (§ 2.4 et § 3 notamment). Elles sont désormais publiées :
+
+| Palier | AOV 1ʳᵉ commande TTC | AOV réachat TTC | Part des commandes en réachat | Part du CA en réachat |
+| --- | ---: | ---: | ---: | ---: |
+| P1 | 45,50 € | 58,00 € | 4,0 % | 5,0 % |
+| P2 | 55,00 € | 72,00 € | 15,0 % | 18,8 % |
+| P3 | 60,00 € | 80,00 € | 27,0 % | 33,0 % |
+| P4 | 63,00 € | 83,00 € | 34,0 % | 40,4 % |
+| P5 | 64,00 € | 85,00 € | 38,0 % | 44,9 % |
+
 ### 2.1 Structure de coût variable (en % du CA HT)
 
 | Palier | COGS | Logistique | PSP | Retours/SAV | Remises | **Marge brute (CM2)** |
@@ -51,6 +62,27 @@ chiffre d'affaires comptable. **Les confondre est l'erreur n° 1 du métier.**
 | P3 | 16,0 % | 12,0 % | 1,65 % | 3,0 % | 7,0 % | **60,3 %** |
 | P4 | 15,0 % | 11,5 % | 1,60 % | 3,5 % | 8,0 % | **60,4 %** |
 | P5 | 14,5 % | 11,0 % | 1,55 % | 3,5 % | 8,0 % | **61,5 %** |
+
+**Valeurs exactes de la marge brute**, pour qui refait les calculs au centime :
+
+| Palier | P1 | P2 | P3 | P4 | P5 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Marge brute (CM2) | 57,20 % | 58,80 % | 60,35 % | 60,40 % | 61,45 % |
+
+> **Trois conventions de modélisation, à connaître avant de citer ces chiffres.**
+>
+> 1. **La logistique est modélisée en % du CA HT**, pas en euros par commande.
+>    C'est une simplification. La conséquence est enseignée en E01 § 7 : c'est
+>    précisément ce qui rend le panier moyen supérieur à la conversion comme
+>    levier. Le module E10 § 6 refait la dérivation en euros par commande.
+> 2. **Le COGS de P1 (20,0 %) correspond à un coefficient effectif de ×6,0**,
+>    inférieur au plus bas coefficient catalogue du § 1 (×6,4). Ce n'est pas une
+>    incohérence : en petite série le coût unitaire est plus élevé — MOQ faible,
+>    aucune remise de volume, casse de lancement. L'écart se referme dès P3.
+> 3. **La remise est traitée comme un coût variable**, pas comme une réduction
+>    du chiffre d'affaires. Comptablement les deux se défendent ; en pilotage on
+>    la met en coût, ligne visible, avec un responsable. Sinon elle disparaît
+>    dans le prix moyen et personne ne la défend jamais.
 
 > Les remises montent avec l'échelle (Black Friday, codes créateurs, paniers
 > abandonnés). Les retours aussi : plus le trafic est large, moins il est
@@ -187,6 +219,14 @@ Dépense publicitaire totale : **1 494 206 € / mois** (**344 817 €
 > C'est normal et universel : chaque plateforme s'attribue le même client.
 > Le seul chiffre honnête est le nCAC global — module E09.
 
+> **Convention à ne pas manquer.** Le modèle affecte **100 % de la dépense
+> publicitaire à l'acquisition de nouveaux clients** : aucun budget n'est isolé
+> pour le retargeting ou la réactivation. C'est volontaire, et ça rend le nCAC
+> **prudent** — il porte tout le média. Une marque qui isole 10 % de son
+> budget en retargeting affichera un nCAC plus flatteur sans qu'un seul euro
+> ait changé de place. C'est exactement le genre de convention qu'il faut
+> écrire avant de comparer deux marques entre elles.
+
 ---
 
 ## 6. La machine créative — combien de publicités faut-il produire ?
@@ -246,6 +286,25 @@ réachat et moins de remises.
 | **EBITDA en % du CA HT** | **10,1 %** | **20,3 %** | **+10,2 pts** |
 | **EBITDA annuel** | **4 377 023 €** | **8 805 583 €** | **4 428 560 €** |
 
+### 8.1 D'où viennent les 4,5 points de marge brute
+
+Le tableau ci-dessus donne le total. Voici sa décomposition poste par poste,
+pour que chaque point ait un chantier et un responsable :
+
+| Poste | P5 | P5+ | Écart | Le chantier | Module |
+| --- | ---: | ---: | ---: | --- | --- |
+| COGS | 14,50 % | 13,50 % | **+1,00 pt** | Paliers de volume, double source, renégociation annuelle | E10 § 9 |
+| Logistique | 11,00 % | 10,50 % | **+0,50 pt** | Contrat 3PL, transporteur, remplissage du colis | E10 § 6 |
+| PSP | 1,55 % | 1,50 % | **+0,05 pt** | Renégociation au volume, mix de moyens de paiement | E10 |
+| Retours / SAV | 3,50 % | 3,00 % | **+0,50 pt** | Fiche produit honnête, guide de choix, ciblage plus qualifié | E07, E10 § 7 |
+| Remises | 8,00 % | 5,50 % | **+2,50 pts** | Fin de la remise permanente, contrepartie exigée | E03 § 5 |
+| **Total** | **38,55 %** | **34,00 %** | **+4,55 pts** | — | — |
+
+> **Regarde la colonne des écarts.** Plus de la moitié du gain vient de la
+> **remise** — le seul poste qui ne demande ni négociation, ni prestataire, ni
+> investissement. Il ne demande que de la discipline commerciale, et c'est
+> exactement pour ça qu'il est le plus difficile à tenir.
+
 > **C'est là que se trouve l'argent.** Le passage de P5 à P5+ ne demande
 > aucun euro de chiffre d'affaires supplémentaire. Il demande un panier moyen
 > plus élevé, une base de clients qui revient, et de la discipline sur la
@@ -264,5 +323,12 @@ réachat et moins de remises.
 | 250 000 € | 1 083 333 € | 13 000 000 € | 496 | 12 315 € |
 | 500 000 € | 2 166 667 € | 26 000 000 € | 992 | 24 631 € |
 | 1 000 000 € | 4 333 333 € | 52 000 000 € | 1 984 | 49 261 € |
+
+> **Deux conventions de passage au quotidien coexistent dans ce fichier, et
+> c'est assumé.** Les volumes de commandes du § 9 sont dérivés de la semaine
+> (÷ 7) ; la dépense publicitaire du § 5 est dérivée du mois (÷ 30,4). L'écart
+> résiduel est de l'ordre de 0,2 %. Ce n'est pas une erreur : c'est la
+> précision réelle de ce type de modèle. **Si tu pilotes une marque sur des
+> écarts de 0,2 %, tu pilotes du bruit** — voir E09 § 8.
 
 *Fin des chiffres canoniques. Généré par `ecommerce/outils/modele_nora.py`.*

@@ -75,11 +75,6 @@ def ent(x: float) -> str:
     return f"{x:,.0f}".replace(",", " ")
 
 
-def pts(x: float, d: int = 1) -> str:
-    """Formate un ecart en points de pourcentage, signe compris."""
-    return f"{x * 100:+.{d}f}".replace(".", ",") + " pts"
-
-
 def nombre(s: str) -> float:
     """Lit un nombre ecrit a la francaise ou a l'anglaise. « 1 494 206,50 € » -> float."""
     t = str(s)
@@ -99,20 +94,41 @@ def titre(t: str) -> List[str]:
 
 
 def tableau(entetes: Sequence[str], lignes: Sequence[Sequence[str]],
-            aligns: Sequence[str], indent: str = "  ") -> List[str]:
-    """Rend un tableau texte a colonnes alignees. 'g' = gauche, 'd' = droite."""
-    cols = list(zip(*([entetes] + [list(l) for l in lignes]))) if lignes else [(e,) for e in entetes]
-    larg = [max(len(c) for c in col) for col in cols]
+            aligns: Sequence[str], indent: str = "  ",
+            largeur_max: int = LARGEUR) -> List[str]:
+    """Rend un tableau texte a colonnes alignees. 'g' = gauche, 'd' = droite.
 
-    def rendre(cells: Sequence[str]) -> str:
+    Si le tableau depasse la largeur cible, la derniere colonne — a condition
+    d'etre alignee a gauche, donc textuelle — est retrecie et son contenu
+    renvoye a la ligne. Aucune information n'est tronquee.
+    """
+    donnees = [list(entetes)] + [list(l) for l in lignes]
+    n = len(entetes)
+    larg = [max(len(r[i]) for r in donnees) for i in range(n)]
+
+    flex = n - 1 if aligns[n - 1] == "g" else None
+    surplus = len(indent) + sum(larg) + 2 * (n - 1) - largeur_max
+    if flex is not None and surplus > 0:
+        larg[flex] = max(14, larg[flex] - surplus)
+
+    def rendre(cells: Sequence[str]) -> List[str]:
+        morceaux = [[c] for c in cells]
+        if flex is not None:
+            morceaux[flex] = _envelopper(cells[flex], larg[flex])
+        hauteur = max(len(m) for m in morceaux)
         out = []
-        for c, w, a in zip(cells, larg, aligns):
-            out.append(c.ljust(w) if a == "g" else c.rjust(w))
-        return indent + "  ".join(out).rstrip()
+        for i in range(hauteur):
+            bouts = []
+            for m, w, a in zip(morceaux, larg, aligns):
+                c = m[i] if i < len(m) else ""
+                bouts.append(c.ljust(w) if a == "g" else c.rjust(w))
+            out.append((indent + "  ".join(bouts)).rstrip())
+        return out
 
-    res = [rendre(entetes), indent + "  ".join("─" * w for w in larg)]
+    res = list(rendre(entetes))
+    res.append(indent + "  ".join("─" * w for w in larg))
     for l in lignes:
-        res.append(rendre(l))
+        res += rendre(l)
     return res
 
 
@@ -181,30 +197,6 @@ def entrees_demo() -> Entrees:
         fixes_mois=360_000,
         passage_90j=0.34,
         reachats_12m=1.24,
-    )
-
-
-def entrees_defaut() -> Entrees:
-    """Valeurs par defaut : une marque francaise en phase de traction.
-
-    Ce sont des ordres de grandeur de depart, PAS des chiffres canoniques.
-    Remplace-les par les tiens : c'est tout l'interet de l'outil.
-    """
-    return Entrees(
-        aov_premiere_ttc=55.00,
-        aov_reachat_ttc=72.00,
-        tva=0.20,
-        cogs=0.180,
-        logistique=0.140,
-        psp=0.017,
-        retours=0.025,
-        remises=0.050,
-        pub_mois=104_636.00,
-        commandes_mois=4_000,
-        part_reachat=0.15,
-        fixes_mois=28_000,
-        passage_90j=0.30,
-        reachats_12m=1.10,
     )
 
 
@@ -491,7 +483,7 @@ def sensibilite(d: Diagnostic) -> List[Tuple[str, float]]:
 # modele_nora.py § 7, pour que le controle de la demonstration reste tracable.
 LIBELLE_COURT: Dict[str, str] = {
     "+10 % de panier moyen (AOV, à commandes constantes)":
-        "+10 % de panier moyen (à commandes constantes)",
+        "+10 % de panier moyen (à commandes égales)",
     "+10 % de taux de conversion du site (à budget pub constant)":
         "+10 % de conversion (à budget pub constant)",
     "−10 % de coût marchandise (COGS)": "−10 % de coût marchandise (COGS)",
@@ -960,12 +952,24 @@ def _construire(brut: Dict[str, float]) -> Entrees:
     return Entrees(**champs)
 
 
+def entrees_defaut() -> Entrees:
+    """Valeurs par defaut : une marque francaise en phase de traction.
+
+    Ce sont des ordres de grandeur de depart, PAS des chiffres canoniques.
+    Remplace-les par les tiens : c'est tout l'interet de l'outil.
+    Source unique : la table QUESTIONS, plus bas.
+    """
+    return _construire({attr: defaut for attr, _, _, defaut in QUESTIONS})
+
+
 # ---------------------------------------------------------------------------
 # 7. LIGNE DE COMMANDE
 # ---------------------------------------------------------------------------
 
 def construire_parseur() -> argparse.ArgumentParser:
-    d = entrees_defaut()
+    # Les defauts affiches par -h sont ceux de QUESTIONS, deja exprimes dans
+    # l'unite de saisie (points de pourcentage), donc sans artefact flottant.
+    d = {attr: defaut for attr, _, _, defaut in QUESTIONS}
     p = argparse.ArgumentParser(
         prog="calculateur.py",
         description="Calculateur de santé économique d'une marque DTC. "
@@ -974,33 +978,33 @@ def construire_parseur() -> argparse.ArgumentParser:
                "La virgule décimale est acceptée partout.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
-    p.add_argument("--aov-premiere", type=nombre, default=d.aov_premiere_ttc,
+    p.add_argument("--aov-premiere", type=nombre, default=d["aov_premiere_ttc"],
                    metavar="€TTC", help="panier moyen d'une première commande, TTC")
-    p.add_argument("--aov-reachat", type=nombre, default=d.aov_reachat_ttc,
+    p.add_argument("--aov-reachat", type=nombre, default=d["aov_reachat_ttc"],
                    metavar="€TTC", help="panier moyen d'une commande de réachat, TTC")
-    p.add_argument("--tva", type=nombre, default=d.tva * 100, metavar="%",
+    p.add_argument("--tva", type=nombre, default=d["tva"], metavar="%",
                    help="taux de TVA moyen pondéré")
-    p.add_argument("--cogs", type=nombre, default=d.cogs * 100, metavar="%",
+    p.add_argument("--cogs", type=nombre, default=d["cogs"], metavar="%",
                    help="coût marchandise, en %% du CA HT")
-    p.add_argument("--logistique", type=nombre, default=d.logistique * 100, metavar="%",
+    p.add_argument("--logistique", type=nombre, default=d["logistique"], metavar="%",
                    help="logistique, en %% du CA HT")
-    p.add_argument("--psp", type=nombre, default=d.psp * 100, metavar="%",
+    p.add_argument("--psp", type=nombre, default=d["psp"], metavar="%",
                    help="commissions d'encaissement, en %% du CA HT")
-    p.add_argument("--retours", type=nombre, default=d.retours * 100, metavar="%",
+    p.add_argument("--retours", type=nombre, default=d["retours"], metavar="%",
                    help="retours et SAV, en %% du CA HT")
-    p.add_argument("--remises", type=nombre, default=d.remises * 100, metavar="%",
+    p.add_argument("--remises", type=nombre, default=d["remises"], metavar="%",
                    help="remises et codes promo, en %% du CA HT")
-    p.add_argument("--pub", type=nombre, default=d.pub_mois, metavar="€",
+    p.add_argument("--pub", type=nombre, default=d["pub_mois"], metavar="€",
                    help="dépense publicitaire mensuelle, tous canaux")
-    p.add_argument("--commandes", type=nombre, default=d.commandes_mois, metavar="N",
+    p.add_argument("--commandes", type=nombre, default=d["commandes_mois"], metavar="N",
                    help="nombre total de commandes par mois")
-    p.add_argument("--part-reachat", type=nombre, default=d.part_reachat * 100, metavar="%",
+    p.add_argument("--part-reachat", type=nombre, default=d["part_reachat"], metavar="%",
                    help="part des commandes passées par un client déjà acquis")
-    p.add_argument("--fixes", type=nombre, default=d.fixes_mois, metavar="€",
+    p.add_argument("--fixes", type=nombre, default=d["fixes_mois"], metavar="€",
                    help="frais fixes mensuels, hors publicité")
-    p.add_argument("--passage-90j", type=nombre, default=d.passage_90j * 100, metavar="%",
+    p.add_argument("--passage-90j", type=nombre, default=d["passage_90j"], metavar="%",
                    help="taux de passage 1re→2e commande à 90 jours")
-    p.add_argument("--reachats-12m", type=nombre, default=d.reachats_12m, metavar="N",
+    p.add_argument("--reachats-12m", type=nombre, default=d["reachats_12m"], metavar="N",
                    help="nombre moyen de réachats par client acquis à 12 mois")
     p.add_argument("--demo", action="store_true",
                    help="tourne sur le palier P5 de NØRA et vérifie les chiffres canoniques")
@@ -1095,7 +1099,7 @@ def verifier_demo(d: Diagnostic) -> bool:
     for nom, attendu, ref in CANONIQUES:
         couples.append((f"{nom} ({ref})", attendu, obtenues[nom]))
     for nom, gain in sensibilite(d):
-        couples.append((f"{LIBELLE_COURT.get(nom, nom)} (§ 7)",
+        couples.append((LIBELLE_COURT.get(nom, nom),
                         SENSIBILITE_CANONIQUE[nom], eur(gain)))
 
     ok = True
@@ -1103,13 +1107,14 @@ def verifier_demo(d: Diagnostic) -> bool:
     for libelle, attendu, obtenu in couples:
         conforme = obtenu == attendu
         ok = ok and conforme
-        lignes.append([libelle[:42], attendu, obtenu, "ok" if conforme else "ÉCART"])
+        lignes.append([libelle[:44], attendu, obtenu, "ok" if conforme else "NON"])
 
     out = []
     out += titre("Contrôle : les chiffres canoniques sont-ils retrouvés ?")
     out += tableau(["Grandeur (renvoi au canonique)", "Canonique", "Calculé", ""],
-                   lignes, ["g", "d", "d", "g"])
+                   lignes, ["g", "d", "d", "d"])
     out.append("")
+    out.append("  Les sept derniers leviers renvoient au § 7 des chiffres canoniques.")
     out.append("  Source : ecommerce/donnees/chiffres-canoniques.md — modele_nora.py.")
     out.append("  " + ("Tous les contrôles passent." if ok
                        else "AU MOINS UN ÉCART : le calculateur contredit le canonique."))

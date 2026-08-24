@@ -564,6 +564,15 @@ def rapport() -> str:
                  eur(p.aov_blended_ttc, 2), eur(p.ca_ttc), eur(p.ca_semaine_ttc)]))
     a("")
 
+    a("**Composition du panier.** Ces colonnes manquaient et plusieurs calculs du")
+    a("cursus en dépendent (§ 2.4 et § 3 notamment). Elles sont désormais publiées :")
+    a("")
+    a(ligne(["Palier", "AOV 1ʳᵉ commande TTC", "AOV réachat TTC", "Part des commandes en réachat", "Part du CA en réachat"]))
+    a(ligne(["---", "---:", "---:", "---:", "---:"]))
+    for p in PALIERS:
+        a(ligne([p.code, eur(p.aov_new_ttc, 2), eur(p.aov_repeat_ttc, 2),
+                 pct(p.part_commandes_repeat), pct(p.part_ca_repeat)]))
+    a("")
     a("### 2.1 Structure de coût variable (en % du CA HT)")
     a("")
     a(ligne(["Palier", "COGS", "Logistique", "PSP", "Retours/SAV", "Remises", "**Marge brute (CM2)**"]))
@@ -571,6 +580,27 @@ def rapport() -> str:
     for p in PALIERS:
         a(ligne([p.code, pct(p.cogs_pct), pct(p.logistique_pct), pct(p.psp_pct, 2),
                  pct(p.retours_sav_pct), pct(p.remises_pct), f"**{pct(p.taux_marge_brute)}**"]))
+    a("")
+    a("**Valeurs exactes de la marge brute**, pour qui refait les calculs au centime :")
+    a("")
+    a(ligne(["Palier"] + [p.code for p in PALIERS]))
+    a(ligne(["---"] + ["---:"] * len(PALIERS)))
+    a(ligne(["Marge brute (CM2)"] + [f"{p.taux_marge_brute * 100:.2f}".replace(".", ",") + "\u202f%" for p in PALIERS]))
+    a("")
+    a("> **Trois conventions de modélisation, à connaître avant de citer ces chiffres.**")
+    a(">")
+    a("> 1. **La logistique est modélisée en % du CA HT**, pas en euros par commande.")
+    a(">    C'est une simplification. La conséquence est enseignée en E01 § 7 : c'est")
+    a(">    précisément ce qui rend le panier moyen supérieur à la conversion comme")
+    a(">    levier. Le module E10 § 6 refait la dérivation en euros par commande.")
+    a("> 2. **Le COGS de P1 (20,0\u202f%) correspond à un coefficient effectif de ×6,0**,")
+    a(">    inférieur au plus bas coefficient catalogue du § 1 (×6,4). Ce n'est pas une")
+    a(">    incohérence : en petite série le coût unitaire est plus élevé — MOQ faible,")
+    a(">    aucune remise de volume, casse de lancement. L'écart se referme dès P3.")
+    a("> 3. **La remise est traitée comme un coût variable**, pas comme une réduction")
+    a(">    du chiffre d'affaires. Comptablement les deux se défendent ; en pilotage on")
+    a(">    la met en coût, ligne visible, avec un responsable. Sinon elle disparaît")
+    a(">    dans le prix moyen et personne ne la défend jamais.")
     a("")
     a("> Les remises montent avec l'échelle (Black Friday, codes créateurs, paniers")
     a("> abandonnés). Les retours aussi : plus le trafic est large, moins il est")
@@ -732,6 +762,14 @@ def rapport() -> str:
     a("> C'est normal et universel : chaque plateforme s'attribue le même client.")
     a("> Le seul chiffre honnête est le nCAC global — module E09.")
     a("")
+    a("> **Convention à ne pas manquer.** Le modèle affecte **100\u202f% de la dépense")
+    a("> publicitaire à l'acquisition de nouveaux clients** : aucun budget n'est isolé")
+    a("> pour le retargeting ou la réactivation. C'est volontaire, et ça rend le nCAC")
+    a("> **prudent** — il porte tout le média. Une marque qui isole 10\u202f% de son")
+    a("> budget en retargeting affichera un nCAC plus flatteur sans qu'un seul euro")
+    a("> ait changé de place. C'est exactement le genre de convention qu'il faut")
+    a("> écrire avant de comparer deux marques entre elles.")
+    a("")
     a("---")
     a("")
 
@@ -810,6 +848,34 @@ def rapport() -> str:
     for r in rows:
         a(ligne(list(r)))
     a("")
+    a("### 8.1 D'où viennent les 4,5 points de marge brute")
+    a("")
+    a("Le tableau ci-dessus donne le total. Voici sa décomposition poste par poste,")
+    a("pour que chaque point ait un chantier et un responsable :")
+    a("")
+    a(ligne(["Poste", "P5", "P5+", "Écart", "Le chantier", "Module"]))
+    a(ligne(["---", "---:", "---:", "---:", "---", "---"]))
+    postes = [
+        ("COGS", p5.cogs_pct, po.cogs_pct, "Paliers de volume, double source, renégociation annuelle", "E10 § 9"),
+        ("Logistique", p5.logistique_pct, po.logistique_pct, "Contrat 3PL, transporteur, remplissage du colis", "E10 § 6"),
+        ("PSP", p5.psp_pct, po.psp_pct, "Renégociation au volume, mix de moyens de paiement", "E10"),
+        ("Retours / SAV", p5.retours_sav_pct, po.retours_sav_pct, "Fiche produit honnête, guide de choix, ciblage plus qualifié", "E07, E10 § 7"),
+        ("Remises", p5.remises_pct, po.remises_pct, "Fin de la remise permanente, contrepartie exigée", "E03 § 5"),
+    ]
+    total_ecart = 0.0
+    for nom, a5, ap, chantier, mod in postes:
+        ecart = a5 - ap
+        total_ecart += ecart
+        a(ligne([nom, pct(a5, 2), pct(ap, 2),
+                 f"**{ecart * 100:+.2f} {'pt' if abs(ecart) < 0.02 else 'pts'}**".replace(".", ","), chantier, mod]))
+    a(ligne(["**Total**", f"**{pct(p5.taux_variable, 2)}**", f"**{pct(po.taux_variable, 2)}**",
+             f"**{total_ecart * 100:+.2f} pts**".replace(".", ","), "—", "—"]))
+    a("")
+    a("> **Regarde la colonne des écarts.** Plus de la moitié du gain vient de la")
+    a("> **remise** — le seul poste qui ne demande ni négociation, ni prestataire, ni")
+    a("> investissement. Il ne demande que de la discipline commerciale, et c'est")
+    a("> exactement pour ça qu'il est le plus difficile à tenir.")
+    a("")
     a("> **C'est là que se trouve l'argent.** Le passage de P5 à P5+ ne demande")
     a("> aucun euro de chiffre d'affaires supplémentaire. Il demande un panier moyen")
     a("> plus élevé, une base de clients qui revient, et de la discipline sur la")
@@ -827,6 +893,13 @@ def rapport() -> str:
         cmd = sem / 7 / 72
         pub = (sem / 2.9) / 7
         a(ligne([eur(sem), eur(mois), eur(an), f"{cmd:,.0f}".replace(",", " "), eur(pub)]))
+    a("")
+    a("> **Deux conventions de passage au quotidien coexistent dans ce fichier, et")
+    a("> c'est assumé.** Les volumes de commandes du § 9 sont dérivés de la semaine")
+    a("> (÷ 7) ; la dépense publicitaire du § 5 est dérivée du mois (÷ 30,4). L'écart")
+    a("> résiduel est de l'ordre de 0,2\u202f%. Ce n'est pas une erreur : c'est la")
+    a("> précision réelle de ce type de modèle. **Si tu pilotes une marque sur des")
+    a("> écarts de 0,2\u202f%, tu pilotes du bruit** — voir E09 § 8.")
     a("")
     a("*Fin des chiffres canoniques. Généré par `ecommerce/outils/modele_nora.py`.*")
     return "\n".join(o)

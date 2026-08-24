@@ -1,0 +1,184 @@
+{
+  "nom": "S02 — le piège de la remise permanente",
+  "description": "Exactement S00, à une ligne près : au mois 9, la remise passe de 3 % à 25 % et y reste. Le chiffre d'affaires monte tout de suite — la remise achète de la conversion. Regarde ensuite trois choses : la marge brute au mois 10, la part de réachat douze mois plus tard, et l'EBITDA cumulé à la fin.",
+  "graine": 7,
+  "categorie": "soin_cheveux",
+  "prix_ttc": 39.0,
+  "coefficient": 8.0,
+  "capital": 450000,
+  "horizon": 36,
+  "mois_depart": 1,
+  "reappro_auto": true,
+  "recrutement_auto": true,
+  "decisions": [
+    {
+      "mois": 1,
+      "budget_pub": 18000,
+      "part_test_crea": 0.15,
+      "remise": 0.03,
+      "invest_offre": 12000,
+      "part_canal_principal": 0.75
+    },
+    {
+      "mois": 2,
+      "budget_pub": 19500
+    },
+    {
+      "mois": 3,
+      "budget_pub": 20500
+    },
+    {
+      "mois": 4,
+      "budget_pub": 22000,
+      "invest_retention": 2500
+    },
+    {
+      "mois": 5,
+      "budget_pub": 23500
+    },
+    {
+      "mois": 6,
+      "budget_pub": 25000
+    },
+    {
+      "mois": 7,
+      "budget_pub": 27000
+    },
+    {
+      "mois": 8,
+      "budget_pub": 29000,
+      "invest_offre": 25000,
+      "invest_retention": 5000
+    },
+    {
+      "mois": 9,
+      "budget_pub": 31000,
+      "remise": 0.25
+    },
+    {
+      "mois": 10,
+      "budget_pub": 33000
+    },
+    {
+      "mois": 11,
+      "budget_pub": 35500,
+      "remise": 0.11
+    },
+    {
+      "mois": 12,
+      "budget_pub": 38000,
+      "invest_retention": 9000,
+      "remise": 0.25
+    },
+    {
+      "mois": 13,
+      "budget_pub": 44000
+    },
+    {
+      "mois": 14,
+      "budget_pub": 51000,
+      "ouvrir_marche": "BE"
+    },
+    {
+      "mois": 15,
+      "budget_pub": 59000
+    },
+    {
+      "mois": 16,
+      "budget_pub": 68500,
+      "invest_retention": 16000
+    },
+    {
+      "mois": 17,
+      "budget_pub": 79500
+    },
+    {
+      "mois": 18,
+      "budget_pub": 92500
+    },
+    {
+      "mois": 19,
+      "budget_pub": 107000,
+      "ouvrir_marche": "DE"
+    },
+    {
+      "mois": 20,
+      "budget_pub": 124000,
+      "invest_retention": 26000
+    },
+    {
+      "mois": 21,
+      "budget_pub": 144000
+    },
+    {
+      "mois": 22,
+      "budget_pub": 167000
+    },
+    {
+      "mois": 23,
+      "budget_pub": 194000,
+      "remise": 0.11
+    },
+    {
+      "mois": 24,
+      "budget_pub": 225000,
+      "ouvrir_marche": "ES",
+      "invest_retention": 42000,
+      "remise": 0.25
+    },
+    {
+      "mois": 25,
+      "budget_pub": 261000
+    },
+    {
+      "mois": 26,
+      "budget_pub": 302500
+    },
+    {
+      "mois": 27,
+      "budget_pub": 351000
+    },
+    {
+      "mois": 28,
+      "budget_pub": 407000,
+      "invest_retention": 70000
+    },
+    {
+      "mois": 29,
+      "budget_pub": 472500,
+      "ouvrir_marche": "IT"
+    },
+    {
+      "mois": 30,
+      "budget_pub": 548000
+    },
+    {
+      "mois": 31,
+      "budget_pub": 635500
+    },
+    {
+      "mois": 32,
+      "budget_pub": 737500,
+      "invest_retention": 105000
+    },
+    {
+      "mois": 33,
+      "budget_pub": 855500
+    },
+    {
+      "mois": 34,
+      "budget_pub": 900000,
+      "ouvrir_marche": "NL"
+    },
+    {
+      "mois": 35,
+      "budget_pub": 900000,
+      "remise": 0.11
+    },
+    {
+      "mois": 36,
+      "budget_pub": 900000,
+      "remise": 0.25
+    }
+  ]
+}

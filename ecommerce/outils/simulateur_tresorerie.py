@@ -616,8 +616,10 @@ def rapport(h: Hypotheses, entete: Optional[List[str]] = None) -> str:
         a(f"    + un mois de charges décaissées           {eur(matelas(h))}")
         a(f"    = à lever réellement                      {eur(besoin + matelas(h))}")
         a("")
-        a("Le strict minimum n'est pas un objectif de levée : il amène la trésorerie")
-        a("à exactement zéro au mois du point bas. Lève le second chiffre.")
+        a("Ces montants sont du cash — ni HT ni TTC : c'est ce qu'il faut avoir en")
+        a("banque. Le strict minimum n'est pas un objectif de levée : il amène la")
+        a("trésorerie à exactement zéro au mois du point bas, ce qui n'est pas une")
+        a("situation dans laquelle on paie des salaires. Lève le second chiffre.")
 
     # -- sensibilite -------------------------------------------------------
     o += titre("6. Sensibilité du point bas", "-")
