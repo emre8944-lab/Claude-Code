@@ -85,14 +85,14 @@ C'est exactement le CM3 canonique de P1. **Traduction : à structure inchangée,
 doubler le volume double la perte avant même de toucher aux frais fixes.**
 
 **Deuxième point — le MER est sous ses deux seuils.** Le MER est le rapport CA TTC
-sur dépense publicitaire. Aux seuils canoniques du palier P1 (§ 2.3) : MER
-d'équilibre CM3 = 2,10, MER d'équilibre EBITDA = 3,33. NØRA est à 1,80. Elle est à
-46,0 % sous sa ligne de flottaison EBITDA.
+sur dépense publicitaire. Seuils canoniques P1 (§ 2.3) : MER d'équilibre CM3 = 2,10,
+MER d'équilibre EBITDA = 3,33. NØRA est à 1,80, soit 46,0 % sous sa ligne de
+flottaison EBITDA.
 
 **Troisième point — le seul actif est la courbe de réachat, et elle n'existe pas
-encore.** Avec 4 % de commandes en réachat, le modèle n'a aucun second étage. La
-LTV en contribution se lit sur la courbe canonique (§ 3) : 0,72 commande de réachat
-par client acquis à six mois, 1,24 à douze mois.
+encore.** À 4 % de commandes en réachat, le modèle n'a aucun second étage. La LTV en
+contribution se lit sur la courbe canonique (§ 3) : 0,72 réachat par client acquis à
+six mois, 1,24 à douze mois.
 
 | Horizon | Réachats cumulés par client | LTV en contribution (P1) | LTV / nCAC |
 | --- | ---: | ---: | ---: |
@@ -102,9 +102,9 @@ par client acquis à six mois, 1,24 à douze mois.
 | 12 mois | 1,24 | 55,97 € | 2,10 |
 | 24 mois | 1,98 | 76,43 € | 2,87 |
 
-Calcul déroulé pour l'horizon 12 mois : contribution de la première commande
-21,69 € + 1,24 × 27,65 € (contribution d'un réachat à 58,00 € TTC de panier) =
-**55,97 €**, soit 2,10 fois le nCAC. Conforme au canonique § 3.1.
+Calcul déroulé à 12 mois : 21,69 € (première commande) + 1,24 × 27,65 €
+(contribution d'un réachat à 58,00 € TTC de panier) ≈ **55,97 €**, soit 2,10 fois le
+nCAC. Conforme au canonique § 3.1.
 
 > **À retenir :** la marque n'est pas non rentable, elle est **différée**. Elle
 > gagne 2,10 € par euro investi — dans douze mois. Le problème n'est pas la
