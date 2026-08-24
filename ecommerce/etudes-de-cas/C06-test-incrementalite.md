@@ -25,7 +25,7 @@ Panier de 1ʳᵉ commande P4 = 31,71 € (§ 2.4) ÷ 60,4 % × 1,20 = 63,00 € 
 ```
 
 *Hypothèses locales :* ventilation du budget par canal (§ 1) ; la France pèse **46 % des
-commandes** ; dépense de chaque canal répartie au prorata des commandes.
+commandes** ; dépense de chaque canal répartie au prorata.
 
 ---
 
@@ -94,8 +94,7 @@ compte, c'est la prospection qui coûte cher. » Il voulait **y déplacer du bud
 
 ## 3. Les options
 
-Évaluées au troisième mois après bascule, frais fixes constants (230 000 €/mois).
-Calculs aux § 4 et § 5.
+Évaluées au troisième mois après bascule, frais fixes constants. Calculs aux § 4 et § 5.
 
 | Option | Budget pub/mois HT | Commandes/mois | CA TTC/mois | MER | **EBITDA/mois** | % CA HT | Δ EBITDA/an |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -231,7 +230,7 @@ net, jamais au budget qu'il met en jeu.
 | Décision (seuil Bonferroni z > 2,2414) | significatif | significatif | — |
 
 Lis la variation brute du témoin : **+2,0 %**. Sans lui, A se lisait « −10,0 % » au lieu
-de −11,76 % et B « −7,8 % » au lieu de −9,65 % : le témoin valait 1,8 point de mesure.
+de −11,76 % et B « −7,8 % » au lieu de −9,65 % — le témoin valait 1,8 point de mesure.
 
 ### 5.2 Incrémentalité et CAC réel
 

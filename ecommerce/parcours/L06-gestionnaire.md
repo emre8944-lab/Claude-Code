@@ -9,7 +9,7 @@
 >
 > **Temps de travail typique :** 22 à 30 heures. Premier niveau dont l'épreuve n'a pas de réponse unique : elle a un plan défendable et une arithmétique qui doit tenir.
 
-> **Lxx mesure ta compétence. Nx mesure l'état de ton business.** Les deux échelles sont indépendantes. Un directeur financier peut être L06 sans posséder de marque. Et une marque **N3** — plusieurs centaines de milliers d'euros par mois — peut être pilotée par une compétence **L04** : quelqu'un qui alloue un budget publicitaire correctement, ne sait pas lire un besoin en fonds de roulement, et découvre sa contrainte de trésorerie six semaines avant qu'elle ne se referme. **C'est le cas le plus dangereux du métier**, et il devient mortel ici : jusqu'à L05, l'incompétence coûte de la marge ; à partir de L06, elle coûte l'entreprise. Une marque ne meurt presque jamais de ne pas être rentable : elle meurt de manquer de trésorerie le mois où elle allait le devenir ([diagnostic](../mentorat/diagnostic.md)).
+> **Lxx mesure ta compétence. Nx mesure l'état de ton business.** Les deux échelles sont indépendantes : un directeur financier peut être L06 sans posséder de marque, et une marque **N3** peut être pilotée par une compétence **L04** — quelqu'un qui alloue un budget publicitaire correctement, ne sait pas lire un besoin en fonds de roulement, et découvre sa contrainte de trésorerie six semaines avant qu'elle ne se referme. **C'est le cas le plus dangereux du métier**, et il devient mortel ici : jusqu'à L05, l'incompétence coûte de la marge ; à partir de L06, elle coûte l'entreprise ([diagnostic](../mentorat/diagnostic.md)).
 
 ---
 
@@ -27,8 +27,7 @@
 
 | # | Lecture | Ce qu'elle apporte **à ce niveau** |
 |---|---|---|
-| 1 | [**E10**](../modules/E10-cash-et-operations.md) § 1 et § 2 | Le cycle de conversion du cash, l'intensité en cash par tranche de 100 000 € de CA, la formule `g = EBITDA mensuel ÷ BFR`. **Le cœur du niveau.** |
-| 2 | [**E10**](../modules/E10-cash-et-operations.md) § 5 | Le point de recommande, l'écart type mesuré sur la fenêtre du délai, et pourquoi un MOQ vaut des centaines de milliers d'euros de trésorerie. |
+| 1 | [**E10**](../modules/E10-cash-et-operations.md) § 1, § 2 et § 5 | Le cycle de conversion du cash, l'intensité en cash par tranche de 100 000 € de CA, la formule `g = EBITDA mensuel ÷ BFR` ; puis le point de recommande, l'écart type mesuré sur la fenêtre du délai, et pourquoi un MOQ vaut des centaines de milliers d'euros. **Le cœur du niveau.** |
 | 3 | [**E10**](../modules/E10-cash-et-operations.md) § 6 et § 7 | La logistique en euros par commande, 3PL contre internalisation, et pourquoi trente jours de délai fournisseur valent plus que 2 % de remise. |
 | 4 | [**C08**](../etudes-de-cas/C08-redressement-90-jours.md), puis [**C05**](../etudes-de-cas/C05-abonnement-et-cac-negatif.md) et [**E01**](../modules/E01-arithmetique-de-la-marque.md) § 4-5 relu | C08 est le modèle de l'épreuve — lis-le **après** l'avoir tentée. C05 en est le symétrique : quand une contribution négative à la première commande est un calcul. E01 donne les deux MER seuils, vus à L01 comme une formule, relus ici comme une contrainte de trésorerie. |
 
@@ -37,8 +36,8 @@
 | Travail | Livrable | Comment on sait que c'est fait |
 |---|---|---|
 | [**S12**](../atelier/S12-la-crise.md), première partie | Un **plan de crise à 14 jours** : ce que tu coupes lundi, ce que tu appelles, ce que tu ne touches pas | Chaque ligne a un montant, une date, un responsable. Une ligne sans montant n'est pas une décision |
-| [**S11**](../atelier/S11-passer-a-l-echelle.md), volet trésorerie | Le plan de trésorerie à 12 mois du passage 30 k€ → 300 k€ | Le creux est identifié au mois près et le montant à réunir est écrit avant la première dépense |
-| **`simulateur_tresorerie.py`**, scénario de crise **imposé** | Trois exécutions : trajectoire subie, trajectoire avec ton plan, trajectoire avec le plan inverse | Tu nommes la semaine exacte où la trésorerie passe sous le point de non-retour dans le cas subi |
+| [**S11**](../atelier/S11-passer-a-l-echelle.md), volet trésorerie | Le plan de trésorerie à 12 mois du passage 30 k€ → 300 k€ | Le creux est identifié au mois près, et le montant à réunir écrit avant la première dépense |
+| **`simulateur_tresorerie.py`**, scénario de crise **imposé** | Trois exécutions : trajectoire subie, avec ton plan, avec le plan inverse | Tu nommes la semaine où la trésorerie passe sous le point de non-retour dans le cas subi |
 
 ```
 python3 ecommerce/outils/simulateur_tresorerie.py \
@@ -77,7 +76,7 @@ KANOPÉ vend des compléments alimentaires en direct, en France et en Belgique. 
 
 **Le produit héros.** 8 000 unités/mois, coût de revient rendu entrepôt 6,00 €/unité, délai fournisseur complet 75 jours, écart type de la demande **mesuré sur des fenêtres glissantes de 75 jours** égal à 22 % de la demande moyenne sur la fenêtre, service visé 97,5 % (`Z = 1,96`), cycle de commande actuel 90 jours, **MOQ négocié 8 000 unités**.
 
-**La courbe de réponse publicitaire** — deux tests d'augmentation, novembre et janvier, par tranches de 78 000 € mensuels.
+**La courbe de réponse publicitaire** — deux tests d'augmentation, par tranches de 78 000 € mensuels.
 
 | Dépense mensuelle cumulée | 78 000 € | 156 000 € | 234 000 € | **312 000 € — actuel** | 390 000 € — proposé |
 |---|---:|---:|---:|---:|---:|
@@ -240,15 +239,13 @@ Gain net réel = 1 495 + 18 720 = +20 215 €, soit +3,11 points
 ```
 
 ```
-B : 123 500 € × 72 % × 7 %                            = 6 224 €/mois
-C : (4,20 − 3,75) + (0,45 − 0,33) = 0,57 €/commande
-    13 000 × 0,57                                     = 7 410 €/mois
+B : 123 500 € × 72 % × 7 %                                = 6 224 €/mois
+C : (4,20 − 3,75) + (0,45 − 0,33) = 0,57 € ; × 13 000     = 7 410 €/mois
     la logistique passe de 6,75 € à 6,18 € par commande, soit de 13,50 %
     à 12,36 % du CA HT à panier constant
-D : 0,9 point × 6 500 €                               = 5 850 €/mois
-    cible non arbitraire : les 41 % de retours « ne correspond pas à la
-    description » pèsent 3,8 % × 0,41 = 1,56 point ; en reprendre 0,9 sur
-    1,56, c'est en traiter 58 %, atteignable puisque la cause est locale
+D : 0,9 point × 6 500 €                                   = 5 850 €/mois
+    les 41 % de retours « ne correspond pas à la description » pèsent
+    3,8 % × 0,41 = 1,56 point ; en reprendre 0,9, c'est en traiter 58 %
 ```
 
 C est le meilleur rapport gain sur effort du dossier **et** le seul levier dont on ne verra rien pendant le trimestre.
@@ -313,7 +310,7 @@ Volume du plan, stable sur le trimestre : `(7 700 + 4 000) × 0,94 = 10 998` com
 | **Flux net** | **+18 408 €** | **+43 645 €** | **+62 413 €** |
 | **Trésorerie en fin de mois** | **183 408 €** | **227 052 €** | **289 466 €** |
 
-La baisse mécanique du BFR du mois 1 : `78 000 − 65 988 = 12 012 €` d'encours d'encaissement et `72 800 − 54 600 = 18 200 €` d'avance publicitaire.
+Baisse mécanique du BFR au mois 1 : `78 000 − 65 988 = 12 012 €` d'encours d'encaissement, `72 800 − 54 600 = 18 200 €` d'avance publicitaire.
 
 ```
 Trésorerie au 31 mai      = 289 466 €, contre 165 000 €        (+75 %)
@@ -362,10 +359,10 @@ Contribution unitaire au prix plein : 50,00 × 54,5 %      =  27,25 € HT
 
 **Quatre fautes éliminatoires**, quelle que soit la note :
 
-1. **Un plan qui atteint l'équilibre par une hausse du chiffre d'affaires.** Au-delà de la pénalité de −15, c'est un refus de diagnostic : la croissance coûte du cash avant d'en rapporter ([canoniques § 4](../donnees/chiffres-canoniques.md)). Elle est ce qu'on s'autorise **après** un redressement, jamais son moyen.
+1. **Un plan qui atteint l'équilibre par une hausse du chiffre d'affaires.** La croissance coûte du cash avant d'en rapporter ([canoniques § 4](../donnees/chiffres-canoniques.md)) : elle est ce qu'on s'autorise **après** un redressement, jamais son moyen.
 2. **Accepter la proposition α au mois 1** — faire tomber la trésorerie de onze à moins de cinq semaines pour 0,96 point de marge : la faute la plus chère du dossier, et celle que le fondateur voudra commettre parce qu'elle « améliore la marge ».
 3. **Confondre CAC moyen et CAC marginal** en Q3 : arbitrer la tranche 4 sur les 34,67 € du nCAC moyen conduit à la conserver, puis à financer la cinquième.
-4. **Un montant sans mention HT ou TTC**, ou un MER calculé sur du CA HT. Le MER se calcule sur le TTC, la marge sur le HT ; les confondre déplace le seuil d'équilibre de 20 % dans le sens qui rassure.
+4. **Un montant sans mention HT ou TTC**, ou un MER calculé sur du CA HT : les confondre déplace le seuil d'équilibre de 20 % dans le sens qui rassure.
 
 **Fautes lourdes :** oublier l'échéance d'emprunt (−4) ; bâtir la trésorerie sur le seul EBITDA (−6) ; chiffrer A sans déduire les commandes perdues (−4).
 
@@ -381,7 +378,7 @@ Contribution unitaire au prix plein : 50,00 × 54,5 %      =  27,25 € HT
 
 **3. Confondre le rapport gain sur effort avec l'ordre d'exécution.** Le levier logistique est le mieux placé des deux points de vue et arrive dernier, à cause d'un préavis. Le déstockage ne rapporte pas un centime de marge et arrive troisième, parce qu'il apporte 160 500 € de trésorerie — deux fois et demie le meilleur levier de marge sur le trimestre. **Un levier de trésorerie et un levier de marge ne se comparent pas ; ils s'exécutent ensemble.** Même chose pour la coupe publicitaire : le meilleur levier du dossier dégrade toutes les métriques que ton équipe regarde.
 
-**4. Croire que « je perds de l'argent » est un diagnostic.** C'est un symptôme, à quatre causes distinctes : MER sous le seuil de contribution (structure — produit ou prix) ; MER entre les deux seuils (taille) ; croissance supérieure à `EBITDA ÷ BFR` (financement, pas rentabilité) ; BFR qui dérive à volume constant (opérations). KANOPÉ est dans le deuxième cas **et** dans le quatrième — qui traite le deuxième en coupant les frais fixes et ignore le quatrième laisse 160 500 € sur la table.
+**4. Croire que « je perds de l'argent » est un diagnostic.** C'est un symptôme, à quatre causes distinctes : MER sous le seuil de contribution (structure — produit ou prix) ; MER entre les deux seuils (taille) ; croissance supérieure à `EBITDA ÷ BFR` (financement, pas rentabilité) ; BFR qui dérive à volume constant (opérations). KANOPÉ est dans le deuxième cas **et** dans le quatrième — qui traite le deuxième en coupant les frais fixes laisse 160 500 € sur la table.
 
 **5. Croire que L06 mesure ta marque.** Une marque **N3** à 780 000 € par mois est, aux yeux de sa banque, de ses fournisseurs et de son entourage, une réussite — elle est à onze semaines de la fin. Le chiffre d'affaires ne mesure ni la compétence ni la solidité : il mesure la vitesse à laquelle une erreur de structure se paie. **À L05, une compétence insuffisante coûtait des points de marge ; à partir d'ici, elle coûte l'entreprise, et vite.**
 
