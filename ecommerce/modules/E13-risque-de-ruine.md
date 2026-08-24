@@ -368,32 +368,32 @@ Six colonnes, revues chaque trimestre, tenues par une personne nommée. Pas un d
 | R1 | Bannissement Meta, 11 j (§ 1.2) | 25 % | 414 464 € | 103 619 € | Référentiel d'allégations, comptes redondants, contact plateforme | 36 000 € | 10 % | 414 464 € | 41 448 € |
 | R2 | Coupure Meta ≥ 30 j (§ 1.2) | 6 % | 1 077 639 € | 64 658 € | *(même mesure)* | — | 2,5 % | 1 077 639 € | 26 941 € |
 | R3 | Sanction allégations (§ 3.2) | 8 % | 650 000 € | 52 000 € | Conseil juridique permanent, DPO | 108 000 € | 2 % | 650 000 € | 13 000 € |
-| R4 | Traceurs, perte de signal (§ 3.2) | 5 % | 1 583 244 € | 79 162 € | Mesure côté serveur, gestion du consentement | 60 000 € | 1,5 % | 1 583 244 € | 23 749 € |
+| R4 | Traceurs, perte de signal (§ 3.2) | 5 % | 1 433 244 € | 71 662 € | Mesure côté serveur, gestion du consentement | 60 000 € | 1,5 % | 1 433 244 € | 21 499 € |
 | R5 | Rappel de lot (§ 4.1) | 2 % | 2 519 502 € | 50 390 € | Traçabilité lot → client, garantie frais de retrait | 71 500 € | 1 % | 1 100 000 € | 11 000 € |
 | R6 | Rupture fournisseur, 45 j (§ 4.2) | 6 % | 1 497 806 € | 89 868 € | Double fournisseur, 70 / 30 | 75 398 € | 1,5 % | 400 000 € | 6 000 € |
 | R7 | Rétrofacturations > seuil PSP (§ 5.1) | 4 % | 1 200 000 € | 48 000 € | Scoring, 3DS ciblé, libellé bancaire, délai | 69 267 € | 1 % | 1 200 000 € | 12 000 € |
 | R8 | Perte des accès critiques (§ 6.2) | 8 % | 900 000 € | 72 000 € | Double administrateur, clés matérielles, propriété société | 9 000 € | 1,5 % | 900 000 € | 13 500 € |
-| | **Total** | | | **559 697 €** | | **429 165 €** | | | **147 638 €** |
+| | **Total** | | | **552 197 €** | | **429 165 €** | | | **145 388 €** |
 
 ### 7.3 L'espérance de perte contre le coût des mesures
 
 ```
-Espérance de perte annuelle, sans mesures   =  559 697 €  = 12,8 % de l'EBITDA
-Espérance de perte annuelle, avec mesures   =  147 638 €  =  3,4 % de l'EBITDA
-Gain en espérance                            =  412 059 €
+Espérance de perte annuelle, sans mesures   =  552 197 €  = 12,6 % de l'EBITDA
+Espérance de perte annuelle, avec mesures   =  145 388 €  =  3,3 % de l'EBITDA
+Gain en espérance                            =  406 809 €
 Coût annuel des mesures                      = −429 165 €  =  9,8 % de l'EBITDA
                                                ----------
-Solde                                            −17 106 €
+Solde                                            −22 356 €
 ```
 
-**Le programme coûte 17 106 € de plus qu'il ne rapporte en espérance.** Ligne par ligne :
+**Le programme coûte 22 356 € de plus qu'il ne rapporte en espérance.** Ligne par ligne :
 
 | Ligne | Gain en espérance | Coût | **Net** | Impact ÷ réserve |
 | --- | ---: | ---: | ---: | ---: |
 | R1 + R2 — conformité publicitaire | 99 888 € | 36 000 € | **+63 888 €** | × 0,33 et × 0,87 |
 | R8 — accès | 58 500 € | 9 000 € | **+49 500 €** | × 0,72 |
 | R6 — double fournisseur | 83 868 € | 75 398 € | **+8 470 €** | **× 1,20** |
-| R4 — traceurs | 55 413 € | 60 000 € | −4 587 € | **× 1,27** |
+| R4 — traceurs | 50 163 € | 60 000 € | −9 837 € | **× 1,15** |
 | R5 — rappel | 39 390 € | 71 500 € | −32 110 € | **× 2,03** |
 | R7 — paiement | 36 000 € | 69 267 € | −33 267 € | × 0,96 |
 | R3 — conseil juridique | 39 000 € | 108 000 € | −69 000 € | × 0,52 |
