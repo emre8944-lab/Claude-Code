@@ -84,6 +84,29 @@ lequel tu te trouves. Le module 10, section 4, tranche pour toi.
 
 ---
 
+## Cursus e-commerce — l'exécution
+
+Le programme ci-dessus explique **où se trouve l'argent et pourquoi**. Le cursus
+[`ecommerce/`](ecommerce/README.md) explique **comment on va le chercher** : créer,
+développer et gérer une marque en direct, du premier euro jusqu'à 1 M€ de chiffre
+d'affaires par semaine.
+
+Il est bâti autour d'une marque fictive suivie de bout en bout, avec un modèle
+économique unique et reproductible — 15 modules, 10 études de cas chiffrées, des
+exercices corrigés, six calculateurs et un protocole de mentorat hebdomadaire.
+
+| Pour commencer | |
+|---|---|
+| [Sommaire du cursus](ecommerce/README.md) | Le programme complet |
+| [Diagnostic](ecommerce/mentorat/diagnostic.md) | 30 minutes, il détermine ce qu'on ignore |
+| [E01 — L'arithmétique de la marque](ecommerce/modules/E01-arithmetique-de-la-marque.md) | Le module central |
+| [Chiffres canoniques](ecommerce/donnees/chiffres-canoniques.md) | La source de vérité chiffrée |
+
+Les deux cursus se répondent : le module 13 (CAC, LTV, payback) est le prérequis
+théorique de E01, et le module 10 (Sharp) est le contradicteur assumé de E05 et E06.
+
+---
+
 ## Méthode de travail
 
 Je n'enseigne pas en résumant des livres. Résumer un livre ne produit aucune
@@ -131,6 +154,7 @@ ménagement, et je te dirai aussi ce qui reste utilisable malgré ça.
 
 ## Fichiers
 
-- `modules/` — les cours
+- `modules/` — les cours du cursus théorique
 - `exercices/` — tes rendus et mes corrections
 - `fiches-de-lecture/` — les livres traités
+- `ecommerce/` — le cursus d'exécution : créer, développer et gérer une marque
