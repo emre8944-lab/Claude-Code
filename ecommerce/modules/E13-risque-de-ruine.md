@@ -41,11 +41,11 @@ Les paliers du § 2 vont du mois 1 au mois 40, soit 3,33 ans : `0,90^3,3333 = 70
 
 Un compte publicitaire n'est pas un actif que tu possèdes : c'est une autorisation révocable, accordée par une entreprise dont tu n'es pas le client mais le fournisseur d'inventaire. Cinq mécanismes la révoquent.
 
-1. **La politique produit.** Cosmétique, complément, minceur : catégorie autorisée mais bordée, classée par un système automatique à partir de ta page et de ta créa, pas de ton dossier réglementaire.
+1. **La politique produit.** Catégorie autorisée mais bordée, classée par un système automatique à partir de ta page et de ta créa, pas de ton dossier réglementaire.
 2. **L'allégation.** Le seul motif qui déclenche des refus en série puis une fermeture. La conformité s'apprécie sur ce que la publicité **laisse croire** : « répare », « stoppe la chute », un avant/après, un pourcentage sans étude nommée.
-3. **La page de destination**, lue par un robot à intervalles irréguliers : mention absente, prix barré non conforme, compte à rebours qui se réinitialise, avis sans origine, écart entre l'annonce et la page.
+3. **La page de destination**, lue par un robot : mention absente, prix barré non conforme, compte à rebours qui se réinitialise, avis sans origine, écart entre l'annonce et la page.
 4. **L'historique de compte.** Une accumulation de refus, même corrigés, dégrade un score interne invisible. Deux comptes au même score ne sont pas traités pareil au troisième incident.
-5. **L'activité liée.** Un compte personnel, un moyen de paiement, un domaine ou un partenaire déjà sanctionné contamine le tien — le motif le plus injuste et le moins contestable, parce que le lien est établi par une machine.
+5. **L'activité liée.** Un compte personnel, un moyen de paiement, un domaine ou un partenaire déjà sanctionné contamine le tien — le motif le plus injuste et le moins contestable, le lien étant établi par une machine.
 
 ### 1.2 Ce que ça coûte réellement
 
@@ -69,13 +69,13 @@ Budget Meta quotidien = 821 813 ÷ 30,4                =  27 033 €
 | 30 jours | 900 061 € | 177 578 € | **1 077 639 €** | 2,95 |
 | 45 jours | 1 332 195 € | 177 578 € | **1 509 773 €** | 4,14 |
 
-**Un incident de trois jours coûte déjà 177 610 €, dont la moitié en apprentissage** : le coût fixe de redémarrage domine les coupures courtes, ce qui rend une série de petits incidents plus chère qu'un seul long. Ces montants sont un plancher — le § 5 affecte 100 % du média à l'acquisition alors qu'en coupure réelle le réachat tombe aussi ([E12](E12-marque-et-actif.md) § 1.3 le modélise à −12 %). À P5 aucune ligne n'est mortelle, l'effet étant étalé sur douze mois ; **à P2, la même coupure est une sentence** (§ 2.3).
+**Un incident de trois jours coûte déjà 177 610 €, dont la moitié en apprentissage** : le coût fixe de redémarrage domine les coupures courtes, ce qui rend une série de petits incidents plus chère qu'un seul long. Ces montants sont un plancher — le § 5 affecte 100 % du média à l'acquisition alors qu'en coupure réelle le réachat tombe aussi ([E12](E12-marque-et-actif.md) § 1.3 : −12 %). À P5 aucune ligne n'est mortelle, l'effet étant étalé sur douze mois ; **à P2, la même coupure est une sentence** (§ 2.3).
 
 ### 1.3 Les mesures, et ce qu'elles valent
 
 - **Conformité des allégations en amont** : un référentiel écrit d'allégations autorisées par produit, avec preuve et source, par lequel toute créa passe avant production. Seule mesure qui agit sur la cause n° 1.
 - **Structures de compte redondantes et légitimes** : une entité par marché, avec son domaine, son moyen de paiement, son gestionnaire déclaré, son activité réelle. Redondant ne veut pas dire clandestin — un réseau de comptes créés pour contourner une sanction est lui-même un motif de fermeture définitive, et la parade se retourne en accélérateur.
-- **Un représentant de plateforme.** Il n'empêche rien, il raccourcit le délai de traitement, ce qui à 29 607 € par jour vaut son poids en réunions. Il s'obtient au volume, donc il arrive quand tu en as le moins besoin.
+- **Un représentant de plateforme.** Il n'empêche rien, il raccourcit le délai de traitement — à 29 607 € par jour, ça vaut son poids en réunions. Il s'obtient au volume, donc il arrive quand tu en as le moins besoin.
 - **Diversification des canaux**, la seule qui change la nature du risque au lieu d'en réduire la probabilité. Ramener Meta de 55 % à 40 % déplace 224 131 € par mois vers des canaux plus chers (§ 5) :
 
 ```
@@ -105,7 +105,7 @@ Coût annuel = 1 116 × 86,75 € × 12                = 1 161 774 €
 | Premier prestataire logistique | part des colis expédiés | > 60 % | > 80 % | site unique |
 | Premier prestataire de paiement | part des encaissements | > 70 % | > 90 % | PSP unique |
 
-Ces seuils dérivent d'une règle unique : **aucune dépendance ne doit pouvoir consommer plus de la moitié de ta réserve avant que tu aies eu le temps de la remplacer** (dérivation au § 7.6). Deux pièges de mesure : le canal se compte en clients réels et non en budget, l'écart venant du prix ; le fournisseur se compte en COGS annuel et non en références — trois produits chez le même façonnier, c'est une dépendance à 100 %, et le catalogue donne l'illusion contraire.
+Ces seuils dérivent d'une règle unique : **aucune dépendance ne doit pouvoir consommer plus de la moitié de ta réserve avant que tu aies eu le temps de la remplacer** (dérivation au § 7.6). Deux pièges : le canal se compte en clients réels et non en budget ; le fournisseur en COGS annuel et non en références — trois produits chez le même façonnier, c'est une dépendance à 100 %, et le catalogue donne l'illusion contraire.
 
 ### 2.2 NØRA à P5 : ce que Meta pèse vraiment
 
@@ -117,7 +117,7 @@ Part du CA TTC du mois           = 19 261 × 64,00 ÷ 4 333 196  = 28,4 %
 
 La troisième est la plus rassurante et la plus fausse : **elle ignore que 44,9 % du CA est du réachat (§ 2) et que tout client qui réachète a d'abord été acquis quelque part.** En régime établi, 51,6 % de la base vient de Meta, donc 51,6 % du réachat aussi. La dépendance réelle n'est pas 28,4 % du chiffre d'affaires d'un mois, c'est **51,6 % de tout ce que l'entreprise fera dans les douze mois suivants**.
 
-C'est le mécanisme central du module : **une dépendance à l'acquisition se transmet à la rétention avec un décalage.** Le jour où le canal s'arrête, le CA baisse de 28 % et personne ne panique ; douze mois plus tard la base s'est vidée de moitié, et il est trop tard pour reconstruire un canal. NØRA à P5 est à 3,4 points du seuil d'alerte, et le sait.
+**Une dépendance à l'acquisition se transmet à la rétention avec un décalage.** Le jour où le canal s'arrête, le CA baisse de 28 % et personne ne panique ; douze mois plus tard la base s'est vidée de moitié, et il est trop tard pour reconstruire un canal. NØRA à P5 est à 3,4 points du seuil d'alerte, et le sait.
 
 ### 2.3 La même coupure à P2
 
@@ -129,7 +129,7 @@ Contribution détruite = 2 720 × (70,70 − 30,78)   = 108 582 €    (§ 3.1)
 Réserve du palier P2                              =  90 530 €    (E10 § 3.1)
 ```
 
-**Un mois de coupure à P2 détruit 120 % de la réserve du palier** — et le compte de résultat s'améliore : la publicité économisée (83 709 €) dépasse la marge brute perdue, l'EBITDA passe de −19 838 € à environ −12 800 €. La marque publie un meilleur mois et vient de perdre un tiers de son année. Le § 2.3 des canoniques dit pourquoi : à P2, NØRA est **sous** son MER d'équilibre EBITDA, elle achète volontairement des clients à perte en pariant sur le réachat. Couper l'acquisition annule le pari après avoir payé la mise.
+**Un mois de coupure à P2 détruit 120 % de la réserve du palier** — et le compte de résultat s'améliore : la publicité économisée (83 709 €) dépasse la marge brute perdue, l'EBITDA passe de −19 838 € à environ −12 800 €. La marque publie un meilleur mois et vient de perdre un tiers de son année. Le § 2.3 des canoniques dit pourquoi : à P2, NØRA est **sous** son MER d'équilibre EBITDA — elle achète des clients à perte en pariant sur le réachat, et couper l'acquisition annule le pari après avoir payé la mise.
 
 ---
 
@@ -141,15 +141,15 @@ Ce module n'est pas un avis juridique. Il fait deux choses qu'un avocat ne fera 
 
 **1 — Allégations produit.** Un cosmétique qui prétend traiter ou prévenir une maladie bascule dans la définition du médicament (dir. 2001/83/CE). Les allégations cosmétiques relèvent des règl. (CE) 1223/2009 et (UE) 655/2013, celles de santé sur denrées et compléments du règl. (CE) 1924/2006, qui n'autorise que les formulations inscrites au registre de l'Union. *Sanction, fait public :* en France la pratique commerciale trompeuse est punie de 2 ans d'emprisonnement et 300 000 € d'amende, **portée à 10 % du CA moyen annuel** des trois derniers exercices (art. L. 132-2 code de la consommation). *Prévention :* le référentiel du § 1.3, un dossier de preuve par allégation, l'interdiction écrite des formulations de guérison.
 
-**2 — Pratiques commerciales trompeuses.** Fausse urgence, faux avis, prix de référence barré. La dir. 2005/29/CE, modifiée par la dir. (UE) 2019/2161 « Omnibus », interdit de publier de faux avis ou de présenter des avis comme émanant de consommateurs sans vérification (annexe I) ; une annonce de réduction doit référer au **prix le plus bas des trente derniers jours** (dir. 98/6/CE modifiée). *Sanction :* même L. 132-2, plus un plafond Omnibus d'au moins **4 % du CA annuel** dans les États concernés pour les infractions transfrontalières de grande ampleur. *Prévention :* aucun compte à rebours qui se réinitialise, aucun prix barré sans historique conservé, aucun avis sans traçabilité de la commande.
+**2 — Pratiques commerciales trompeuses.** Fausse urgence, faux avis, prix de référence barré. La dir. 2005/29/CE modifiée par la dir. (UE) 2019/2161 « Omnibus » interdit de publier de faux avis ou de présenter des avis comme émanant de consommateurs sans vérification (annexe I) ; une annonce de réduction doit référer au **prix le plus bas des trente derniers jours** (dir. 98/6/CE modifiée). *Sanction :* même L. 132-2, plus un plafond Omnibus d'au moins **4 % du CA annuel** dans les États concernés pour les infractions transfrontalières de grande ampleur. *Prévention :* aucun compte à rebours qui se réinitialise, aucun prix barré sans historique conservé, aucun avis sans traçabilité de la commande.
 
-**3 — Rétractation et information précontractuelle.** La dir. 2011/83/UE donne quatorze jours, et son article 10 porte la disposition la plus coûteuse du droit de la consommation européen : **si le professionnel n'a pas informé du droit de rétractation, le délai est prolongé de douze mois.** L'article 8 exige un bouton de commande mentionnant sans ambiguïté l'obligation de payer, faute de quoi le consommateur n'est pas lié. Ce n'est pas une amende, c'est un taux de retour qui change de régime (§ 3.2). *Prévention :* la relecture du parcours par un juriste, une fois, avant l'échelle.
+**3 — Rétractation et information précontractuelle.** La dir. 2011/83/UE donne quatorze jours, et son article 10 porte la disposition la plus coûteuse du droit européen de la consommation : **si le professionnel n'a pas informé du droit de rétractation, le délai est prolongé de douze mois.** L'article 8 exige un bouton de commande mentionnant sans ambiguïté l'obligation de payer, faute de quoi le consommateur n'est pas lié. Pas une amende : un taux de retour qui change de régime (§ 3.2). *Prévention :* la relecture du parcours par un juriste, une fois, avant l'échelle.
 
-**4 — Données personnelles et suivi publicitaire.** Le RGPD (règl. (UE) 2016/679) plafonne les amendes à **20 M€ ou 4 % du CA annuel mondial**, le plus élevé (art. 83.5) ; les traceurs non essentiels exigent un consentement préalable (dir. 2002/58/CE art. 5.3). *Fait public :* en décembre 2021 la CNIL a prononcé 150 M€ et 60 M€ contre deux grandes plateformes, au motif que refuser les traceurs y était plus difficile que les accepter. *Prévention :* bannière conforme, base légale par traitement, registre, mesure côté serveur pour ne pas dépendre du navigateur ([E06](E06-acquisition-payante.md) § 2.3).
+**4 — Données personnelles et suivi publicitaire.** Le RGPD (règl. (UE) 2016/679) plafonne les amendes à **20 M€ ou 4 % du CA annuel mondial**, le plus élevé (art. 83.5) ; les traceurs non essentiels exigent un consentement préalable (dir. 2002/58/CE art. 5.3). *Fait public :* en décembre 2021 la CNIL a prononcé 150 M€ et 60 M€ contre deux grandes plateformes, au motif que refuser les traceurs y était plus difficile que les accepter. *Prévention :* bannière conforme, base légale par traitement, registre, mesure côté serveur ([E06](E06-acquisition-payante.md) § 2.3).
 
-**5 — Étiquetage et sécurité produit.** Le règl. 1223/2009 impose une personne responsable établie dans l'Union, un dossier d'information produit, un rapport de sécurité signé, la notification au portail CPNP, un étiquetage complet (INCI, lot, durabilité, précautions). Depuis le 13 décembre 2024, le règl. (UE) 2023/988 sur la sécurité générale des produits ajoute un opérateur responsable dans l'Union pour toute vente en ligne et une procédure de rappel ; le Royaume-Uni applique son propre régime depuis le Brexit. *Prévention :* chaque marché ouvert dans [E11](E11-passage-a-echelle.md) est une ligne de conformité, pas seulement de traduction.
+**5 — Étiquetage et sécurité produit.** Le règl. 1223/2009 impose une personne responsable dans l'Union, un dossier d'information produit, un rapport de sécurité signé, la notification au portail CPNP et un étiquetage complet (INCI, lot, durabilité, précautions). Depuis le 13 décembre 2024, le règl. (UE) 2023/988 sur la sécurité générale des produits ajoute un opérateur responsable dans l'Union pour toute vente en ligne et une procédure de rappel ; le Royaume-Uni applique son propre régime depuis le Brexit. *Prévention :* chaque marché ouvert dans [E11](E11-passage-a-echelle.md) est une ligne de conformité, pas de traduction.
 
-**6 — TVA et guichet unique.** Depuis le 1ᵉʳ juillet 2021, seuil unique de **10 000 € HT** de ventes à distance intracommunautaires : au-delà, la TVA est due dans l'État de destination, déclarable au guichet unique OSS. *Risque :* facturer partout au taux du pays d'établissement quand les taux vont de 19 % à 22 % sur les marchés de P5. *Sanction :* rattrapage sur trois exercices, majoration de 40 % pour manquement délibéré (art. 1729 CGI), intérêt de retard de 0,20 % par mois (art. 1727 CGI). Seul des six à se calculer directement, *hypothèses : 60 % du CA hors France, écart moyen de 0,8 point de taux* :
+**6 — TVA et guichet unique.** Depuis le 1ᵉʳ juillet 2021, seuil unique de **10 000 € HT** de ventes à distance intracommunautaires : au-delà, la TVA est due dans l'État de destination, déclarable au guichet unique OSS. *Risque :* facturer partout au taux du pays d'établissement quand les taux vont de 19 % à 22 % sur les marchés de P5. *Sanction :* rattrapage sur trois exercices, majoration de 40 % pour manquement délibéré (art. 1729 CGI), intérêt de retard de 0,20 % par mois (art. 1727 CGI). Seul des six à se calculer, *hypothèses : 60 % du CA hors France, écart moyen de 0,8 point* :
 
 ```
 CA TTC hors France = 0,60 × 51 998 352 €                = 31 199 011 €/an
@@ -178,7 +178,7 @@ EBITDA annuel de référence à P5 : **4 377 023 €** (§ 7). CA HT annuel : 3 
 
 *Hypothèses de marché, à revérifier avant d'engager.* **P1** — CGV, mentions, parcours de rétractation, bannière, notification CPNP, rapport de sécurité : ≈ 5 000 € une fois. **P2** — relecture des allégations au fil de l'eau : 18 000 à 36 000 €/an. **P3** — enregistrement OSS, TVA du deuxième marché, contrat 3PL relu : + 8 000 à 15 000 €. **P4** — DPO externalisé, audit complet, RC produit, personne responsable par régime : + 40 000 à 70 000 €. **P5** — conseil permanent et veille multi-pays : 120 000 à 180 000 €.
 
-À P5, **144 000 € par an représentent 3,3 % de l'EBITDA annuel**. Face à une sanction à 4 333 196 €, le rapport est de 30 pour 1 — mais la comparaison honnête n'est pas là : le conseil ne ramène pas la probabilité à zéro, il la divise.
+À P5, **144 000 € par an représentent 3,3 % de l'EBITDA annuel** — 30 pour 1 face à une sanction à 4 333 196 €. Mais la comparaison honnête n'est pas là : le conseil ne ramène pas la probabilité à zéro, il la divise.
 
 ```
 Probabilité annuelle estimée d'une sanction : 8 % sans conseil, 2 % avec
@@ -188,7 +188,7 @@ Coût du conseil                                       = −144 000 €/an
 Gain net en espérance                                    115 992 €/an
 ```
 
-**C'est l'une des rares lignes du module qui se justifie par l'espérance seule**, et elle le doit à un plafond exprimé en pourcentage du chiffre d'affaires : c'est le seul risque du registre dont l'impact grandit exactement au rythme de ton entreprise.
+**C'est l'une des rares lignes du module qui se justifie par l'espérance seule**, et elle le doit à un plafond exprimé en pourcentage du chiffre d'affaires : le seul risque du registre dont l'impact grandit au rythme de ton entreprise.
 
 ---
 
@@ -214,7 +214,7 @@ Unités du héros/mois = 45 % × 120 400 = 54 180 → lot = 108 360 unités
 | Rupture : 60 200 × 45 % × 1,5 mois × 36,86 € de marge brute | (§ 2.2 ÷ § 2) | 1 497 806 € |
 | **Total** | | **2 519 502 €** |
 
-**Un rappel sur le produit héros coûte 2,52 M€, soit 6,9 mois d'EBITDA de P5 et 2,03 fois la réserve du palier** (1 243 595 €, [E10](E10-cash-et-operations.md) § 3.1) — seul risque du module dont l'impact dépasse la réserve d'un facteur deux. Et 59 % du total ne vient pas du rappel mais de la rupture qui le suit, ce qui désigne la mesure.
+**Un rappel sur le héros coûte 2,52 M€, soit 6,9 mois d'EBITDA de P5 et 2,03 fois la réserve du palier** (1 243 595 €, [E10](E10-cash-et-operations.md) § 3.1). Et 59 % du total ne vient pas du rappel mais de la rupture qui le suit, ce qui désigne la mesure.
 
 ### 4.2 Les trois mesures, et leur rendement
 
@@ -228,9 +228,9 @@ Coût : ERP/WMS 15 000 € + sérialisation 0,01 € × 120 400 × 12
                                                 ≈    26 500 € la 1ʳᵉ année
 ```
 
-**L'assurance responsabilité civile produit.** *Hypothèse de marché : 0,15 à 0,45 % du CA HT pour une marque cosmétique DTC, plafond 5 à 10 M€* — à 0,25 %, 108 330 € par an. Le point à ne pas rater : **la RC produit couvre les dommages causés à des tiers, presque jamais le rappel lui-même.** Les frais de retrait sont une garantie distincte, la perte d'exploitation consécutive une troisième. Une marque assurée en RC seule découvre au pire moment qu'elle a payé pour autre chose.
+**L'assurance responsabilité civile produit.** *Hypothèse de marché : 0,15 à 0,45 % du CA HT pour une marque cosmétique DTC, plafond 5 à 10 M€* — à 0,25 %, 108 330 € par an. **La RC produit couvre les dommages causés à des tiers, presque jamais le rappel lui-même** : les frais de retrait sont une garantie distincte, la perte d'exploitation consécutive une troisième. Une marque assurée en RC seule découvre au pire moment qu'elle a payé pour autre chose.
 
-**Le double fournisseur.** Présenté comme une assurance de disponibilité, c'est aussi une assurance qualité : deux sites, deux lots, deux chaînes de matières premières — un défaut ne peut plus atteindre 100 % du volume.
+**Le double fournisseur.** Assurance de disponibilité, mais aussi de qualité : deux sites, deux lots, deux chaînes de matières premières — un défaut ne peut plus atteindre 100 % du volume.
 
 ```
 COGS annuel P5 = 14,5 % × 43 331 964 €                    = 6 283 135 €
@@ -241,11 +241,11 @@ Qualification du second (stabilité, challenge test, mise à
 Seuil contre une rupture de 45 jours : 75 398 ÷ 1 497 806  = 5,0 %/an
 ```
 
-**Si tu estimes à plus de 5 % par an la probabilité qu'un fournisseur unique t'arrête 45 jours** — défaut, incendie, faillite, litige, blocage douanier, non-conformité —, le double fournisseur est rentable en espérance avant même de compter ce qu'il apporte sur le rappel. Il l'est presque toujours.
+**Si tu estimes à plus de 5 % par an la probabilité qu'un fournisseur unique t'arrête 45 jours** — défaut, incendie, faillite, litige, blocage douanier, non-conformité —, il est rentable en espérance avant même de compter ce qu'il apporte sur le rappel. Il l'est presque toujours.
 
 ### 4.3 La contrefaçon
 
-Elle ne détruit pas l'entreprise, elle la dévalorise. Sans dépôt de marque, tu ne peux ni faire retirer une copie sur une place de marché, ni empêcher un tiers de déposer ton nom sur un marché où tu n'es pas encore, ni vendre l'entreprise sans décote — l'actif de [E12](E12-marque-et-actif.md) n'existe juridiquement pas. *Fait public :* le barème EUIPO d'une marque de l'Union déposée en ligne est de 850 € pour une classe, 50 € pour la deuxième, 150 € par classe supplémentaire, pour dix ans. **Meilleur rapport protection/prix du cursus, et manqué par presque toutes les marques avant P3** — au moment précis où le nom devient assez connu pour valoir la peine d'être pris.
+Elle ne détruit pas l'entreprise, elle la dévalorise. Sans dépôt de marque, tu ne peux ni faire retirer une copie sur une place de marché, ni empêcher un tiers de déposer ton nom là où tu n'es pas encore, ni vendre l'entreprise sans décote : l'actif de [E12](E12-marque-et-actif.md) n'existe juridiquement pas. *Fait public :* le barème EUIPO d'une marque de l'Union déposée en ligne est de 850 € pour une classe, 50 € pour la deuxième, 150 € par classe supplémentaire, pour dix ans. **Meilleur rapport protection/prix du cursus, manqué par presque toutes les marques avant P3.**
 
 ---
 
@@ -253,7 +253,7 @@ Elle ne détruit pas l'entreprise, elle la dévalorise. Sans dépôt de marque, 
 
 ### 5.1 Le seuil qui ferme le compte
 
-Une rétrofacturation (*chargeback*) est un rejet de paiement à l'initiative du porteur de carte, après livraison. Les réseaux surveillent ton taux mensuel et l'imposent à ton prestataire de paiement (PSP). *Ordres de grandeur publics, barèmes révisés régulièrement :* surveillance vers **0,9 % de litiges avec au moins 100 cas** chez Visa, **1,5 % avec au moins 100 cas** chez Mastercard. En pratique ton PSP réagit avant.
+Une rétrofacturation (*chargeback*) est un rejet de paiement à l'initiative du porteur de carte, après livraison. Les réseaux surveillent ton taux mensuel et l'imposent à ton prestataire de paiement (PSP). *Ordres de grandeur publics, barèmes révisés régulièrement :* surveillance vers **0,9 % de litiges et au moins 100 cas** chez Visa, **1,5 % et 100 cas** chez Mastercard. Ton PSP réagit avant.
 
 | Taux mensuel | Ce qui se passe |
 | ---: | --- |
@@ -283,7 +283,7 @@ Réserve glissante PSP (hypothèse : 7,5 % sur 90 j)
 Effet sur le BFR de 2 264 655 € (§ 4)                 =  + 42,5 %
 ```
 
-**Une suspension d'encaissement transforme un problème de fraude en problème de trésorerie du jour au lendemain.** C'est le seul risque du module qui coupe les entrées de cash au lieu d'augmenter les sorties, donc le plus rapide à tuer.
+**Une suspension d'encaissement transforme un problème de fraude en problème de trésorerie du jour au lendemain** — seul risque du module qui coupe les entrées de cash au lieu d'augmenter les sorties, donc le plus rapide à tuer.
 
 ### 5.3 La prévention, et son prix en conversion
 
@@ -301,7 +301,7 @@ Solde en régime normal                                 −183 913 €/an
 
 **Le 3DS systématique n'est pas rentable en régime normal, et il l'est absolument en régime dégradé** — parce qu'à ce moment-là il n'achète pas de la marge, il achète le droit de continuer à encaisser. C'est le raisonnement du § 0 : une mesure d'espérance négative devient obligatoire quand l'issue qu'elle évite est absorbante.
 
-Entre les deux, quatre mesures au coût faible ou nul. **Le libellé sur le relevé bancaire** : la première cause de rétrofacturation en DTC n'est pas la fraude, c'est le client qui ne reconnaît pas la ligne — coût zéro, meilleur rendement du module. **Le délai de livraison** : un colis à douze jours produit des litiges « marchandise non reçue », donc le SAV de [E10](E10-cash-et-operations.md) § 6 est une mesure anti-fraude. **Le 3DS ciblé par score**, déclenché sur les seules commandes à risque — montant atypique, adresse différente, réexpéditeur connu, vitesse de commande. **Les plafonds** par carte, par adresse et par fenêtre de temps, qui suppriment les attaques automatisées sans toucher au client normal.
+Entre les deux, quatre mesures au coût faible ou nul. **Le libellé sur le relevé bancaire** : la première cause de rétrofacturation en DTC n'est pas la fraude, c'est le client qui ne reconnaît pas la ligne — coût zéro, meilleur rendement du module. **Le délai de livraison** : un colis à douze jours produit des litiges « marchandise non reçue », donc le SAV de [E10](E10-cash-et-operations.md) § 6 est une mesure anti-fraude. **Le 3DS ciblé par score**, sur les seules commandes à risque — montant atypique, adresse différente, réexpéditeur connu. **Les plafonds** par carte, par adresse et par fenêtre de temps.
 
 ---
 
@@ -329,11 +329,11 @@ Surestimation de 25 % : le stock se vendra, à −30 % de prix
 Rapport = 2 662 766 ÷ 1 299 598 = 2,05
 ```
 
-**Se tromper par défaut coûte deux fois plus que se tromper par excès** — à condition de pouvoir porter le surstock, ce qui renvoie au § 6.3. C'est la seule justification chiffrée de la sur-commande saisonnière, et elle s'annule le jour où le cash manque.
+**Se tromper par défaut coûte deux fois plus que se tromper par excès** — à condition de pouvoir porter le surstock (§ 6.3). C'est la seule justification chiffrée de la sur-commande saisonnière, et elle s'annule le jour où le cash manque.
 
 **La plateforme.** Le même incident coûte 2,40 fois plus cher en saison : `29 607 × 2,40 = 71 057 €` par jour, soit **781 627 € pour les onze jours de [C10](../etudes-de-cas/C10-compte-publicitaire-banni.md)** contre 325 675 € en régime normal. Et sa probabilité monte au même moment : plus de créas neuves, plus de pages modifiées, plus d'allégations promotionnelles, plus de contrôles. **Le risque n'est pas la moyenne annuelle rapportée à un mois, c'est un pic de probabilité multiplié par un pic d'impact.** Le CPM y monte aussi de 25 à 50 % ([E06](E06-acquisition-payante.md) § 7.5) ; [C09](../etudes-de-cas/C09-piege-du-black-friday.md) chiffre le ciseau complet.
 
-**La mesure.** Lisser. Passer de 40 % à 28 % ramène le pic de ×2,40 à ×1,68 et libère `1 832 581 × (2,40 − 1,68) = 1 319 458 €` de trésorerie. Leviers : gamme de rechargement et abonnement ([E08](E08-retention-et-ltv.md)), marchés à saisonnalité décalée ([E11](E11-passage-a-echelle.md)), et ne pas construire l'offre autour de la remise, faute de quoi le pic se creuse chaque année. *Seuil d'alerte :* **plus de 35 % du CA annuel sur un trimestre.** Au-delà, tu ne pilotes plus une marque mais une opération logistique annuelle avec une fenêtre de tir de neuf semaines.
+**La mesure.** Lisser. Passer de 40 % à 28 % ramène le pic de ×2,40 à ×1,68 et libère `1 832 581 × (2,40 − 1,68) = 1 319 458 €`. Leviers : rechargement et abonnement ([E08](E08-retention-et-ltv.md)), marchés à saisonnalité décalée ([E11](E11-passage-a-echelle.md)), et ne pas construire l'offre autour de la remise, faute de quoi le pic se creuse chaque année. *Seuil d'alerte :* **plus de 35 % du CA annuel sur un trimestre.** Au-delà, tu pilotes une opération logistique annuelle avec une fenêtre de tir de neuf semaines, pas une marque.
 
 ### 6.2 La personne
 
@@ -346,9 +346,7 @@ Le test tient en une phrase : **que se passe-t-il si cette personne s'arrête tr
 | Détention des accès | Business Manager, domaine, DNS, PSP, banque, ERP | **Mortel** |
 | Associé qui part en conflit | Décisions bloquées, valorisation contestée, sortie non prévue | **Mortel** |
 
-Seules les deux dernières lignes sont des risques de ruine, et ce sont les deux les moins chères à supprimer. **Les accès :** deux administrateurs par système, gestionnaire de secrets d'entreprise, clé matérielle sur les comptes sensibles, domaine et DNS enregistrés **au nom de la société** et pas d'une personne, procédure de départ écrite — *environ 9 000 € par an*, la meilleure ligne du registre (§ 7.3). **L'associé :** pacte avec vesting sur quatre ans et cliff d'un an, clauses *good leaver* / *bad leaver*, promesse croisée, clause d'agrément ; *hypothèses de marché : 6 000 à 15 000 € de rédaction, assurance homme clé 0,3 à 0,8 % du capital assuré par an.* Le pacte s'écrit quand tout va bien, parce qu'il ne s'écrit jamais après.
-
-**La documentation.** Le test n'est pas « existe-t-il une procédure » mais « une personne compétente qui n'était pas là peut-elle reprendre le poste avec ce qui est écrit ». Une procédure s'écrit pendant qu'on l'exécute. *Seuil d'alerte :* **tout processus critique dont une seule personne connaît l'exécution et qui touche l'entrée ou la sortie de cash.**
+Seules les deux dernières sont des risques de ruine, et ce sont les deux les moins chères à supprimer. **Les accès :** deux administrateurs par système, gestionnaire de secrets d'entreprise, clé matérielle sur les comptes sensibles, domaine et DNS enregistrés **au nom de la société** et pas d'une personne, procédure de départ écrite — *environ 9 000 € par an*, la meilleure ligne du registre (§ 7.3). **L'associé :** pacte avec vesting sur quatre ans et cliff d'un an, clauses *good leaver* / *bad leaver*, promesse croisée, clause d'agrément ; *hypothèses : 6 000 à 15 000 € de rédaction, assurance homme clé 0,3 à 0,8 % du capital assuré par an.* Il s'écrit quand tout va bien, parce qu'il ne s'écrit jamais après. **La documentation :** le test n'est pas « existe-t-il une procédure » mais « une personne compétente qui n'était pas là peut-elle reprendre le poste avec ce qui est écrit ». *Seuil d'alerte :* **tout processus critique à porte unique qui touche l'entrée ou la sortie de cash.**
 
 ### 6.3 La trésorerie, sous l'angle de la ruine
 
@@ -360,7 +358,7 @@ Semaines de trésorerie de survie
      ÷ Frais fixes hebdomadaires
 ```
 
-Les définitions comptent plus que la formule, parce que c'est là que tout le monde triche. **Trésorerie nette disponible** = solde bancaire + encaissements PSP à recevoir sous 7 jours, **moins** la TVA collectée non reversée, les dettes fournisseurs échues ou échéant sous 30 jours, les commandes encaissées non expédiées, les charges sociales et fiscales dues, et toute ligne de crédit remboursable à vue. **Engagements non annulables** = commandes fournisseurs signées, loyers et contrats à préavis long, recrutements signés, engagements média forfaitaires.
+Les définitions comptent plus que la formule, parce que c'est là que tout le monde triche. **Trésorerie nette disponible** = solde bancaire + encaissements PSP à recevoir sous 7 jours, **moins** TVA collectée non reversée, dettes fournisseurs échues ou échéant sous 30 jours, commandes encaissées non expédiées, charges sociales et fiscales dues, ligne de crédit remboursable à vue. **Engagements non annulables** = commandes fournisseurs signées, loyers et contrats à préavis long, recrutements signés, engagements média forfaitaires.
 
 ```
 Réserve du palier P5 = 2 mois de fixes + 1 mois de COGS  = 1 243 595 €
@@ -370,7 +368,7 @@ Engagements fournisseurs en cours (stock 1 832 581 € à 60 j
 Semaines de survie = (1 243 595 − 916 291) ÷ 83 077      =   3,9 semaines
 ```
 
-**La réserve calibrée pour un choc d'exploitation tient 3,9 semaines face à un choc de ruine.** Ce n'est pas une contradiction avec E10 : E10 dimensionne pour réagir, E13 dimensionne pour ne pas mourir pendant qu'on réagit. Le seuil ne se choisit pas en mois ronds, il dérive de ton délai de réaction le plus long — le délai fournisseur, 90 jours en cosmétique avec fabrication à façon ([E10](E10-cash-et-operations.md) § 5).
+**La réserve calibrée pour un choc d'exploitation tient 3,9 semaines face à un choc de ruine.** Pas une contradiction avec E10 : E10 dimensionne pour réagir, E13 pour ne pas mourir pendant qu'on réagit. Le seuil dérive de ton délai de réaction le plus long — le délai fournisseur, 90 jours en cosmétique à façon ([E10](E10-cash-et-operations.md) § 5).
 
 | Semaines de survie | Régime | Ce que tu fais |
 | ---: | --- | --- |
@@ -388,7 +386,7 @@ Trésorerie requise à P5 : `916 291 + 13 × 83 077 = 1 996 292 €` contre 1 24
 
 ### 7.1 La méthode
 
-Un registre est un tableau à six colonnes, revu chaque trimestre, tenu par une personne nommée. Pas un document de conformité : un outil d'allocation. **Le risque**, formulé comme un événement daté et mesurable — « coupure Meta de 11 jours », pas « dépendance aux plateformes ». **La probabilité annuelle**, déclarée comme une estimation : tu ne la connais pas, écris-la quand même — un nombre faux se corrige, une intuition non écrite ne se corrige jamais. **L'impact en euros**, calculé, avec sa ligne de calcul. **L'espérance de perte** = probabilité × impact. **La mesure**, et ce qu'elle change — probabilité, impact, ou les deux. **Le coût annuel de la mesure**, y compris ce qu'elle coûte en marge ou en conversion.
+Six colonnes, revues chaque trimestre, tenues par une personne nommée. Pas un document de conformité : un outil d'allocation. **Le risque**, formulé comme un événement daté et mesurable — « coupure Meta de 11 jours », pas « dépendance aux plateformes ». **La probabilité annuelle**, déclarée comme une estimation : tu ne la connais pas, écris-la quand même — un nombre faux se corrige, une intuition non écrite ne se corrige jamais. **L'impact en euros**, calculé, avec sa ligne de calcul. **L'espérance de perte** = probabilité × impact. **La mesure**, et ce qu'elle change. **Son coût annuel**, y compris en marge ou en conversion.
 
 ### 7.2 Le registre de NØRA au palier P5
 
@@ -449,11 +447,11 @@ Rapport                                                   3,84 pour 1
 
 > **À retenir :** la réduction du risque ne se justifie presque jamais par l'espérance de perte annuelle. Elle se justifie par la probabilité de survie multipliée par la valeur de l'actif. Un registre lu en espérance dit de ne rien faire, le même registre lu en survie dit de tout faire. **Le second a raison, et c'est le premier qu'on présente en réunion.**
 
-Trois limites de méthode. Les risques ne sont **pas indépendants** — un rappel en novembre, une rupture qui provoque un pic de litiges, un bannissement pendant une pénurie de cash : sommer des espérances indépendantes sous-estime la queue de distribution. Les probabilités sont **tes** estimations, donc tes biais. Et le registre ne contient que les risques que tu as su nommer : sa limite la plus sérieuse.
+Trois limites. Les risques ne sont **pas indépendants** — un rappel en novembre, une rupture qui provoque un pic de litiges, un bannissement pendant une pénurie de cash : sommer des espérances indépendantes sous-estime la queue de distribution. Les probabilités sont **tes** estimations, donc tes biais. Et le registre ne contient que les risques que tu as su nommer : sa limite la plus sérieuse.
 
 ### 7.5 La règle de Kelly, appliquée informellement
 
-Le critère de Kelly détermine la fraction du capital à miser pour maximiser la croissance à long terme d'une série de paris. Sa conclusion opérationnelle tient en une phrase :
+Le critère de Kelly détermine la fraction du capital à miser pour maximiser la croissance à long terme d'une série de paris. Sa conclusion opérationnelle tient en une phrase.
 
 ```
 Aucun pari, si favorable soit-il, ne doit être dimensionné de telle sorte
@@ -462,15 +460,15 @@ qu'une issue défavorable te retire la capacité de faire le pari suivant.
 
 **La demi-Kelly.** La fraction optimale est déjà agressive quand on connaît les probabilités — or on ne les connaît pas, et surestimer la probabilité de gain fait croître le risque de ruine bien plus vite que la sous-estimer ne coûte de rendement. **Quand tu hésites entre deux tailles de pari, prends la plus petite.** L'asymétrie n'est pas dans les gains, elle est dans ta capacité à te tromper.
 
-**La mise n'est pas ce que tu peux perdre.** Applique Kelly à la commande de stock du § 6.1 : mise 2 565 613 €, gain de l'ordre de 4,2 fois la mise, perte limitée à un quart de la mise puisque le stock se vend, plus tard, en remise. Kelly te répond de miser plus de 100 % du capital, et Kelly a raison sur la marge. Mais tu paies en septembre et tu encaisses en décembre : si un bannissement, un rappel ou une suspension de PSP tombe entre les deux, tu as un entrepôt plein et pas un euro. **Dans une marque DTC, la mise de Kelly n'est pas ce que tu risques de perdre, c'est ce que tu immobilises.** La faillite n'arrive pas parce que tu as perdu de l'argent, elle arrive parce que ton argent est dans un entrepôt.
+**La mise n'est pas ce que tu peux perdre.** Applique Kelly à la commande du § 6.1 : mise 2 565 613 €, gain de l'ordre de 4,2 fois la mise, perte limitée à un quart puisque le stock se vend, plus tard, en remise. Kelly te répond de miser plus de 100 % du capital, et Kelly a raison sur la marge. Mais tu paies en septembre et tu encaisses en décembre : si un bannissement, un rappel ou une suspension de PSP tombe entre les deux, tu as un entrepôt plein et pas un euro. **Dans une marque DTC, la mise de Kelly n'est pas ce que tu risques de perdre, c'est ce que tu immobilises.** La faillite n'arrive pas parce que tu as perdu de l'argent, elle arrive parce que ton argent est dans un entrepôt.
 
 ### 7.6 Les trois plafonds
 
-**Plafond de dépense publicitaire.** La dépense d'un mois est le montant engagé sans savoir s'il produira ; le cycle fournisseur est ta durée de réaction. `Trésorerie nette minimale = dépense publicitaire d'un mois + 13 semaines de frais fixes`, soit à P5 `1 494 206 + 13 × 83 077 = 2 574 207 €`. Tant que la trésorerie est en dessous, chaque euro de budget supplémentaire augmente ton risque de ruine plus qu'il n'augmente ton EBITDA.
+**Plafond de dépense publicitaire.** La dépense d'un mois est le montant engagé sans savoir s'il produira ; le cycle fournisseur est ta durée de réaction. `Trésorerie nette minimale = dépense publicitaire d'un mois + 13 semaines de frais fixes`, soit à P5 `1 494 206 + 13 × 83 077 = 2 574 207 €`. En dessous, chaque euro de budget supplémentaire augmente ton risque de ruine plus qu'il n'augmente ton EBITDA.
 
-**Plafond de commande fournisseur.** Aucune commande unique ne dépasse **25 % de la trésorerie nette disponible**, ni **60 jours de couverture** au rythme des huit dernières semaines. À P5 : `25 % × 2 574 207 = 643 552 €`, quand le stock du palier vaut 1 832 581 € — donc trois commandes en rotation permanente au minimum. *Coût de la règle, hypothèse : commander en trois lots au lieu d'un coûte 3 % sur le COGS, soit 3 % × 6 283 135 = 188 494 € par an.* **C'est le prix explicite de la survie, et il n'apparaît sous ce nom dans aucun compte de résultat.**
+**Plafond de commande fournisseur.** Aucune commande unique ne dépasse **25 % de la trésorerie nette disponible**, ni **60 jours de couverture** au rythme des huit dernières semaines. À P5 : `25 % × 2 574 207 = 643 552 €` quand le stock du palier vaut 1 832 581 € — donc trois commandes en rotation permanente au minimum. *Coût de la règle, hypothèse : commander en trois lots au lieu d'un coûte 3 % sur le COGS, soit 3 % × 6 283 135 = 188 494 € par an.* **C'est le prix explicite de la survie, et il n'apparaît sous ce nom dans aucun compte de résultat.**
 
-**Plafond d'exposition à un marché.** Aucun marché ne dépasse **40 % de la marge brute**. Le seuil dérive du temps de réaction, pas d'un chiffre rond. Face à un arrêt total — interdiction de vente, retrait réglementaire, blocage douanier, litige de marque :
+**Plafond d'exposition à un marché.** Aucun marché ne dépasse **40 % de la marge brute**, seuil dérivé du temps de réaction et non d'un chiffre rond. Face à un arrêt total — interdiction de vente, retrait réglementaire, blocage douanier, litige de marque :
 
 ```
 Marge brute mensuelle P5 = 2 218 957 €, fixes 360 000 € (§ 2.2)
@@ -504,11 +502,11 @@ Exposition 80 % : EBITDA = 364 752 − 1 775 166 = −1 410 414 €/mois → 1,8
 
 ## 9. Ce que ce module ne dit pas
 
-**Les risques macroéconomiques.** Le change n'est pas traité : acheter en dollars expose le COGS annuel de P5, **6 283 135 €**, à 628 313 € pour dix points de parité — la ligne « −10 % de COGS » du § 7 des canoniques, mais dans le mauvais sens et sans contrepartie. Douane, énergie, fret et coût du capital relèvent de la même famille : ils frappent la marge brute sans prévenir, ne se réduisent pas par une mesure interne, et se couvrent par des instruments financiers que ce cursus n'enseigne pas. **Ils appartiennent au registre, avec une probabilité et un impact, même quand aucune mesure n'existe** — une ligne sans mesure n'est pas inutile, c'est une ligne qui dimensionne la réserve.
+**Les risques macroéconomiques.** Le change n'est pas traité : acheter en dollars expose le COGS annuel de P5, **6 283 135 €**, à 628 313 € pour dix points de parité — la ligne « −10 % de COGS » du § 7 des canoniques, dans le mauvais sens et sans contrepartie. Douane, énergie, fret et coût du capital relèvent de la même famille : ils frappent la marge brute sans prévenir, ne se réduisent pas par une mesure interne, et se couvrent par des instruments que ce cursus n'enseigne pas. **Ils appartiennent au registre, avec une probabilité et un impact, même quand aucune mesure n'existe** — une ligne sans mesure dimensionne la réserve.
 
-**Le détail juridique national.** Le § 3 énonce des textes européens et des ordres de grandeur. Il ne dit pas ce qui s'applique à ta forme juridique, à ton pays d'établissement, à ton statut d'importateur ou de distributeur, ni comment l'autorité de chaque marché applique réellement ces règles — et l'écart entre le texte et la pratique est parfois plus grand que l'écart entre deux textes. Seuils, taux et régimes changent. **Responsabilité produit, fiscalité transfrontalière et données personnelles exigent un conseil identifié, pas une lecture de module.** Le § 3.3 dit à quel palier le prendre et ce qu'il coûte ; il ne le remplace pas.
+**Le détail juridique national.** Le § 3 énonce des textes européens et des ordres de grandeur. Il ne dit ni ce qui s'applique à ta forme juridique, à ton pays d'établissement et à ton statut d'importateur ou de distributeur, ni comment l'autorité de chaque marché applique réellement ces règles — l'écart entre le texte et la pratique étant parfois plus grand que l'écart entre deux textes. Seuils, taux et régimes changent. **Responsabilité produit, fiscalité transfrontalière et données personnelles exigent un conseil identifié, pas une lecture de module.**
 
-**Trois absences volontaires.** L'assurance, traitée seulement par la RC produit (§ 4.2) : perte d'exploitation, cyber, responsabilité des dirigeants et crédit client relèvent d'un courtier. Le risque de réputation, non modélisable en espérance de perte, qui se gère par la marque ([E12](E12-marque-et-actif.md)). La restructuration — négociation avec les créanciers, procédures amiables, redressement — qui commence là où ce module s'arrête ; [C08](../etudes-de-cas/C08-redressement-90-jours.md) en montre la version opérationnelle.
+**Trois absences volontaires.** L'assurance, traitée seulement par la RC produit (§ 4.2) : perte d'exploitation, cyber, responsabilité des dirigeants et crédit client relèvent d'un courtier. Le risque de réputation, non modélisable en espérance, qui se gère par la marque ([E12](E12-marque-et-actif.md)). La restructuration — créanciers, procédures amiables, redressement — qui commence là où ce module s'arrête ([C08](../etudes-de-cas/C08-redressement-90-jours.md)).
 
 **Ce module suppose que tu veux survivre**, et ce n'est pas toujours le bon objectif. Une marque financée en capital-risque, dont l'actionnaire tient vingt lignes, maximise rationnellement l'espérance et non la survie : la ruine d'une ligne ne le ruine pas. [E10](E10-cash-et-operations.md) § 4.2 chiffre le prix de cette assurance — le capital-risque coûte six fois la dette la plus chère. **Si tu es le seul actionnaire, la seule ligne de ton portefeuille est ton entreprise, et le § 0 s'applique intégralement.**
 
@@ -525,7 +523,7 @@ Exposition 80 % : EBITDA = 364 752 − 1 775 166 = −1 410 414 €/mois → 1,8
 | 5 | **Part du trimestre le plus fort** | CA TTC du meilleur trimestre ÷ CA TTC annuel glissant (§ 6.1) | Trimestrielle | > 35 % |
 | 6 | **Lignes du registre non couvertes** | Risques dont l'impact dépasse la réserve du palier et dont la mesure n'est pas exécutée (§ 7.4) | Trimestrielle | > 0 |
 
-Le 1 est le seul qui se regarde chaque semaine et le seul qui ne ment jamais — à condition que ses soustractions soient faites honnêtement. Le 4 est un compte, pas une mesure : sa cible est zéro et il coûte quelques milliers d'euros à y ramener. Le 6 est le seul indicateur du cursus dont le seuil d'alerte est zéro, parce qu'une ligne d'impact supérieur à la réserve n'est pas un risque à surveiller mais une décision à prendre. Aucun des six ne figure dans une interface publicitaire ou un logiciel de comptabilité : ils se tiennent à la main, par une personne nommée.
+Le 1 est le seul qui ne ment jamais — à condition que ses soustractions soient faites honnêtement. Le 4 est un compte, pas une mesure : sa cible est zéro et il coûte quelques milliers d'euros à y ramener. Le 6 est le seul indicateur du cursus dont le seuil d'alerte est zéro, parce qu'une ligne d'impact supérieur à la réserve n'est pas un risque à surveiller mais une décision à prendre. Aucun des six ne figure dans une interface publicitaire ou un logiciel de comptabilité : ils se tiennent à la main.
 
 ---
 

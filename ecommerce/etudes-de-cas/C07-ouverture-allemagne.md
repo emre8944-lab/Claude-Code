@@ -19,8 +19,8 @@ NØRA est au palier **P3** : 18 000 commandes par mois, 1 177 200 € TTC, 981 0
 60,35 % de marge brute, 51 033 € d'EBITDA mensuel, nCAC 33,18 €, MER 2,70 (canonique § 2).
 Le passage à P4 suppose cinq marchés ; le premier ouvert est l'**Allemagne**, parce que
 c'est le plus grand — et que si un marché doit casser la méthode, autant que ce soit
-celui-là tant qu'il reste du cash. Trésorerie au mois 0 : **1 250 000 €**, cinq mois, et
-un critère de fermeture écrit d'avance.
+celui-là tant qu'il reste du cash. Trésorerie au mois 0 : **1 250 000 €**, cinq mois, un
+critère de fermeture écrit d'avance.
 
 ### 1.1 Le coût de la préparation, avant le premier euro de chiffre d'affaires
 
@@ -86,8 +86,9 @@ Le dirigeant croyait ouvrir un marché. Il ouvrait trois chantiers, dont deux no
 
 ### 2.1 Surprise n° 1 — le retour, et l'illusion qu'il ne coûte qu'une ligne
 
-France : **4,2 % des commandes**. Allemagne : **12,4 % au mois 5**, pic à 13,6 % au mois
-3. Commander plusieurs variantes et renvoyer le reste est un usage hérité de la vente par
+France : **4,2 % des commandes** — `0,46 × 3,9 + 0,33 × 4,6 + 0,15 × 4,8 + 0,06 × 2,8` sur
+le mix français. Allemagne : **12,4 % au mois 5**, pic à 13,6 % au mois 3. Commander
+plusieurs variantes et renvoyer le reste est un usage hérité de la vente par
 correspondance — et l'achat sur facture permet de commander **sans payer**.
 
 | Moyen de paiement (mix du M5) | Part | Taux de retour | Contribution au taux |
@@ -99,17 +100,16 @@ correspondance — et l'achat sur facture permet de commander **sans payer**.
 | Virement immédiat | 6 % | 5,9 % | 0,35 pt |
 | **Moyenne pondérée** | **100 %** | **12,42 %** | **12,42 pts** |
 
-En France, le même calcul donne `0,46 × 3,9 + 0,33 × 4,6 + 0,15 × 4,8 + 0,06 × 2,8 =
-4,20 %`. **Le taux de retour n'est pas un trait national : c'est la conséquence arithmétique
-d'un mix de paiement.** Et il ne coûte pas une ligne, il en contamine quatre :
+**Le taux de retour n'est pas un trait national : c'est la conséquence arithmétique d'un
+mix de paiement.** Et il ne coûte pas une ligne, il en contamine quatre :
 
 ```
 CA TTC facturé                                              64,00 € TTC
-− retours (12,4 % des commandes, remboursement intégral)     −7,94 € TTC
+− retours (12,4 % des commandes, remboursés)                 −7,94 € TTC
 = CA TTC net                                                 56,06 € TTC
 = CA HT net (÷ 1,19)                                         47,11 € HT
 − COGS non récupéré  8,60 × (1 − 0,124 × 0,70)               −7,85 €
-− logistique aller (payée sur 100 % des commandes)           −7,90 €
+− logistique aller (sur 100 % des commandes)                 −7,90 €
 − transport retour et reconditionnement  6,20 × 0,124        −0,77 €
 − PSP et impayés                                             −1,42 €
 − remises et codes (6,0 % du HT net)                         −2,83 €
@@ -128,9 +128,6 @@ défavorables le retour en pèse **42 %**, devant la logistique — et c'est le 
 s'achète pas.
 
 ### 2.2 Surprise n° 2 — le mix de paiement : conversion contre trésorerie
-
-NØRA a ouvert avec carte, PayPal et virement immédiat, comme en France. L'achat sur facture
-n'a été activé qu'au mois 3, après un test à trafic partagé.
 
 
 | Test, semaine 3 du mois 3 | Sans achat sur facture | Avec achat sur facture |
@@ -197,14 +194,14 @@ Perte cumulée à fin M3 : 225 134 € d'exploitation + 71 020 € de préparati
 | Option | Pub M4+M5 | Nouveaux clients M4+M5 | Clients cumulés au M5 | **EBITDA marché M4+M5** |
 | --- | ---: | ---: | ---: | ---: |
 | **A** — fermer immédiatement | 0 € | 0 | 5 076 | **−5 078 €** (liquidation) |
-| **B** — pousser les créas traduites, budget +50 % | 592 500 € | 10 738 | 15 814 | **−348 252 €** |
-| **C** — geler le budget, reconstruire les créas | 260 000 € | 6 516 | 11 592 | **−132 545 €** |
+| **B** — pousser les créas traduites, +50 % | 592 500 € | 10 738 | 15 814 | **−348 252 €** |
+| **C** — geler le budget, reconstruire | 260 000 € | 6 516 | 11 592 | **−132 545 €** |
 | **D** — reconstruire **et** accélérer | 395 000 € | 10 321 | **15 397** | **−176 179 €** |
 
 **A.** `5 076 × 0,55 × 32,89 € = 91 822 €` de contribution résiduelle sur douze mois,
-moins 74 400 € de fixes maintenus et 22 500 € de décote sur le stock — solde **−5 078 €**,
+moins 74 400 € de fixes maintenus et 22 500 € de décote sur le stock : solde **−5 078 €**,
 perte définitive **301 232 €**. Fermer n'est pas gratuit, mais c'est le point de
-comparaison de toutes les autres options : chiffre-le en premier. **B** épuise la
+comparaison de toutes les autres options — chiffre-le en premier. **B** épuise la
 bibliothèque, donc le LTV/CAC tombe à `56,05 ÷ 58,00 = 0,97` : **on achète des clients qui
 valent moins qu'ils ne coûtent.**
 
@@ -239,7 +236,7 @@ la règle du cursus dit *on ne scale pas, on répare*.
 
 ### 4.2 Le critère écrit d'avance, et sa lecture
 
-| Condition rédigée au M−1, signée, non modifiable | Seuil | Réel au M5 | Verdict |
+| Condition écrite au M−1, signée | Seuil | Réel au M5 | Verdict |
 | --- | ---: | ---: | :---: |
 | nCAC du marché ≤ 1,25 × nCAC France | ≤ 41,48 € | 37,00 € (×1,12) | ✓ |
 | Marge de contribution ≥ 50 % du CA HT net | ≥ 50,00 % | 54,74 % | ✓ |
@@ -262,7 +259,6 @@ fiches réécrites. Frais fixes : 39 050 €, 41 250 €, 41 750 €.
 | --- | ---: | ---: | ---: |
 | Taux de retour ; nCAC | 11,3 % ; 36,00 € | 10,2 % ; 35,20 € | **9,4 % ; 34,50 €** |
 | Commandes ; AOV TTC | 7 261 ; 65,00 € | 7 810 ; 66,00 € | 8 327 ; 67,00 € |
-| Contribution / commande | 27,13 € | 29,31 € | **30,45 €** |
 | Marge ; % du CA HT net | 196 991 € ; 56,00 % | 228 911 € ; 58,84 % | **253 557 € ; 59,69 %** |
 | CA TTC net ; MER | 418 669 € ; 1,90 | 462 899 € ; 2,10 | **505 449 € ; 2,30** |
 | **Résultat du marché** | **−62 059 €** | **−32 339 €** | **−8 193 €** |
@@ -277,7 +273,6 @@ LTV/CAC ≥ 1,90 au mois 8 — est atteint**, à 8 193 € de l'équilibre.
 
 | Indicateur | France P3 (référence) | Allemagne M1 | Allemagne M5 | Allemagne M8 |
 | --- | ---: | ---: | ---: | ---: |
-| Taux de retour | 4,2 % | 11,5 % | 12,4 % | **9,4 %** |
 | nCAC ; rapport à la France | 33,18 € ; ×1,00 | 80,00 € ; ×2,41 | 37,00 € ; ×1,12 | **34,50 € ; ×1,04** |
 | Marge brute (CM2) | 60,35 % | 50,15 % | 54,74 % | **59,69 %** |
 | CA TTC net / mois | 1 177 200 € | 38 498 € | 373 696 € | **505 449 €** |
@@ -285,9 +280,9 @@ LTV/CAC ≥ 1,90 au mois 8 — est atteint**, à 8 193 € de l'équilibre.
 | **Résultat du marché / mois** | **+51 033 €** | **−54 427 €** | **−84 434 €** | **−8 193 €** |
 
 **+9,54 points de marge brute en huit mois**, dont 3,4 du seul taux de retour ; en
-résultat, de **−168,3 % du CA HT net** au mois 1 à **−1,9 %** au mois 8. **Coût total :**
-71 020 € de préparation, 503 904 € de pertes, 396 200 € de BFR — **capital d'ouverture
-réel 971 124 €**, soit **4,4 fois la dépense publicitaire mensuelle de croisière**.
+résultat, de **−168,3 % du CA HT net** au mois 1 à **−1,9 %** au mois 8. 71 020 € de
+préparation, 503 904 € de pertes, 396 200 € de BFR : **capital d'ouverture réel 971 124
+€**, **4,4 fois la dépense publicitaire mensuelle de croisière**.
 
 ---
 
@@ -339,9 +334,10 @@ de reconstruction créative, un d'apprentissage algorithmique, deux pour la prem
 cohorte de réachat. Juger plus tôt, c'est juger ses créas — au mois 2, l'Allemagne était à
 60,00 € de CAC et 0,37 de LTV/CAC.
 
-**7.3 Les trois indicateurs qui décident**, aux mois 5, 8 et 12. *nCAC ÷ nCAC de référence* :
-≤ 1,25, ≤ 1,10, ≤ 1,05. *Marge de contribution en % du CA HT net* : ≥ 50 %, ≥ 57 %, ≥ 59 %.
-*LTV 12 mois ÷ CAC* : —, ≥ 1,90, ≥ 2,20. **Aucun des trois n'est un chiffre d'affaires.**
+**7.3 Les trois indicateurs qui décident**, aux mois 5, 8 et 12. *nCAC ÷ nCAC de
+référence* : ≤ 1,25, ≤ 1,10, ≤ 1,05. *Marge de contribution en % du CA HT net* : ≥ 50 %, ≥
+57 %, ≥ 59 %. *LTV 12 mois ÷ CAC* : —, ≥ 1,90, ≥ 2,20. **Aucun des trois n'est un chiffre
+d'affaires.**
 
 **7.4 Pourquoi on n'ouvre jamais trois marchés à la fois.** L'apprentissage est fonction
 du **volume de conversions**, pas du temps : diviser le budget par trois le fait passer
@@ -410,11 +406,10 @@ achète des clients à perte, volontairement.
 **2.** À 11,4 % : `CA HT net = 64,00 × 0,886 ÷ 1,19 = 47,65 €` ; COGS non récupéré `8,60 ×
 (1 − 0,114 × 0,70) = 7,91 €` ; transport retour `6,20 × 0,114 = 0,71 €` ; remises `47,65 ×
 0,06 = 2,86 €`. Contribution `47,65 − 7,91 − 7,90 − 0,71 − 1,42 − 2,86 − 0,55 = 26,30 €`,
-soit **55,19 %** contre 54,74 % : **un point de taux vaut 0,45 point de marge**, 0,51 €
-par commande, `0,51 × 6 666 = 3 400 €` par mois. La ligne canonique mesure un **coût** en
-% du CA HT, celui-ci un **taux de commandes** — et un point de taux contamine quatre
-lignes : marchandise détruite, transport aller perdu, transport retour, dénominateur de
-tous les autres ratios.
+**55,19 %** contre 54,74 % : **un point de taux vaut 0,45 point de marge**, `0,51 × 6 666
+= 3 400 €` par mois. La ligne canonique mesure un **coût** en % du CA HT, celui-ci un
+**taux de commandes** — et un point de taux contamine quatre lignes : marchandise
+détruite, transport aller perdu, transport retour, dénominateur de tous les ratios.
 
 **3.** `17 542 ÷ 41 200 × 1 000 = 425,78 €` sans, `19 134 ÷ 41 200 × 1 000 = 464,42 €`
 avec : **+38,64 €, soit +9,1 %.** On garde. La contribution par commande baisse de 2,09 €

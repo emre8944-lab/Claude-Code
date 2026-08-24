@@ -13,8 +13,7 @@
 
 ---
 
-**Ce qui sépare un L09 d'un L10.** Pas la connaissance : à L09 tu sais déjà tout ce que ce cursus contient. D'abord **la vitesse de hiérarchisation** — devant le dossier de la partie (a), un L09 trouve les huit problèmes (CAC qui explose, surstock, trésorerie courte, cadence créative divisée par deux, dépendance à une plateforme, rétention qui décroche, marge qui s'effondre, avis qui tombent) et il a raison sur les huit ; un L10 trouve les mêmes huit **et sait, en trente minutes, lequel produit les sept autres**. Ensuite **la capacité à voir ce qui ne colle pas** : un CAC qui monte de 40 % pendant que le CPM bouge de 2 % est une contradiction — quelque chose s'est cassé entre le clic et l'achat, et l'acquisition n'y est pour rien. Cette sensation ne s'acquiert qu'en ayant vu beaucoup de dossiers, d'où un diagnostic chronométré plutôt qu'un questionnaire. Enfin, plus rare : **savoir dire non, chiffré.** Un refus sans nombre est une opinion.
-
+**Ce qui sépare un L09 d'un L10.** Pas la connaissance : à L09 tu sais déjà tout ce que ce cursus contient. D'abord **la vitesse de hiérarchisation** — devant le dossier de la partie (a), un L09 trouve les huit problèmes et a raison sur les huit ; un L10 trouve les mêmes huit **et sait, en trente minutes, lequel produit les sept autres**. Ensuite **la capacité à voir ce qui ne colle pas** : un CAC qui monte de 40 % pendant que le CPM bouge de 2 % est une contradiction — quelque chose s'est cassé entre le clic et l'achat, et l'acquisition n'y est pour rien. Cette sensation ne s'acquiert qu'en ayant vu beaucoup de dossiers, d'où un diagnostic chronométré plutôt qu'un questionnaire. Enfin, plus rare : **savoir dire non, chiffré.** Un refus sans nombre est une opinion.
 ---
 
 ## 1. Les compétences du niveau
@@ -36,11 +35,11 @@ La lecture ne sert plus à apprendre : elle sert à **entretenir** et à retrouv
 
 | # | Lecture | Ce qu'elle apporte **à ce niveau** |
 |---|---|---|
-| 1 | [**E01**](../modules/E01-arithmetique-de-la-marque.md) et [**E09**](../modules/E09-mesure-et-incrementalite.md), relus en cherchant les **limites** | À L10 on est jugé sur les cas où le modèle habituel ne s'applique pas. |
-| 2 | [**E12**](../modules/E12-marque-et-actif.md) § 8 et [**E13**](../modules/E13-risque-de-ruine.md) | Ce qui fait un multiple, et la frontière entre un risque qui coûte et un risque qui termine — la partie (b) repose dessus. |
-| 3 | **Les dix cas C01 à C10, trente minutes chacun**, corrigé fermé | Le seul entraînement qui reproduit les conditions de l'épreuve. Écris ton diagnostic avant d'ouvrir le corrigé. |
-| 4 | [**E04**](../modules/E04-psychologie-du-client.md) § 1 à § 3 | Les niveaux de conscience, appliqués à ton interlocuteur : le matériau de la partie (c). |
-| 5 | Une source **primaire** par trimestre | Pas de synthèse de synthèse : à L10 tu es la source de quelqu'un d'autre. |
+| 1 | [**E01**](../modules/E01-arithmetique-de-la-marque.md) et [**E09**](../modules/E09-mesure-et-incrementalite.md), relus en cherchant les **limites** | À L10 on est jugé sur les cas où le modèle habituel ne s'applique pas |
+| 2 | [**E12**](../modules/E12-marque-et-actif.md) § 8 et [**E13**](../modules/E13-risque-de-ruine.md) | Ce qui fait un multiple, et la frontière entre un risque qui coûte et un risque qui termine |
+| 3 | **Les dix cas C01 à C10, trente minutes chacun**, corrigé fermé | Le seul entraînement qui reproduit les conditions de l'épreuve |
+| 4 | [**E04**](../modules/E04-psychologie-du-client.md) § 1 à § 3 | Les niveaux de conscience, appliqués à ton interlocuteur : le matériau de la partie (c) |
+| 5 | Une source **primaire** par trimestre | Pas de synthèse de synthèse : à L10 tu es la source de quelqu'un d'autre |
 
 ---
 
@@ -48,11 +47,11 @@ La lecture ne sert plus à apprendre : elle sert à **entretenir** et à retrouv
 
 | Travail | Livrable | Comment on sait que c'est fait |
 |---|---|---|
-| **Trente dossiers en trente minutes** | Par dossier : un goulot, deux chiffres de preuve, une décision | La part des dossiers où ton goulot survit à la vérification. Sous 70 %, tu n'y es pas |
+| **Trente dossiers en trente minutes** | Un goulot, deux chiffres de preuve, une décision | La part des dossiers où ton goulot survit à la vérification. Sous 70 %, tu n'y es pas |
 | **Le journal de prédictions** | Avant chaque décision : ce que tu attends, chiffré et daté | Tu l'as relu à 90 jours et compté tes erreurs |
-| **Enseigner trois modules** à un débutant complet | Trois séances, et les questions qu'on t'a posées | Une question qui révèle un terme non défini vaut plus qu'un compliment |
-| **Trois refus écrits** | Trois dossiers refusés, chacun avec le nombre qui fonde le refus | Un refus sans nombre ne compte pas |
-| [**S12**](../atelier/S12-la-crise.md), partie 2, et le simulateur sur toutes les stratégies | La revue générale ; le tableau des fins de partie, même graine | Tu prédis le classement **avant** de lancer |
+| **Enseigner trois modules** à un débutant | Trois séances, et les questions qu'on t'a posées | Une question qui révèle un terme non défini vaut plus qu'un compliment |
+| **Trois refus écrits** | Trois dossiers refusés, avec le nombre qui fonde chaque refus | Un refus sans nombre ne compte pas |
+| [**S12**](../atelier/S12-la-crise.md) partie 2, et le simulateur sur toutes les stratégies | La revue générale ; le tableau des fins de partie, même graine | Tu prédis le classement **avant** de lancer |
 
 > **Le journal de prédictions est le seul de ces travaux qui produit de la compétence par lui-même.** Sans lui, trente dossiers diagnostiqués produisent trente occasions de se confirmer. C'est ce qui sépare quelqu'un qui a vu cent marques de quelqu'un qui a vu une marque cent fois.
 
@@ -179,7 +178,6 @@ Un point de CA HT = 1 250 000 × 12 ÷ 100 = 150 000 € par an
 MER : 1 500 000 ÷ 472 500 = 3,17   →   1 500 000 ÷ 661 500 = 2,27
 ```
 
-**Barème.** 6 le tableau, 2 l'EBITDA en points et en euros. −2 si le MER est calculé sur le CA HT.
 
 ### A3 — La décomposition
 
@@ -245,7 +243,6 @@ Ratio 19,03 ÷ 1,42 = 13,4 pour 1
 
 **KORVA a économisé un point de marge et en a perdu treize.** L'économie était immédiate et sur une ligne ; le coût était différé de deux mois et sur d'autres lignes. C'est la structure de la plupart des décisions qui détruisent une marque.
 
-**Barème.** 3 le gain, 3 le coût avec l'imputation à 94,8 %, 2 le ratio. Compter les 15,12 points entiers : 5.
 
 ### A9 — Les cohortes
 
@@ -285,7 +282,6 @@ Avec les engagements fournisseur :
 
 **Le nCAC à 44,10 €** — conséquence mesurée en A4 : 94,8 % de sa hausse disparaît quand le produit redevient ce qu'il était. **Le stock de 4,1 mois** — même décision vue depuis le bilan ; l'écouler plus vite aggrave la rétention. **La dépendance à Meta (68 %)** — risque réel, mais un risque de ruine à horizon indéterminé ne passe pas devant une insolvabilité à huit semaines. La cadence à 19 concepts par semaine est acceptable comme quatrième réponse.
 
-**Barème.** 2 par symptôme, dont 1 pour la raison.
 
 ### A12 — Lundi matin
 
@@ -293,7 +289,6 @@ Avec les engagements fournisseur :
 
 **Délai avant que le premier chiffre bouge :** le taux de retour réagit en 3 à 4 semaines ; la note des avis en 6 à 10 semaines, parce qu'il faut noyer 1 041 avis ; la conversion suit la note avec 2 à 4 semaines de retard ; le nCAC suit la conversion immédiatement. **Premier signal à 4 semaines, premier euro à 10 ou 14 semaines** — d'où la vraie conclusion : **la réparation prend plus longtemps que la trésorerie ne dure.**
 
-**Barème.** 2 le retrait du lot, 2 la renégociation fournisseur justifiée par le calendrier.
 
 ### B1 — Payback et cumul
 
@@ -310,7 +305,6 @@ Option 3  −1 800 000 + 520 000 +1 460 000  +1 700 000
   payback   12 + (1 280 000 ÷ 1 460 000) × 12         22,5 mois
 ```
 
-**Barème.** 8 par option : 3 la ligne cumulée, 3 le payback interpolé, 2 le cumul.
 
 ### B2 — Les deux classements
 
@@ -318,7 +312,6 @@ Ils coïncident : **3, puis 1, puis 2**, sur les deux critères. Ils divergeraie
 
 **La règle :** *le payback mesure le risque, le cumul mesure la valeur ; quand ils s'opposent on choisit le payback tant que la trésorerie est le facteur limitant, le cumul dès qu'elle ne l'est plus.*
 
-**Barème.** 4 le constat, 5 l'exemple chiffré, 3 la règle.
 
 ### B3 — Le choix
 
@@ -366,7 +359,6 @@ Cumul de l'option 3 seule                         = 1 880 000 €
 
 **Le partage détruit 2 036 000 € en trois ans**, parce que deux des trois options ont un seuil sous lequel elles ne produisent rien. **Un investissement qui a un seuil d'entrée ne se divise pas.** C'est la raison arithmétique pour laquelle dire non est une compétence : dire oui à tout revient à financer trois échecs partiels.
 
-**Barème.** 4 les trois tiers, 4 le calcul de l'écart, 2 la règle du seuil d'entrée.
 
 ### Partie (c) — La réponse modèle et sa grille
 
@@ -432,29 +424,25 @@ Cumul de l'option 3 seule                         = 1 880 000 €
 
 | Rythme | Ce que tu fais | Pourquoi |
 |---|---|---|
-| Semaine | **Un chiffrage en cinq minutes** : une intuition, trois hypothèses déclarées, un ordre de grandeur, écrit avant de vérifier | La compétence qui se perd en premier, et celle pour laquelle on t'appelle |
-| Mois | **Un dossier inconnu diagnostiqué en trente minutes**, chrono lancé | Sans dossier neuf, tu ne diagnostiques plus : tu reconnais |
+| Semaine | **Un chiffrage en cinq minutes** : une intuition, trois hypothèses déclarées, un ordre de grandeur, écrit avant de vérifier | La compétence qui se perd en premier |
+| Mois | **Un dossier inconnu en trente minutes**, chrono lancé | Sans dossier neuf, tu ne diagnostiques plus : tu reconnais |
 | Trimestre | **Relire ton journal de prédictions** et compter tes erreurs par catégorie | La seule mesure honnête de ton jugement |
-| Trimestre | **Enseigner une fois** à quelqu'un qui n'y connaît rien | Les questions qu'on te pose révèlent ce que tu as cessé de comprendre |
+| Trimestre | **Enseigner une fois** à quelqu'un qui n'y connaît rien | Les questions révèlent ce que tu as cessé de comprendre |
 | Année | **Ré-attestation** : trois parties, dossier neuf, chronomètre | Un niveau qu'on ne repasse pas est un niveau qu'on a eu |
 
 ### Les sources à suivre
 
-Pas de liste d'outils ni de comptes : ça se périme en douze mois. Trois catégories.
-
-1. **Les données primaires** — rapports annuels de distributeurs et de marques cotées, statistiques publiques de commerce de détail, jeux de données de prestataires de paiement. On y cherche des séries longues, seule matière qui distingue une tendance d'une saison.
-2. **La documentation des plateformes publicitaires et leurs changements de règles** — non pour les tactiques, qui meurent en 6 à 18 mois, mais pour ce que les règles révèlent du mécanisme d'enchère et du signal.
-3. **Tes propres cohortes et celles des marques que tu conseilles** — si tu as tenu le journal. Sinon c'est un souvenir.
+Pas de liste d'outils ni de comptes : ça se périme en douze mois. Trois catégories. **Les données primaires** — rapports annuels de distributeurs et de marques cotées, statistiques publiques de commerce de détail — pour leurs séries longues, seule matière qui distingue une tendance d'une saison. **La documentation des plateformes publicitaires et leurs changements de règles**, non pour les tactiques qui meurent en 6 à 18 mois, mais pour ce que les règles révèlent du mécanisme d'enchère et du signal. **Tes propres cohortes et celles des marques que tu conseilles**, si tu as tenu le journal ; sinon c'est un souvenir.
 
 Ce qu'on ne suit pas : les études de cas de prestataires, où le survivant est toujours le client ; les classements de marques « qui explosent », où le chiffre d'affaires n'est jamais rapporté à la marge ; les contenus dont l'auteur ne montre jamais un compte de résultat.
 
 ### Pourquoi ce niveau se perd en dix-huit mois
 
-**La péremption des repères.** Un CAC de 34 €, un CPM, un taux de conversion normal, un délai de production : ces ordres de grandeur bougent, et ton diagnostic à trente minutes repose sur eux — c'est ce qui te fait sentir qu'un chiffre ne colle pas. Un an sans dossier neuf, et tu compares aux normes d'il y a un an avec la même assurance.
+**La péremption des repères.** Un CAC de 34 €, un CPM, un taux de conversion normal : ces ordres de grandeur bougent, et ton diagnostic à trente minutes repose sur eux — c'est ce qui te fait sentir qu'un chiffre ne colle pas. Un an sans dossier neuf, et tu compares aux normes d'il y a un an avec la même assurance.
 
 **La reconnaissance qui remplace le diagnostic.** À force de voir les mêmes cas on cesse de calculer : on classe. Ça marche jusqu'au dossier qui ressemble à un cas connu sans en être un — exactement celui pour lequel on t'appelle, puisque les autres, l'équipe les a déjà réglés.
 
-**L'absence de retour.** Sans journal de prédictions tu n'apprends plus de tes erreurs : tu te souviens de tes réussites. Dix-huit mois de ce régime produisent une confiance qui monte pendant qu'une compétence descend, et rien dans l'expérience vécue ne signale le croisement.
+**L'absence de retour.** Sans journal, tu n'apprends plus de tes erreurs : tu te souviens de tes réussites. Dix-huit mois de ce régime produisent une confiance qui monte pendant qu'une compétence descend, et rien dans l'expérience vécue ne signale le croisement.
 
 > **La seule protection est d'être régulièrement mis en défaut sur un dossier réel**, chronomètre en marche, devant quelqu'un qui connaît la réponse. Cherche-le volontairement : personne ne te l'offrira, parce qu'à ce niveau on te consulte, on ne te teste plus.
 
