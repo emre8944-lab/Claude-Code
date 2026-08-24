@@ -92,14 +92,20 @@ développer et gérer une marque en direct, du premier euro jusqu'à 1 M€ de c
 d'affaires par semaine.
 
 Il est bâti autour d'une marque fictive suivie de bout en bout, avec un modèle
-économique unique et reproductible — 15 modules, 10 études de cas chiffrées, des
-exercices corrigés, six calculateurs et un protocole de mentorat hebdomadaire.
+économique unique et reproductible. Il se parcourt en trois activités qui ne se
+remplacent pas : **tu lis** (15 modules, 10 études de cas chiffrées), **tu
+construis** (12 séances d'atelier qui produisent le dossier complet d'une marque),
+et **tu joues** (un simulateur de marque au tour par tour, où chaque décision a sa
+conséquence chiffrée). La progression va de novice à expert, en onze niveaux
+validés par des épreuves notées.
 
 | Pour commencer | |
 |---|---|
 | [Sommaire du cursus](ecommerce/README.md) | Le programme complet |
+| [Le parcours en 11 niveaux](ecommerce/parcours/README.md) | De L00 à L10, avec les épreuves |
+| [L'atelier en 12 séances](ecommerce/atelier/README.md) | Tu construis réellement une marque |
+| [Le simulateur](ecommerce/outils/simulateur_marque.py) | `--comparer` pour voir cinq stratégies s'affronter |
 | [Diagnostic](ecommerce/mentorat/diagnostic.md) | 30 minutes, il détermine ce qu'on ignore |
-| [E01 — L'arithmétique de la marque](ecommerce/modules/E01-arithmetique-de-la-marque.md) | Le module central |
 | [Chiffres canoniques](ecommerce/donnees/chiffres-canoniques.md) | La source de vérité chiffrée |
 
 Les deux cursus se répondent : le module 13 (CAC, LTV, payback) est le prérequis

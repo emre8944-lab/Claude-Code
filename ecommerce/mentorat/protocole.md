@@ -62,7 +62,13 @@ enrichit son fondateur d'une marque qui fait joli sur un tableau de bord.
 
 ---
 
-## 2. Les cinq niveaux, et ce qu'on travaille à chacun
+## 2. Les cinq niveaux de business, et ce qu'on travaille à chacun
+
+> **Attention à ne pas confondre deux échelles.** Les niveaux **Nx** ci-dessous
+> mesurent l'état de ton **business**. Les niveaux **Lxx** du
+> [parcours](../parcours/README.md) mesurent ta **compétence**, et se valident par
+> des épreuves notées. Les deux sont indépendants — et le cas dangereux, c'est un
+> business en N3 piloté par une compétence L04.
 
 Tu es forcément à l'un de ces cinq niveaux. Le [diagnostic](diagnostic.md) te place
 précisément. Ce qui suit détermine **ce qu'on travaille et ce qu'on ignore** — parce
@@ -253,5 +259,6 @@ Dans l'ordre, avant de m'écrire :
 
 ---
 
-*Prochaine étape : fais le [diagnostic](diagnostic.md). Il prend 30 minutes et il
-détermine tout le reste.*
+*Prochaine étape : fais le [diagnostic](diagnostic.md) — 30 minutes, il place ton
+business. Puis attaque le [parcours](../parcours/README.md) à partir de L00, et
+l'[atelier](../atelier/README.md) à partir de S01.*

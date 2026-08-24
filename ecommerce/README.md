@@ -83,15 +83,47 @@ Les cinq paliers du parcours :
 
 ## Par où commencer
 
-**1. Fais le [diagnostic](mentorat/diagnostic.md)** — 30 minutes. Il te place, et
-surtout il détermine ce qu'on va **ignorer**. Travailler le bon sujet au mauvais
-moment est la façon la plus courante de perdre un an.
+Le cursus se parcourt sur **deux échelles indépendantes** — ne les confonds jamais :
 
-**2. Lis le [protocole de mentorat](mentorat/protocole.md)** — comment on travaille
-ensemble, ce que je fais, ce que je ne ferai pas, et ce que tu m'envoies chaque
-semaine.
+| Échelle | Ce qu'elle mesure | Où |
+|---|---|---|
+| **Lxx — de L00 à L10** | Ta **compétence**, validée par des épreuves notées | [`parcours/`](parcours/README.md) |
+| **Nx — de N0 à N4** | L'état de ton **business** | [`mentorat/diagnostic.md`](mentorat/diagnostic.md) |
 
-**3. Lis le socle, dans cet ordre — pas dans l'ordre des numéros :**
+On peut être L07 sans entreprise. On peut être N3 avec une compétence L04 — une
+marque à 500 000 € par mois pilotée par quelqu'un qui n'a jamais calculé un CAC
+marginal. **Ce second cas est le plus dangereux du métier, et le plus fréquent.**
+Garde ton niveau L au-dessus de ton niveau N.
+
+Dans l'ordre :
+
+**1. Le [diagnostic](mentorat/diagnostic.md)** — 30 minutes. Il place ton business
+et détermine ce qu'on va **ignorer**. Travailler le bon sujet au mauvais moment est
+la façon la plus courante de perdre un an.
+
+**2. Le [parcours](parcours/README.md), à partir de [L00](parcours/L00-novice.md)** —
+même si tu penses le dépasser. L'épreuve L00 se passe en 25 minutes et révèle presque
+toujours deux automatismes manquants.
+
+**3. L'[atelier](atelier/README.md), à partir de [S01](atelier/S01-choisir-le-terrain.md)** —
+tu construis réellement une marque, séance par séance, sur ton projet ou sur un
+projet fictif.
+
+**4. Le [simulateur](outils/simulateur_marque.py)** — tu joues la création d'une
+marque mois par mois et tu vois les conséquences chiffrées de chaque décision.
+
+```bash
+python3 ecommerce/outils/simulateur_marque.py --comparer
+```
+
+> **Pourquoi les trois, et pas seulement les cours.** Un module peut t'expliquer que
+> couper le budget de test créatif tue une marque en six mois. L'atelier te fait
+> construire la machine créative de tes mains. Le simulateur te fait **vivre**
+> l'extinction : tu joues la stratégie sans test, tu regardes ton compte s'éteindre
+> mois après mois, et tu n'oublies plus. Une erreur simulée coûte dix minutes. La
+> même erreur réelle coûte deux ans.
+
+**5. Le socle théorique, dans cet ordre — pas dans l'ordre des numéros :**
 
 | Ordre | Module | Ce qu'il te donne |
 |---|---|---|
@@ -100,8 +132,50 @@ semaine.
 | 3ᵉ | [**E02 — Marché et produit**](modules/E02-marche-et-produit.md) | Si ta catégorie autorise ton objectif |
 | 4ᵉ | [**E14 — Le plan**](modules/E14-plan-1M-semaine.md) | La carte entière, pour savoir où tu es dessus |
 
-**4. Puis suis le parcours de ton niveau**, décrit dans le
-[protocole § 3](mentorat/protocole.md).
+---
+
+## Les trois activités
+
+Aucune ne suffit seule. Le parcours les combine à chaque niveau.
+
+| Activité | Où | Ce que ça produit |
+|---|---|---|
+| **Tu lis** | [`modules/`](modules/) et [`etudes-de-cas/`](etudes-de-cas/) | Les mécanismes |
+| **Tu construis** | [`atelier/`](atelier/README.md) — 12 séances | Les livrables réels d'une marque |
+| **Tu joues** | [`outils/simulateur_marque.py`](outils/simulateur_marque.py) | Les conséquences, en accéléré |
+
+### Les onze niveaux
+
+| Niveau | Nom | Épreuve de passage |
+|---|---|---|
+| [L00](parcours/L00-novice.md) | Novice | 25 questions, dont 10 calculs |
+| [L01](parcours/L01-initie.md) | Initié | Dossier chiffré, 3 erreurs à trouver |
+| [L02](parcours/L02-praticien.md) | Praticien | 3 dossiers produits, tu choisis et tu prouves |
+| [L03](parcours/L03-operateur.md) | Opérateur | Corpus client brut → angle, script, page |
+| [L04](parcours/L04-acquereur.md) | Acquéreur | 8 semaines de données → allocation budgétaire |
+| [L05](parcours/L05-constructeur.md) | Constructeur | 12 concepts à juger + cohortes à diagnostiquer |
+| [L06](parcours/L06-gestionnaire.md) | Gestionnaire | Plan de redressement à 90 jours |
+| [L07](parcours/L07-stratege.md) | Stratège | Test géographique biaisé à corriger |
+| [L08](parcours/L08-batisseur.md) | Bâtisseur | Plan d'ouverture de marché + organigramme |
+| [L09](parcours/L09-architecte.md) | Architecte | 9,4 % → 18 % d'EBITDA sans croissance du CA |
+| [L10](parcours/L10-expert-mondial.md) | Expert mondial | Diagnostic chronométré, arbitrage, enseignement |
+
+### Les douze séances de l'atelier
+
+| # | Séance | Livrable |
+|---|---|---|
+| [S01](atelier/S01-choisir-le-terrain.md) | Choisir le terrain | Décision de catégorie, notée et chiffrée |
+| [S02](atelier/S02-prouver-la-demande.md) | Prouver la demande | Six tests avec seuils écrits d'avance |
+| [S03](atelier/S03-produit-et-cogs.md) | Le produit et le coût réel | Spécification + COGS rendu entrepôt |
+| [S04](atelier/S04-offre-prix-et-panier.md) | L'offre, le prix, le panier | Gamme, prix, construction d'AOV |
+| [S05](atelier/S05-recherche-client-et-angles.md) | Recherche client et angles | Trois fiches d'angle sur verbatim réel |
+| [S06](atelier/S06-premier-lot-de-creas.md) | Le premier lot de créas | Douze concepts, accroches et scripts rédigés |
+| [S07](atelier/S07-le-site.md) | Le site qui convertit | Page produit rédigée + mesure vérifiée |
+| [S08](atelier/S08-le-lancement.md) | Les 30 premiers jours | Plan de lancement + tableau de seuils |
+| [S09](atelier/S09-lire-les-premiers-chiffres.md) | Lire les chiffres et décider | Diagnostic sur dossier piégé |
+| [S10](atelier/S10-installer-la-retention.md) | Installer la rétention | Sept flux rédigés + cohortes |
+| [S11](atelier/S11-passer-a-l-echelle.md) | Passer à l'échelle | Plan 30 k€ → 300 k€ sur 12 mois |
+| [S12](atelier/S12-la-crise.md) | La crise et la revue générale | Plan de crise + auto-évaluation finale |
 
 ---
 
@@ -161,6 +235,7 @@ Tous en Python 3, sans aucune dépendance externe. Chacun a un mode `--demo`.
 
 | Outil | Ce qu'il calcule |
 |---|---|
+| [`simulateur_marque.py`](outils/simulateur_marque.py) | **Le simulateur.** Tu crées une marque et tu la pilotes mois par mois, avec les conséquences |
 | [`modele_nora.py`](outils/modele_nora.py) | Le modèle canonique du cursus. Change une hypothèse, relance, tout reste cohérent |
 | [`calculateur.py`](outils/calculateur.py) | Ta cascade de marges, ton MER seuil, ta LTV/CAC, ton verdict |
 | [`simulateur_tresorerie.py`](outils/simulateur_tresorerie.py) | Ton point bas de trésorerie et ta croissance maximale autofinançable |
@@ -224,11 +299,13 @@ même dossier — ne les ouvre pas avant d'avoir rendu.
 ecommerce/
 ├── README.md                 ← tu es ici
 ├── CHARTE.md                 ← les règles de rédaction du cursus
+├── parcours/                 ← L00 à L10, les niveaux et leurs épreuves notées
+├── atelier/                  ← S01 à S12, la construction réelle d'une marque
 ├── modules/                  ← E00 à E14, les cours
 ├── etudes-de-cas/            ← C01 à C10, chiffrées, avec corrigés
 ├── exercices/                ← tes rendus et les corrigés
 ├── mentorat/                 ← protocole, diagnostic, jalons, tableau de bord, rituel
-├── outils/                   ← les calculateurs Python
+├── outils/                   ← les calculateurs et le simulateur de marque
 ├── modeles/                  ← les documents opérationnels prêts à l'emploi
 └── donnees/
     └── chiffres-canoniques.md  ← généré, la source de vérité chiffrée
