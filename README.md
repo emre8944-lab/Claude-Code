@@ -66,10 +66,35 @@ les asymétries d'**information** (bloc A), les asymétries de **perception**
 L'ordre est pédagogique, pas rigide. Si un livre que tu m'apportes touche au module 11,
 on saute au module 11.
 
+### Bloc E — Acquisition payante et affiliation *(métier complet)*
+
+Le seul bloc du cursus qui décrive un métier entier plutôt qu'un modèle. Il applique
+les blocs A à D à l'achat média à la performance. **Plan d'exécution, budgets et
+critères de passage : [`PARCOURS-ACQUISITION.md`](PARCOURS-ACQUISITION.md).**
+
+| # | Module | Statut |
+|---|--------|--------|
+| 19 | [**La machine**](modules/19-affiliation-machine.md) — acteurs, EPC, CPA plafond, les 4 asymétries de l'affilié | ✅ Écrit |
+| 20 | [**Tracking et attribution**](modules/20-tracking-attribution.md) — S2S, CAPI, déduplication, incrémentalité | ✅ Écrit |
+| 21 | [**L'offre DTC**](modules/21-offre-dtc.md) — mécanisme, garantie, pile d'upsells, pouvoir d'enchère | ✅ Écrit |
+| 22 | [**Angles et créas**](modules/22-angles-creatives.md) — les 10 familles d'angles, l'usine à tests | ✅ Écrit |
+| 23 | [**Les sources de trafic**](modules/23-sources-de-trafic.md) — intention vs interruption, l'arsenal comparé | ✅ Écrit |
+| 24 | [**Tunnel et CRO**](modules/24-cro-tunnel.md) — pré-landers, carte des fuites, tester sans se mentir | ✅ Écrit |
+| 25 | [**Pilotage et scale**](modules/25-pilotage-et-scale.md) — MER, CAC marginal, rituels, règles d'arrêt | ✅ Écrit |
+| 26 | [**La zone grise**](modules/26-zone-grise.md) — la carte honnête : contrat / loi / client | ✅ Écrit |
+| 27 | [**Structure, risque, équipe**](modules/27-structure-risque-equipe.md) — trésorerie, PSP, chargebacks, recrutement | ✅ Écrit |
+
+> Le module 26 traite frontalement le *grey hat*, parce qu'un métier dont on ne connaît
+> que la moitié finit par être enseigné par ses concurrents, dans de mauvaises
+> conditions. Il trie les pratiques sur trois axes — violation de **contrat**,
+> violation de la **loi**, préjudice au **client** — et montre pourquoi confondre le
+> premier avec les deux autres est l'erreur d'analyse la plus coûteuse du secteur.
+
 ### Le socle écrit — à lire dans cet ordre
 
-Quatre modules sont rédigés, et ils forment déjà une chaîne complète et suffisante pour
-décider. Lis-les dans cet ordre, pas dans l'ordre des numéros :
+Quatre modules de fond sont rédigés, plus le bloc E complet. Ensemble ils forment une
+chaîne suffisante pour décider *et* pour exécuter. Lis dans cet ordre, pas dans l'ordre
+des numéros :
 
 | Ordre | Module | Ce qu'il te donne |
 |---|---|---|
@@ -77,6 +102,7 @@ décider. Lis-les dans cet ordre, pas dans l'ordre des numéros :
 | 2ᵉ | [**12 — Hopkins**](modules/12-hopkins-publicite-scientifique.md) | Comment le message capte cet argent |
 | 3ᵉ | [**10 — Sharp contre Hopkins**](modules/10-sharp-distinctivite.md) | Ce que la mesure de Hopkins ne voit pas |
 | 4ᵉ | [**13 — CAC, LTV, payback**](modules/13-unit-economics.md) | Comment savoir si tu gagnes vraiment |
+| 5ᵉ | [**Bloc E — modules 19 à 27**](PARCOURS-ACQUISITION.md) | Comment on va chercher les clients, concrètement |
 
 Les modules 10 et 12 se contredisent frontalement. **C'est voulu, et c'est le cœur de la
 formation.** Les deux sont vrais dans leur domaine ; la compétence rare est de savoir dans
@@ -134,3 +160,4 @@ ménagement, et je te dirai aussi ce qui reste utilisable malgré ça.
 - `modules/` — les cours
 - `exercices/` — tes rendus et mes corrections
 - `fiches-de-lecture/` — les livres traités
+- `PARCOURS-ACQUISITION.md` — le plan d'exécution du bloc E, paliers et budgets
