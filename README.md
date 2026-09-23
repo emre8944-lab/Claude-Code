@@ -4,6 +4,12 @@ Objectif de l'élève : **générer un maximum de revenus durables en business.*
 Objectif du cours : te donner les modèles mentaux qui expliquent *pourquoi* l'argent
 se trouve à certains endroits et pas à d'autres — puis les rendre opérationnels.
 
+> **Deux cursus dans ce dépôt.** Ce README présente le cursus général (business,
+> marketing, psychologie de la décision). Le cursus appliqué
+> **[Formation DTC — de zéro à 1 M€ par mois en e-commerce](formation-dtc/README.md)**
+> se trouve dans `formation-dtc/` : 16 modules, une boîte à outils et les cahiers
+> d'exercices. Il s'appuie sur les modules 1, 10, 12 et 13 ci-dessous.
+
 ---
 
 ## Principe directeur du cursus
@@ -134,3 +140,4 @@ ménagement, et je te dirai aussi ce qui reste utilisable malgré ça.
 - `modules/` — les cours
 - `exercices/` — tes rendus et mes corrections
 - `fiches-de-lecture/` — les livres traités
+- `formation-dtc/` — le cursus e-commerce DTC (modules, exercices, boîte à outils)
