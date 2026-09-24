@@ -1,110 +1,101 @@
-# Site USTA Conseils & Travaux — version 1 (exemple de travail)
+# Site USTA Conseils & Travaux — v2
 
-Site vitrine de l'entreprise familiale USTA Conseils & Travaux (plomberie, électricité,
-carrelage, placo, rénovation intérieure). Pensé pour **transformer les visiteurs en demandes
-de devis** et **ressortir sur Google pour les recherches locales** (« plombier + ville »,
-« carreleur + ville »…).
-
-HTML, CSS et JavaScript simples : aucun framework, aucune dépendance, aucun cookie.
+Site vitrine de l'entreprise familiale USTA Conseils & Travaux (plomberie, électricité, carrelage,
+placo, rénovation intérieure). Objectifs : **une image de marque forte**, **des demandes de devis**
+et **une bonne visibilité sur Google pour les recherches locales** (« plombier + ville »…).
 
 ## Voir le site
 
-Double-cliquer sur `index.html`. Pour un rendu identique à la mise en ligne :
+- Ouvrir `public/index.html` dans un navigateur (double-clic), ou
+- `npm run serve` puis ouvrir http://localhost:8000 (rendu identique à la mise en ligne).
 
-```bash
-cd site-usta
-python3 -m http.server 8000   # puis ouvrir http://localhost:8000
+**Mettre en ligne = envoyer le contenu du dossier `public/`** chez l'hébergeur (Netlify, OVH, o2switch…).
+Le dossier `src/` sert uniquement à générer les pages.
+
+## Organisation
+
+```
+site-usta/
+├── public/                  ← le site à mettre en ligne (HTML généré + ressources)
+│   ├── *.html
+│   └── assets/
+│       ├── css/style.css    ← toute l'identité visuelle
+│       ├── js/main.js       ← menus, animations, formulaires
+│       ├── js/scene3d.js    ← maquette 3D (fichier généré, ne pas modifier à la main)
+│       ├── fonts/           ← polices hébergées sur le site (pas de Google Fonts → RGPD)
+│       └── img/             ← logo, favicon, image de partage réseaux sociaux
+└── src/                     ← sources
+    ├── build.py             ← CONFIG (ville, téléphone…) + en-tête, menu, pied de page
+    ├── content.py           ← titres Google, descriptions, FAQ de chaque page
+    ├── services_content.py  ← textes des 5 pages métiers
+    ├── pages/               ← contenu de l'accueil, contact, mentions légales, 404, merci
+    │   └── _service.html    ← gabarit commun des pages métiers
+    └── js/scene3d.js        ← source de la maquette 3D (Three.js)
 ```
 
-## Pages
+### Modifier le site
 
-| Fichier | Rôle | Recherche Google visée |
-|---|---|---|
-| `index.html` | Accueil : proposition de valeur, formulaire de rappel, métiers, méthode, réalisations, avis, zone, FAQ | « artisan rénovation [ville] » |
-| `plomberie.html` | Page métier | « plombier [ville] » |
-| `electricite.html` | Page métier | « électricien [ville] » |
-| `carrelage.html` | Page métier | « carreleur [ville] » |
-| `placo-platrerie.html` | Page métier | « plaquiste [ville] » |
-| `renovation-interieure.html` | Rénovation clé en main | « rénovation salle de bain [ville] » |
-| `contact.html` | Formulaire de devis complet | — |
-| `merci.html` | Confirmation après envoi (sert aussi à mesurer les conversions) | non indexée |
-| `mentions-legales.html` | Mentions légales, RGPD, assurance, médiateur | non indexée |
-| `404.html` | Page introuvable | non indexée |
+```bash
+npm install          # une seule fois (Three.js + esbuild pour la 3D)
+npm run build        # régénère public/ (3D + pages HTML)
+npm run build:html   # seulement les pages (Python 3, sans dépendance)
+```
 
-Autres fichiers : `assets/css/style.css`, `assets/js/main.js`, `assets/img/` (logo, favicon,
-image de partage réseaux sociaux), `sitemap.xml`, `robots.txt`.
+Ne pas modifier les fichiers HTML de `public/` à la main : ils sont écrasés à chaque génération.
 
-## À remplacer avant la mise en ligne
+## À compléter avant la mise en ligne
 
-Dans le navigateur, **tout ce qui est surligné en jaune** (texte entre crochets) et
-**tous les encadrés « À faire »** sont à compléter ou à supprimer.
+1. **Dans `src/build.py`, section CONFIG** (répercuté partout, y compris dans les données Google) :
+   `VILLE`, `RAYON`, `TEL`, `TEL_HREF`, `WHATSAPP`, `EMAIL`, `SITE` (nom de domaine), `HOURS`, `FORM_ACTION`.
+2. **Textes entre crochets** encore présents dans les sources (`[Adresse]`, `[Code postal]`, `[SIRET…]`,
+   `[Assureur]`, `[XXXX]`, `[30]`…) : rechercher `%PH:` dans `src/` et `[` dans `src/pages/mentions-legales.html`.
+   Adresse et code postal sont aussi dans `BUSINESS` (`src/build.py`).
+3. **Mentions légales** : forme juridique, SIRET, TVA, hébergeur, assureur décennale, médiateur de la consommation.
+4. **Formulaire** : créer un formulaire gratuit sur [Formspree](https://formspree.io) et remplacer `VOTRE_ID`
+   dans `FORM_ACTION`. Tant que ce n'est pas fait, le formulaire affiche un message « mode démonstration ».
+   (Formspree est hébergé aux États-Unis ; un service européen peut le remplacer en changeant juste l'adresse.)
 
-Dans le code, rechercher (dans tous les fichiers) :
+**Ne jamais inventer** d'avis clients, de chiffres (« 500 chantiers ») ni de labels (RGE, Qualibat) :
+c'est interdit et sanctionné. Les chiffres affichés (48 h, 24 h, 10 ans, 1 contact) sont des
+engagements de service : à ajuster s'ils ne correspondent pas à votre fonctionnement.
 
-| Rechercher | Remplacer par |
-|---|---|
-| `[Ville]` | la ville principale (dans les titres, textes et données structurées) |
-| `[XX]`, `[année]`, `[Commune…]`, `[Adresse]`, `[Code postal]`, `[SIRET…]`, `[Assureur]`… | les vraies informations |
-| `06 00 00 00 00`, `+33600000000`, `33600000000` | le vrai numéro (affiché, lien d'appel, lien WhatsApp) |
-| `contact@votre-domaine.fr` | la vraie adresse e-mail |
-| `https://www.votre-domaine.fr` | le nom de domaine (y compris dans `sitemap.xml` et `robots.txt`) |
-| `VOTRE_ID` | l'identifiant du formulaire Formspree (voir ci-dessous) |
-| `Lun – Ven 8h – 18h`, `8h – 18h`… et `openingHoursSpecification` | les vrais horaires |
-| `class="dev-note"` | supprimer ces encadrés une fois le contenu en place |
-| `class="ph"` | une fois le texte remplacé, retirer le `<span class="ph">` autour |
+## Identité visuelle
 
-Le bouton « Voir tous nos avis Google » (accueil) doit pointer vers votre fiche Google.
+- **Concept** : « le plan, puis le chantier ». Fond encre, papier, orange signal, annotations
+  façon plan d'architecte (police à chasse fixe, repères, numérotation).
+- **Couleurs** : encre `#0E0E0C`, papier `#F2F0EB`, orange signal `#FF5A1F`.
+- **Code couleur des métiers** (repris dans la 3D, le menu et les formulaires) :
+  plomberie bleu `#3D7BFF`, électricité jaune `#FFC53D`, carrelage vert d'eau `#2BB5A0`, placo plâtre `#C9C4B8`.
+- **Typographie** : Archivo (largeur variable, version élargie pour les titres) + JetBrains Mono pour les annotations.
+- **Logo** : le toit et le « U » de USTA, en noir sur carré orange.
 
-**Important :** ne jamais inventer d'avis clients, de chiffres (« 500 chantiers ») ou de
-labels (RGE, Qualibat) que l'entreprise n'a pas : c'est interdit et sanctionné.
+## La maquette 3D
 
-## Le formulaire de devis
+Sur l'accueil, une pièce en coupe se construit couche par couche : carrelage, réseau de plomberie,
+circuits électriques, cloisons en placo, et le toit orange du logo qui flotte au-dessus.
+Les métiers s'allument à tour de rôle ; survoler un métier sous le titre le met en avant ;
+en faisant défiler, la maison « s'éclate » en couches. Sur chaque page métier, la même maquette
+met en avant le métier concerné.
 
-Le site étant statique, les formulaires passent par un service d'envoi d'e-mails.
-Réglage par défaut : [Formspree](https://formspree.io) (gratuit jusqu'à 50 envois/mois).
+Performances : la 3D se charge **après** la page (elle ne retarde pas l'affichage), s'arrête quand elle
+n'est plus visible, se simplifie sur mobile, et un dessin fixe la remplace si le navigateur ne gère
+pas la 3D ou si le visiteur a demandé à réduire les animations.
 
-1. Créer un compte Formspree et un formulaire → récupérer l'identifiant (ex. `xyzabcd`).
-2. Remplacer `VOTRE_ID` par cet identifiant dans `index.html` et `contact.html`.
-3. Faire un envoi de test.
+## Conversion et SEO
 
-Tant que `VOTRE_ID` est présent, le formulaire reste en **mode démonstration** (il affiche un
-message au lieu d'envoyer). Si l'envoi échoue, le visiteur voit le numéro de téléphone.
-Formspree est hébergé aux États-Unis ; un équivalent européen peut le remplacer sans toucher
-au reste (il suffit de changer l'adresse `action` du formulaire).
-
-## Ce qui est en place pour la conversion
-
-- Téléphone cliquable partout, **barre « Appeler / Devis gratuit » fixe sur mobile**.
-- Formulaire de rappel court (4 champs) dès le haut de l'accueil, formulaire complet sur `contact.html`.
-- Chaque page métier pré-coche le bon type de travaux dans le formulaire (`contact.html?service=plomberie`).
-- Réassurance : décennale, devis gratuit sous 48 h, entreprise familiale, méthode en 4 étapes.
-- Argument différenciant : **un seul interlocuteur pour tous les corps de métier** (comparatif).
-- Réponses aux objections (FAQ), encadré « urgence » sur plomberie et électricité.
-- Clics sur les boutons marqués (`data-track`) : prêts pour Google Tag Manager le jour où il sera ajouté.
-
-## Ce qui est en place pour le SEO
-
-- Une page par métier avec un contenu **unique** (pas de copier-coller entre les pages).
-- Titres, méta-descriptions, un seul `h1` par page, fil d'Ariane, maillage interne entre métiers.
-- Données structurées schema.org : entreprise locale (adresse, horaires, zone, services),
-  pages service, fil d'Ariane, FAQ.
-- `sitemap.xml`, `robots.txt`, URL canoniques, balises de partage (Open Graph).
-- Site très léger (pas d'images lourdes, pas de police externe, pas de framework) → rapide sur mobile.
-- Pas de cookie → pas de bandeau de consentement nécessaire.
+- Téléphone toujours visible, barre « Appeler / Devis gratuit » fixe sur mobile, formulaire de rappel
+  en fin de chaque page, pré-rempli selon le métier.
+- Une page par métier au contenu unique, titres et descriptions optimisés, fil d'Ariane, FAQ,
+  données structurées schema.org (entreprise locale, services, FAQ), `sitemap.xml`, `robots.txt`.
+- Site léger, polices et 3D hébergées sur le site, aucun cookie (pas de bandeau nécessaire).
+- Clics sur les boutons marqués `data-track`, prêts pour Google Tag Manager.
 
 ## Prochaines étapes (par ordre d'impact)
 
-1. **Fiche Google Business Profile** : c'est le levier n°1 pour un artisan local (carte Google).
-   Même nom, adresse et téléphone que sur le site.
-2. **Vraies photos de chantiers** (avant/après) dans la section Réalisations.
-3. **Avis clients** : demander systématiquement un avis Google en fin de chantier, puis en reprendre quelques-uns sur le site.
-4. Nom de domaine + hébergement (Netlify, OVH, o2switch…), puis **Google Search Console** avec envoi du `sitemap.xml`.
-5. Si RGE / Qualibat / autre label : l'ajouter dans la barre de confiance (fort impact sur la confiance).
-6. Page « Réalisations » dédiée avec un cas détaillé par chantier (budget, durée, photos).
-7. Pages par commune **uniquement avec du contenu réellement local** (chantiers réalisés sur place),
-   sinon Google les considère comme des pages satellites.
-8. Mesure d'audience sans cookie (Plausible, Matomo configuré en mode exempté) pour suivre les appels et les devis.
-
-Note technique : l'en-tête et le pied de page sont répétés dans chaque fichier HTML. Si le site
-grossit (blog, pages par commune), passer à un générateur de site statique (ex. Eleventy)
-évitera de les modifier page par page.
+1. **Fiche Google Business Profile** (levier n°1 pour un artisan local), avec les mêmes nom, adresse, téléphone.
+2. **Photos réelles de chantiers** (avant/après) : une page ou une section « Réalisations ».
+3. **Avis Google** demandés à chaque fin de chantier, puis une section avis sur le site.
+4. Nom de domaine, hébergement, puis **Google Search Console** avec envoi du sitemap.
+5. Labels éventuels (RGE, Qualibat…) dans le hero et le pied de page.
+6. Pages par commune **seulement avec du contenu réellement local** (chantiers réalisés sur place).
+7. Mesure d'audience sans cookie (Plausible, ou Matomo en mode exempté).

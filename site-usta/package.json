@@ -1,0 +1,15 @@
+{
+  "name": "site-usta",
+  "private": true,
+  "description": "Site USTA Conseils & Travaux — générateur des pages statiques et de la scène 3D",
+  "scripts": {
+    "build:3d": "esbuild src/js/scene3d.js --bundle --minify --format=iife --target=es2019 --legal-comments=none --outfile=public/assets/js/scene3d.js",
+    "build:html": "python3 src/build.py",
+    "build": "npm run build:3d && npm run build:html",
+    "serve": "python3 -m http.server 8000 --directory public"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "three": "^0.186.0"
+  }
+}

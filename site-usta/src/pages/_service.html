@@ -1,0 +1,61 @@
+<main id="contenu">
+  <section class="page-hero page-hero--scene grain" data-hero>
+    {{SCENE_FOCUS}}
+    <div class="container">
+      <div class="page-hero__content">
+        {{BREADCRUMB}}
+        {{TRADE_TAG}}
+        <h1>{{H1}}<small>{{H1_SMALL}}</small></h1>
+        <p class="lead">{{LEAD}}</p>
+        <div class="hero__ctas">
+          <a class="btn btn--signal btn--lg" href="contact.html?service={{SLUG}}" data-track="devis-{{SLUG}}-hero">{{CTA_LABEL}} %I:arrow:arrow%</a>
+          <a class="btn btn--ghost btn--lg" href="%TEL_HREF%" data-track="appel-{{SLUG}}-hero">%I:phone% %TEL%</a>
+        </div>
+        {{URGENT}}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="container">
+      <div class="section-head section-head--split">
+        <div>
+          <p class="index">01 / Prestations</p>
+          <h2 class="display" data-reveal>{{PRESTA_TITLE}}</h2>
+        </div>
+        <p class="section-head__text" data-reveal style="--d:1">{{PRESTA_INTRO}}</p>
+      </div>
+      <div class="services-list">{{PRESTATIONS}}</div>
+    </div>
+  </section>
+
+  <section class="section section--dark grain">
+    <div class="container split">
+      <div>
+        <p class="index">02 / L'avantage USTA</p>
+        <h2 class="display" data-reveal>{{ADV_TITLE}}</h2>
+        {{ADV_BODY}}
+      </div>
+      <div class="tip" data-reveal style="--d:1">
+        <p class="mono">%I:bulb% Le conseil USTA</p>
+        <p>{{TIP}}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper-2" id="faq">
+    <div class="container faq-layout">
+      <div class="faq-layout__aside">
+        <p class="index">03 / Questions fréquentes</p>
+        <h2 class="display" data-reveal>{{FAQ_TITLE}}</h2>
+        <p data-reveal style="--d:1">Une autre question ? Appelez-nous, on vous répond directement.</p>
+        <a class="btn btn--line" href="%TEL_HREF%" data-track="appel-{{SLUG}}-faq">%I:phone% %TEL%</a>
+      </div>
+      {{FAQ}}
+    </div>
+  </section>
+
+  {{OTHER_SERVICES}}
+
+  {{CTA_FINAL}}
+</main>

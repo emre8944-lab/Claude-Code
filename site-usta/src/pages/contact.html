@@ -1,0 +1,108 @@
+<main id="contenu">
+  <section class="page-hero grain">
+    <div class="container">
+      <div class="page-hero__content">
+        {{BREADCRUMB}}
+        <p class="trade-tag" style="--trade: var(--signal)"><i></i>Devis gratuit · Rappel sous 24 h</p>
+        <h1>Demandez votre<br>devis gratuit.<small>Décrivez vos travaux en 2 minutes : on vous rappelle pour en parler et, si besoin, organiser une visite gratuite.</small></h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight section--paper">
+    <div class="container contact-grid">
+      <div class="panel" id="formulaire">
+        <h2>Votre projet</h2>
+        <form class="form" action="%FORM_ACTION%" method="POST" data-lead-form>
+          <input type="hidden" name="_subject" value="Demande de devis — site USTA">
+          <input type="hidden" name="source" value="Page contact">
+
+          <fieldset class="fieldset">
+            <legend>Quels travaux ? <span class="opt">(plusieurs choix possibles)</span></legend>
+            <div class="choice">
+              <label><input type="checkbox" name="travaux" value="plomberie"><span style="--trade: var(--c-plomberie)"><i></i>Plomberie</span></label>
+              <label><input type="checkbox" name="travaux" value="electricite"><span style="--trade: var(--c-electricite)"><i></i>Électricité</span></label>
+              <label><input type="checkbox" name="travaux" value="carrelage"><span style="--trade: var(--c-carrelage)"><i></i>Carrelage</span></label>
+              <label><input type="checkbox" name="travaux" value="placo"><span style="--trade: var(--c-placo)"><i></i>Placo / plâtrerie</span></label>
+              <label><input type="checkbox" name="travaux" value="renovation"><span style="--trade: var(--c-renovation)"><i></i>Rénovation complète</span></label>
+              <label><input type="checkbox" name="travaux" value="autre"><span style="--trade: var(--muted)"><i></i>Autre</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="c-projet">Votre projet en quelques mots</label>
+            <textarea class="input" id="c-projet" name="projet" rows="5" placeholder="Ex. : refaire une salle de bain de 6 m² et remplacer la baignoire par une douche à l'italienne."></textarea>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="c-delai">Démarrage souhaité</label>
+              <select class="input" id="c-delai" name="delai">
+                <option>Dès que possible</option>
+                <option>C'est urgent (fuite, panne)</option>
+                <option>Dans le mois</option>
+                <option>Dans 1 à 3 mois</option>
+                <option>Je me renseigne</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="c-cp">Code postal des travaux</label>
+              <input class="input" id="c-cp" name="code_postal" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" maxlength="5" required>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="c-nom">Nom et prénom</label>
+              <input class="input" id="c-nom" name="nom" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="c-tel">Téléphone</label>
+              <input class="input" id="c-tel" name="telephone" type="tel" autocomplete="tel" minlength="10" placeholder="06 12 34 56 78" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="c-email">E-mail <span class="opt">(facultatif)</span></label>
+            <input class="input" id="c-email" name="email" type="email" autocomplete="email">
+          </div>
+
+          <div class="hp" aria-hidden="true"><label>Ne pas remplir <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+
+          <button class="btn btn--signal btn--lg btn--block" type="submit" data-track="form-devis">Envoyer ma demande de devis %I:arrow:arrow%</button>
+          <div class="form-status" role="status" aria-live="polite"></div>
+          <p class="form__legal">Gratuit et sans engagement. Vos données servent uniquement à répondre à votre demande et ne sont jamais revendues. <a href="mentions-legales.html#donnees-personnelles">En savoir plus</a>.</p>
+        </form>
+      </div>
+
+      <aside class="aside-stack">
+        <div class="panel panel--dark">
+          <p class="mono" style="color: var(--on-dark-2)">Vous préférez appeler ?</p>
+          <a class="bigphone" href="%TEL_HREF%" data-track="appel-contact"><span class="bigphone__icon">%I:phone%</span>%TEL%</a>
+          <p class="mono" style="color: var(--on-dark-2); margin-top: 14px">%HOURS%</p>
+        </div>
+        <div class="panel">
+          <h2>Envoyez-nous des photos</h2>
+          <p>Quelques photos de la pièce ou du problème nous aident à préparer la visite et le devis. Envoyez-les par SMS ou WhatsApp au <a href="%WHATSAPP%" data-track="whatsapp-contact">%TEL%</a>.</p>
+        </div>
+        <div class="panel panel--dark">
+          <h2>Ce qui se passe ensuite</h2>
+          <ol class="timeline">
+            <li><strong>On vous rappelle sous 24 h ouvrées</strong><span>Pour comprendre votre besoin et répondre à vos questions.</span></li>
+            <li><strong>Visite gratuite si nécessaire</strong><span>Prise de mesures, conseils, choix des solutions.</span></li>
+            <li><strong>Devis détaillé sous 48 h</strong><span>Clair, poste par poste, sans engagement.</span></li>
+          </ol>
+        </div>
+        <div class="panel">
+          <h2>Nos coordonnées</h2>
+          <address>
+            USTA Conseils &amp; Travaux<br>
+            %PH:Adresse%<br>
+            %PH:Code postal% %VILLE%<br>
+            <a href="mailto:%EMAIL%">%EMAIL%</a>
+          </address>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
